@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavItems } from "../NavItems/NavItems";
 import './Nav.css'
 
-function Nav() {
+const Nav = () => {
 
+    // clicked = initial state // setClicked function that changes initial change
+    const [clicked, setClicked] = useState(false)
+
+    const toggle = index => {
+        console.log('ive been clicked')
+
+        if (clicked === index) {
+            console.log('ive been clicked x2')
+            // if clicked and already active then close
+            return setClicked(null)
+        }
+        setClicked(index)
+    }
 
     return (
         <div>
@@ -12,14 +25,19 @@ function Nav() {
                     {NavItems.map((item, index) => {
                         return (
                             <section>
-                                <h2> {item.title}</h2>
-                                <article>{item.info} </article>
+                                <h2 onClick={() => toggle(index)} key={index}> {item.title}</h2>
+
+                                {clicked === index ? (
+                                    <article>
+                                        <p>
+                                            {item.info}
+                                        </p>
+                                    </article>
+                                ) : null}
+
                             </section>
                         )
                     })}
-                    <div>
-                        About Us
-                    </div>
                 </nav>
             </main>
         </div>
