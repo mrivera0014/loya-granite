@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavItems } from "../NavItems/NavItems";
+import Calc from '../Calc/Calc'
 import './Nav.css'
 
 const Nav = () => {
@@ -30,7 +31,8 @@ const Nav = () => {
                                 {clicked === index ? (
                                     <article>
                                         <p>
-                                            {item.info}
+                                            <p>{item.info}</p>
+                                            <item.location/>
                                         </p>
                                     </article>
                                 ) : null}
