@@ -26,13 +26,13 @@ const Nav = () => {
                     {NavItems.map((item, index) => {
                         return (
                             <section>
-                                <h2 onClick={() => toggle(index)} key={index}> {item.title}</h2>
+                                <h2 onClick={() => toggle(index)} key={index} className={item.cName}> {item.title}</h2>
 
                                 {clicked === index ? (
                                     <article>
                                         <p>
                                             <p>{item.info}</p>
-                                            <item.location/>
+                                            <item.location />
                                         </p>
                                     </article>
                                 ) : null}

@@ -22,48 +22,48 @@ initializePassport(
 
 
 app.set('view-engine', 'ejs');
-app.use(express.urlencoded({extended:false}))
+app.use(express.urlencoded({ extended: false }))
 app.use(flash());
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
-    saveUninitialized:false
+    saveUninitialized: false
 }))
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(methodOverride("_method"))
-app.get('/',checkNotAuthenticated,(req,res)=>{
+app.get('/', checkNotAuthenticated, (req, res) => {
     res.render("./answer.ejs");
 })
- 
-app.get("/stuff",checkNotAuthenticated,(req,res)=>{
+
+app.get("/stuff", checkNotAuthenticated, (req, res) => {
     res.render('login.ejs')
 })
 
 
 
 
-app.post('/calc',(req,res)=>{
+app.post('/calc', (req, res) => {
     let result = new UseCalc(Number(req.body.unitOne), Number(req.body.unitTwo));
     answers.push(result.yep);
     console.log(answers);
-     res.redirect('/answer');
+    res.redirect('/answer');
 })
 
 
-function checkAuthenticated(req,res,next){
-    if(req.isAuthenticated()){
+function checkAuthenticated(req, res, next) {
+    if (req.isAuthenticated()) {
         return next()
     }
 
     res.redirect('/')
 }
 
-function checkNotAuthenticated(req,res,next){
-    if(req.isAuthenticated()){
+function checkNotAuthenticated(req, res, next) {
+    if (req.isAuthenticated()) {
         return res.redirect('/')
     }
     next()
 }
 
-app.listen(3000)
+app.listen(3050)

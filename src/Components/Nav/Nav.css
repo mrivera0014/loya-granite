@@ -11,3 +11,9 @@
 .section {
 position: absolute;
 }
+
+.about,
+.projects,
+.estimations {
+    color: white;
+}
