@@ -1,0 +1,17 @@
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 10rem;
+    min-width: 15rem;
+    margin: auto;
+}
+
+
+.projectItems{
+    padding: 5%;
+    max-height: 100%;
+    min-width: 33%;
+    border:1px solid black;
+    background:white;
+
+}
