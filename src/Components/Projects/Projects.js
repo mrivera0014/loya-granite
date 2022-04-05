@@ -14,34 +14,14 @@ const Projects = () => {
 
   const consoleLogged = (item) =>{{
       console.log(item.item)
-      if (projectToggle === item){
-         return setProjectToggle(null)
-      }
-      if(item.item == "One"){
-        itemChosen = itemOne
-      }
-      if(item.item == "Two"){
-        itemChosen = itemTwo
-      }
-      if(item.item == "Three"){
-        itemChosen = itemThree
-      }
+
 
   }
-
-
     setProjectToggle(item)
-
-    return(
-      <div className={`modal ${projectToggle ? "": "show"}` }>
-      {itemChosen.map((item,index)=>(
-        <div className={`modal-pictures-picture`}>
-            <div >{item.itemitem}</div>
-          </div>
-      ))}
-      </div>
-
-    )
+  }
+  const closeModal = (item) =>{
+    if (item === false) return;
+    return setProjectToggle(null)
   }
 
 
@@ -59,12 +39,22 @@ const Projects = () => {
       <div>
 
         {/* mapping the modal pictures */}
-
+      
         </div>
         </>
     )
 
    })}
+
+<div className={`modal ${projectToggle ? "show": ""}` }>
+  <button className={`close button`} onClick={()=> closeModal(projectToggle)}>X</button>
+      {itemChosen.map((item,index)=>(
+        <div className={`modal-pictures-picture`}>
+            <div >{item.itemitem}</div>
+          </div>
+      ))}
+      </div>
+
 
   </div>
 
