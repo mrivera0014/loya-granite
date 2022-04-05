@@ -9,9 +9,35 @@
 
 .projectItems{
     padding: 5%;
-    max-height: 100%;
+    max-height: 5rem;
     min-width: 33%;
     border:1px solid black;
     background:white;
 
 }
+.projectItems:active{
+    max-height: 10rem !important;
+}
+
+.modal{
+    display: none;
+
+    min-height: 30vh;
+    min-width: 80vw;
+    /* position: absolute; */
+    margin: 0 auto;
+    transform: translate(-50% ,-50%);
+    background-color: orange;   
+}
+.modal-pictures-picture{
+min-width: 25%;
+min-height: 25%;
+    background-color: lightblue;
+
+}
+
+.show{
+    display: flex;
+    position: absolute;
+}
+

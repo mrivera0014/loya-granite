@@ -1,5 +1,5 @@
-import React, {useRef,useEffect} from 'react'
-import {assists} from './projectAssets/projectAssists';
+import React, {useState,useRef,useEffect} from 'react'
+import {assists,itemOne,itemTwo,itemThree} from './projectAssets/projectAssists';
 import  './projects.css'
 import {gsap} from "gsap/all"
 
@@ -9,30 +9,63 @@ import {gsap} from "gsap/all"
 const Projects = () => {
 
 
+  const [projectToggle, setProjectToggle] = useState(false)
+  var itemChosen = itemOne;
 
+  const consoleLogged = (item) =>{{
+      console.log(item.item)
+      if (projectToggle === item){
+         return setProjectToggle(null)
+      }
+      if(item.item == "One"){
+        itemChosen = itemOne
+      }
+      if(item.item == "Two"){
+        itemChosen = itemTwo
+      }
+      if(item.item == "Three"){
+        itemChosen = itemThree
+      }
 
-  const projectElRef = gsap.utils.toArray(".projectItems")
-
-  projectElRef.map((item,index)=>{
-    item.anim = gsap.to(item,{
-      height:100
-    }).reversed(true);
-    item.addEventlistener("click",doStuff)
-  })
-
-  function doStuff(){
-    this.anim.reversed(!this.anim.reversed())
   }
 
+
+    setProjectToggle(item)
+
+    return(
+      <div className={`modal ${projectToggle ? "": "show"}` }>
+      {itemChosen.map((item,index)=>(
+        <div className={`modal-pictures-picture`}>
+            <div >{item.itemitem}</div>
+          </div>
+      ))}
+      </div>
+
+    )
+  }
+
+
   return (
+    
   <div className={`projects`}>
+
+{/* mapping the projects */}
    {assists.map((item,index)=>{
     return(
-      <button className={`projectItems`}  >
+      <>
+      <button className={`projectItems`} onClick={() => consoleLogged(item)}>
         <h1>{item.item}</h1>
       </button>
+      <div>
+
+        {/* mapping the modal pictures */}
+
+        </div>
+        </>
     )
+
    })}
+
   </div>
 
 
