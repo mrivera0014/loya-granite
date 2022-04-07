@@ -46,3 +46,12 @@ margin:5%;
     position: absolute;
 }
 
+.close-button{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 95%;
+}

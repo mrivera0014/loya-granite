@@ -47,7 +47,7 @@ const Projects = () => {
    })}
 
 <div className={`modal ${projectToggle ? "show": ""}` }>
-  <button className={`close button`} onClick={()=> closeModal(projectToggle)}>X</button>
+  <button className={`close-button`} onClick={()=> closeModal(projectToggle)}>X</button>
       {itemChosen.map((item,index)=>(
         <div className={`modal-pictures-picture`}>
             <div >{item.itemitem}</div>
