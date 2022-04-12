@@ -55,7 +55,7 @@ const Projects = () => {
   <button className={`close-button`} onClick={()=> closeModal(projectToggle)}>X</button>
 
       </div>
-
+        
 
 
   </div>
