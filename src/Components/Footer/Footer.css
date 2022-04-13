@@ -1,0 +1,18 @@
+.footer{
+    min-height: 15rem;
+    max-width: 100%;
+    background-color:rgba(010,10,10,1);
+    color:#333;
+    padding-left: 5%;
+    padding-top: 5%;
+    
+}
+
+
+.footer-copyright{
+    position: relative;
+    bottom:auto;
+    left: 45%;
+    max-width: 50%;
+    padding-top: 5%;
+}
