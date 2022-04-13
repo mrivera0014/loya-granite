@@ -1,0 +1,56 @@
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 15rem;
+    min-width: 15rem;
+    margin: auto;
+}
+
+
+.projectItems{
+    padding: 5%;
+    max-height: 25%;
+    min-width: 25%;
+    margin: 3%;
+    border:1px solid black;
+    background:white;
+
+}
+.projectItems:hover{
+    background-color: black;
+    color: white;;
+}
+
+.modal{
+    display: none;
+
+    min-height: 30vh;
+    min-width: 80%;
+    left:50%;
+    top:40%;
+    /* position: absolute; */
+    overflow-y: scroll;
+    transform: translate(-50% ,-50%);
+    background-color: orange;   
+}
+.modal-pictures-picture{
+min-width: 25%;
+min-height: 25%;
+margin:5%;
+    background-color: lightblue;
+
+}
+
+.show{
+    display: flex;
+    position: absolute;
+}
+
+.close-button{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+   display:flex;
+}
