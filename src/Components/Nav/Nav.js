@@ -8,10 +8,10 @@ const Nav = () => {
     const [clicked, setClicked] = useState(false)
 
     const toggle = index => {
-        console.log('ive been clicked')
+        // console.log('ive been clicked')
 
         if (clicked === index) {
-            console.log('ive been clicked x2')
+            // console.log('ive been clicked x2')
             // if clicked and already active then close
             return setClicked(null)
         }
@@ -24,7 +24,7 @@ const Nav = () => {
                 <nav className="fullNav">
                     {NavItems.map((item, index) => {
                         return (
-                            <section>
+                            <section className="container">
                                 <h2 onClick={() => toggle(index)} key={index} className={item.cName}> {item.title}</h2>
 
                                 {clicked === index ? (
