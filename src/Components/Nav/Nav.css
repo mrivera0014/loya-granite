@@ -10,16 +10,16 @@
 
 .container {
     padding: 0 1em;
-    font-family: 'Abril Fatface',
-        cursive;
-    ;
+    font-family: 'Abril Fatface';
+    border: azure solid 2px;
 }
 
 .about,
+.contact,
 .projects,
 .estimations {
     color: white;
     max-width: 40rem;
-    border: azure solid 2px;
+    /* border: azure solid 2px; */
     margin: auto;
 }
