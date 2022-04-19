@@ -1,0 +1,28 @@
+.contactContain {
+    display: flex;
+}
+
+.form {
+    min-width: 12rem;
+    max-width: 32rem;
+}
+
+.name,
+.email,
+.message {
+    /* max-width: 32rem; */
+    min-width: 18rem;
+    min-height: 4rem;
+    font-family: 'Abril Fatface';
+}
+
+.message {
+    min-height: 9rem;
+}
+
+.submit {
+    display: block;
+    margin-left: 41%;
+}
+
+/* might have to add media query for  */
