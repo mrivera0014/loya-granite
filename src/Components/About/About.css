@@ -1,4 +1,46 @@
 .loyaGranite,
-p {
+.aboutLoya {
+    /* color: #fcdb03; */
     color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.aboutSection {
+    border: #fcdb03 2px solid;
+    background: #fcdb03;
+    padding: .5rem;
+    max-width: 20rem;
+    float: left;
+    margin: 1rem;
+    animation-name: slideIn;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.who {
+    border: #0390fc 2px solid;
+    background: #0390fc;
+    padding: .5rem;
+    max-width: 49rem;
+    margin: 1rem;
+    float: left;
+}
+
+.more {
+    border: #fc0303 2px solid;
+    background: #fc0303;
+    padding: .5rem;
+    max-width: 49rem;
+    margin: 1rem;
+    float: left;
 }
