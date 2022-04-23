@@ -32,16 +32,17 @@ const Projects = () => {
 {/* mapping the projects */}
    {assists.map((item,index)=>{
     return(
-      <>
+      <div className='projects_photos'>
       <button className={`projectItems`} onClick={() => consoleLogged(item)}>
         <h1>{item.item}</h1>
+        <img src={item.item} className={`project_item-img`}></img>
       </button>
       <div>
 
         {/* mapping the modal pictures */}
       
         </div>
-        </>
+        </div>
     )
 
    })}

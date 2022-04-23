@@ -1,13 +1,18 @@
 import React from 'react'
 
+
+import kitchenOne from './assets/kitchen_counter_angle.jpg'
+import bathroomOne from './assets/bathroom_shells.jpg'
+import firePlace from './assets/fireplace_darker.jpg'
+
 export const assists = [
 
-    {item:"one",
+    {item:kitchenOne,
 
     },
-    {item:"two",
+    {item:bathroomOne,
 },
-    {item:"three",
+    {item:firePlace,
 }
 
 
