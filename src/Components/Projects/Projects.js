@@ -7,23 +7,41 @@ import {gsap} from "gsap/all"
 
 
 const Projects = () => {
+  var itemChosen = [];
 
 
   const [projectToggle, setProjectToggle] = useState(false)
-  var itemChosen = itemOne;
 
-  const consoleLogged = (item) =>{{
-      console.log(item.item)
-
-
-  }
-    setProjectToggle(item)
+  const consoleLogged = (item) =>{
+    let values = (item + 1);
+    {
+      console.log(values)
+    }
+   
   }
   const closeModal = (item) =>{
-    if (item === false) return;
+    let values = (item + 1);
+
+    if (values === false) return;
     return setProjectToggle(null)
   }
+  const chosenModal  = (item) =>{
+    let values = (item + 1);
+    if (values == 1){
+      itemChosen = itemOne
+    }
+    if (values == 2){
+      itemChosen = itemTwo
+    }
+    if (values == 3){
+      itemChosen = itemThree
+    }
+    console.log(itemChosen)
 
+    setProjectToggle(values)
+    return itemChosen;
+  }
+ 
 
   return (
     
@@ -31,18 +49,17 @@ const Projects = () => {
 E
 {/* mapping the projects */}
    {assists.map((item,index)=>{
-    return(
-      <div className='projects_photos'>
-      <button className={`projectItems`} onClick={() => consoleLogged(item)}>
-        <h1 className={`project_name`}>{item.name}</h1>
-        <img src={item.item} className={`project_item-img`}></img>
-      </button>
-      <div>
 
-        {/* mapping the modal pictures */}
-      
+    return(
+      <div className='projects_photos' key={index}>
+        <button className={`projectItems`} onClick={() =>  chosenModal(index) }>
+          <h1 className={`project_name`}>{item.name}</h1>
+          <img src={item.item} className={`project_item-img`}></img>
+        </button>
+        <div>
+          {/* mapping the modal pictures */}
         </div>
-        </div>
+      </div>
     )
 
    })}
@@ -50,10 +67,10 @@ E
 <div className={`modal ${projectToggle ? "show": ""}` }>
       {itemChosen.map((item,index)=>(
         <div className={`modal-pictures-picture`}>
-            <div >{item.itemitem}</div>
+            <img className={`modal-pictures-picture`} src={item.itemitem}></img>
           </div>
       ))}
-  <button className={`close-button`} onClick={()=> closeModal(projectToggle)}>X</button>
+  <button className={`close-button`} onClick={()=> closeModal(projectToggle)  }>X</button>
 
       </div>
         
