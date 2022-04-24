@@ -1,4 +1,5 @@
 .projects{
+    color: white;
     display: flex;
     flex-wrap: wrap;
     max-height: 25rem;
@@ -45,7 +46,6 @@
     /* position: absolute; */
     overflow-y: scroll;
     transform: translate(-50% ,-50%);
-    background-color: orange;   
 }
 .modal-pictures-picture{
 max-width: 100%;

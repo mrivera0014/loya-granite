@@ -5,20 +5,13 @@ import {gsap} from "gsap/all"
 
 
 
-
 const Projects = () => {
-  var itemChosen = [];
+  var itemChosen = itemTwo;
 
 
   const [projectToggle, setProjectToggle] = useState(false)
 
-  const consoleLogged = (item) =>{
-    let values = (item + 1);
-    {
-      console.log(values)
-    }
-   
-  }
+
   const closeModal = (item) =>{
     let values = (item + 1);
 
@@ -27,36 +20,16 @@ const Projects = () => {
   }
   const chosenModal  = (item) =>{
     let values = (item + 1);
-    if (values == 1){
-      itemChosen = itemOne
-    }
-    if (values == 2){
-      itemChosen = itemTwo
-    }
-    if (values == 3){
-      itemChosen = itemThree
-    }
-    console.log(itemChosen)
 
     setProjectToggle(values)
-    return (
-      <div className={`modal ${projectToggle ? "show": ""}` }>
-      {itemChosen.map((item,index)=>(
-        <div className={`modal-pictures-picture`}>
-            <img className={`modal-pictures-picture`} src={item.itemitem}></img>
-          </div>
-      ))}
-  <button className={`close-button`} onClick={()=> closeModal(projectToggle)  }>X</button>
 
-      </div>
-    );
   }
  
 
   return (
     
   <div className={`projects`}>
-E
+
 {/* mapping the projects */}
    {assists.map((item,index)=>{
 
@@ -74,7 +47,15 @@ E
 
    })}
 
+<div className={`modal ${projectToggle ? "show": ""}` }>
+      {itemChosen.map((item,index)=>(
+        <div className={`modal-pictures-picture`}>
+            <img className={`modal-pictures-picture`} src={item.itemitem}></img>
+          </div>
+      ))}
+  <button className={`close-button`} onClick={()=> closeModal(projectToggle)  }>X</button>
 
+      </div>
         
 
 
