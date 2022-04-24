@@ -1,4 +1,58 @@
 .loyaGranite,
-p {
+.aboutLoya {
+    /* color: #fcdb03; */
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.aboutLoyaGraniteSection {
+    border-bottom: #fcdb03 solid 2px;
+    border-left: #fcdb03 solid 2px;
+    /* background: #fcdb03; */
+    padding: .5rem;
+    max-width: 20rem;
+    float: left;
+    margin: 1rem;
+    /* border-radius: 1rem; */
+}
+
+.loyaGraniteName {
+    font-weight: 700;
     color: white;
 }
+
+.loyaGraniteName,
+.aboutLoya {
+    display: contents;
+    vertical-align: top;
+}
+
+.whoIsLoyaGranite {
+    border-bottom: #0390fc solid 2px;
+    border-left: #0390fc solid 2px;
+    padding: .5rem;
+    max-width: 49rem;
+    margin: 1rem;
+    float: left;
+}
+
+.moreAboutLoyaGranite {
+    border-bottom: #fc0303 solid 2px;
+    border-left: #fc0303 solid 2px;
+    padding: .5rem;
+    max-width: 49rem;
+    margin: 1rem;
+    float: left;
+}
+
+.logoImage {
+    max-height: 26rem;
+}
+
+/* .sidebar {
+    max-width: 4rem;
+    background: black;
+    display: inline-block;
+    min-height: 78vh;
+} */

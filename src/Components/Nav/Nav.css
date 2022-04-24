@@ -5,12 +5,13 @@
     justify-self: center;
     position: relative;
     height: 100vh;
-    background: gray;
+    background: black;
 }
 
 .container {
     padding: 0 1em;
-    font-family: 'Abril Fatface';
+    font-family: 'Roboto Slab',
+        serif;
     border: azure solid 2px;
 }
 
@@ -22,4 +23,12 @@
     max-width: 40rem;
     /* border: azure solid 2px; */
     margin: auto;
+}
+
+.about {
+    color: #fcdb03;
+}
+
+.contact {
+    color: #0390fc;
 }
