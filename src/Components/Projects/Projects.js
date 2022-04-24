@@ -39,7 +39,17 @@ const Projects = () => {
     console.log(itemChosen)
 
     setProjectToggle(values)
-    return itemChosen;
+    return (
+      <div className={`modal ${projectToggle ? "show": ""}` }>
+      {itemChosen.map((item,index)=>(
+        <div className={`modal-pictures-picture`}>
+            <img className={`modal-pictures-picture`} src={item.itemitem}></img>
+          </div>
+      ))}
+  <button className={`close-button`} onClick={()=> closeModal(projectToggle)  }>X</button>
+
+      </div>
+    );
   }
  
 
@@ -64,15 +74,7 @@ E
 
    })}
 
-<div className={`modal ${projectToggle ? "show": ""}` }>
-      {itemChosen.map((item,index)=>(
-        <div className={`modal-pictures-picture`}>
-            <img className={`modal-pictures-picture`} src={item.itemitem}></img>
-          </div>
-      ))}
-  <button className={`close-button`} onClick={()=> closeModal(projectToggle)  }>X</button>
 
-      </div>
         
 
 
