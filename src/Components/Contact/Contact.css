@@ -1,10 +1,12 @@
 .contactContain {
-    color: #0390fc;
+    /* display: flex; */
+    color: white;
 }
 
 .form {
-    min-width: 12rem;
+    min-width: 20rem;
     max-width: 32rem;
+    float: left;
 }
 
 .name,
@@ -24,6 +26,25 @@
 .submit {
     display: block;
     margin-left: 41%;
+}
+
+.contactInfo {
+    border-top: #0390fc solid 2px;
+    border-left: #0390fc solid 2px;
+    float: left;
+    max-width: 18rem;
+    padding: .5rem;
+    margin-top: 2rem;
+}
+
+.loyaHours {
+    border-bottom: #fc0303 solid 2px;
+    border-right: #fc0303 solid 2px;
+    float: left;
+    max-width: 17rem;
+    min-width: 18rem;
+    padding: .5rem;
+    margin-top: 2rem;
 }
 
 /* might have to add media query for  */
