@@ -30,7 +30,7 @@ const Nav = () => {
                                 {clicked === index ? (
                                     <article>
                                         <p>
-                                            <p>{item.info}</p>
+
                                             <item.location />
                                         </p>
                                     </article>
@@ -44,5 +44,39 @@ const Nav = () => {
         </div>
     )
 }
+
+
+// const Nav = () => {
+
+//     const [selected, setSelected] = useState(null)
+
+//     const toggle = i => {
+//         // if selected is equal to i the close it-null
+//         if (selected === i) {
+//             return setSelected(null)
+//         }
+//         //is selected is not equal to i then open 
+//         setSelected(i)
+//     }
+
+//     return (
+//         <div>
+//             <main>
+//                 <nav className="fullNav">
+//                     {NavItems.map((item, i) => (
+//                         <section className="container">
+//                             {/* toggle will determine if i is equal to selected */}
+//                             <h2 key={i} className={item.cName} onClick={() => toggle(i)}>{item.title}</h2>
+//                             <article>
+
+//                                 <p className={selected === i ? 'content show' : 'content'}>{item.location}</p>
+//                             </article>
+//                         </section>
+//                     ))}
+//                 </nav>
+//             </main>
+//         </div>
+//     )
+// }
 
 export default Nav
