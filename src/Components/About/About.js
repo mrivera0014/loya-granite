@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './About.css'
 
-import logoImage from '../About/assets/LOYA-Logo-Color-WO-Text.png'
+import logoImage from './assets/LOYA-Logo-Color-WO-Text.png'
 import { gsap } from 'gsap/all'
 
 const About = () => {

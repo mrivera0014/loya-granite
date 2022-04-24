@@ -5,25 +5,26 @@ import {gsap} from "gsap/all"
 
 
 
-
 const Projects = () => {
+  var itemChosen = itemTwo;
 
 
   const [projectToggle, setProjectToggle] = useState(false)
-  var itemChosen = itemOne;
-
-  const consoleLogged = (item) =>{{
-      console.log(item.item)
 
 
-  }
-    setProjectToggle(item)
-  }
   const closeModal = (item) =>{
-    if (item === false) return;
+    let values = (item + 1);
+
+    if (values === false) return;
     return setProjectToggle(null)
   }
+  const chosenModal  = (item) =>{
+    let values = (item + 1);
 
+    setProjectToggle(values)
+
+  }
+ 
 
   return (
     
@@ -31,17 +32,17 @@ const Projects = () => {
 
 {/* mapping the projects */}
    {assists.map((item,index)=>{
-    return(
-      <>
-      <button className={`projectItems`} onClick={() => consoleLogged(item)}>
-        <h1>{item.item}</h1>
-      </button>
-      <div>
 
-        {/* mapping the modal pictures */}
-      
+    return(
+      <div className='projects_photos' key={index}>
+        <button className={`projectItems`} onClick={() =>  chosenModal(index) }>
+          <h1 className={`project_name`}>{item.name}</h1>
+          <img src={item.item} className={`project_item-img`}></img>
+        </button>
+        <div>
+          {/* mapping the modal pictures */}
         </div>
-        </>
+      </div>
     )
 
    })}
@@ -49,10 +50,10 @@ const Projects = () => {
 <div className={`modal ${projectToggle ? "show": ""}` }>
       {itemChosen.map((item,index)=>(
         <div className={`modal-pictures-picture`}>
-            <div >{item.itemitem}</div>
+            <img className={`modal-pictures-picture`} src={item.itemitem}></img>
           </div>
       ))}
-  <button className={`close-button`} onClick={()=> closeModal(projectToggle)}>X</button>
+  <button className={`close-button`} onClick={()=> closeModal(projectToggle)  }>X</button>
 
       </div>
         
