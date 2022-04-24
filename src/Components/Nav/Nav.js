@@ -30,7 +30,7 @@ const Nav = () => {
                                 {clicked === index ? (
                                     <article>
                                         <p>
-                                            <p>{item.info}</p>
+                                            <p className={item.title}>{item.info}</p>
                                             <item.location />
                                         </p>
                                     </article>

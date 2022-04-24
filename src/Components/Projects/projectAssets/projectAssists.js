@@ -8,11 +8,14 @@ import firePlace from './assets/fireplace_darker.jpg'
 export const assists = [
 
     {item:kitchenOne,
+        name:"Kitchens Counters"
 
     },
     {item:bathroomOne,
+        name: "Bathrooms"
 },
     {item:firePlace,
+        name: "Fire Places"
 }
 
 
