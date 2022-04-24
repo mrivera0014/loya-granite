@@ -6,6 +6,7 @@
     position: relative;
     height: 100vh;
     background: black;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
 .container {
@@ -13,6 +14,7 @@
     font-family: 'Roboto Slab',
         serif;
     border: azure solid 2px;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
 .about,
@@ -23,6 +25,8 @@
     max-width: 40rem;
     /* border: azure solid 2px; */
     margin: auto;
+    cursor: pointer;
+    transition: all 1s cubic-bezier(1, 0, 1, 0);
 }
 
 .about {
@@ -31,4 +35,16 @@
 
 .contact {
     color: #0390fc;
+}
+
+.content {
+    display: flex;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+.content.show {
+    height: auto;
+    max-height: 100vh;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
