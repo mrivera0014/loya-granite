@@ -1,16 +1,26 @@
 {
   "files": {
-    "main.css": "/loya-granite/static/css/main.073c9b0a.css",
-    "main.js": "/loya-granite/static/js/main.f8654a4a.js",
-    "static/js/787.cbd58fe4.chunk.js": "/loya-granite/static/js/787.cbd58fe4.chunk.js",
-    "static/media/logo.svg": "/loya-granite/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/loya-granite/static/css/main.239202d7.css",
+    "main.js": "/loya-granite/static/js/main.648b081b.js",
+    "static/media/close-up-black-marble-textured-background.jpg": "/loya-granite/static/media/close-up-black-marble-textured-background.ba96c168bbae7f8700dd.jpg",
+    "static/media/black-marble-patterned-texture-background.jpg": "/loya-granite/static/media/black-marble-patterned-texture-background.f7e66ac50e972c89f613.jpg",
+    "static/media/stone-floor-texture.jpg": "/loya-granite/static/media/stone-floor-texture.44556210ac5bd06d0b65.jpg",
+    "static/media/LOYA-logo-Color.png": "/loya-granite/static/media/LOYA-logo-Color.31e7bc0250fdce81de3e.png",
+    "static/media/LOYA-Logo-Color-WO-Text.png": "/loya-granite/static/media/LOYA-Logo-Color-WO-Text.8e269a47450ac077f2b2.png",
+    "static/media/kitchen_counter_island_grey.jpg": "/loya-granite/static/media/kitchen_counter_island_grey.e44d8763352b54d45ea9.jpg",
+    "static/media/bathroom_granite_two_sink_dark.jpg": "/loya-granite/static/media/bathroom_granite_two_sink_dark.60faa7a4287ccfbb7e6c.jpg",
+    "static/media/fireplace_darker.jpg": "/loya-granite/static/media/fireplace_darker.0b3e6e6efe536947ef1c.jpg",
+    "static/media/bathroom_granite_sink_lighter.jpg": "/loya-granite/static/media/bathroom_granite_sink_lighter.be66ff1fe441f06e0daf.jpg",
+    "static/media/bathroom_shells.jpg": "/loya-granite/static/media/bathroom_shells.86e16c4f42ed97421e86.jpg",
+    "static/media/bathroom_counter_two_sink_darker.jpg": "/loya-granite/static/media/bathroom_counter_two_sink_darker.4e8ef3a64a8a66e8c590.jpg",
+    "static/media/bathroom_lighter_bathtub_granite.jpg": "/loya-granite/static/media/bathroom_lighter_bathtub_granite.e4cdeec466d34aa4f830.jpg",
+    "static/media/bathroom_counter_sink_white.jpg": "/loya-granite/static/media/bathroom_counter_sink_white.7696bb6a0938d12c0e17.jpg",
     "index.html": "/loya-granite/index.html",
-    "main.073c9b0a.css.map": "/loya-granite/static/css/main.073c9b0a.css.map",
-    "main.f8654a4a.js.map": "/loya-granite/static/js/main.f8654a4a.js.map",
-    "787.cbd58fe4.chunk.js.map": "/loya-granite/static/js/787.cbd58fe4.chunk.js.map"
+    "main.239202d7.css.map": "/loya-granite/static/css/main.239202d7.css.map",
+    "main.648b081b.js.map": "/loya-granite/static/js/main.648b081b.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f8654a4a.js"
+    "static/css/main.239202d7.css",
+    "static/js/main.648b081b.js"
   ]
 }
