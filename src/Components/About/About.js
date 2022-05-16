@@ -21,11 +21,11 @@ const About = () => {
 
                 <p className='aboutLoya'>We cover everything from kitchens, baths, fireplaces, reception areas and more!</p>
 
-                <p className='aboutLoya'>We provide granite stone, quartz, marble, solid stone, etc. If you have any questions please do not hesitate to contact us! </p>
+                <p className='aboutLoya'> We provide granite stone, quartz, marble, solid stone, etc. If you have any questions please do not hesitate to contact us! </p>
             </section>
             <section className='whoIsLoyaGranite'>
                 <h3 className='loyaGranite'>WHO IS LOYA GRANITE?</h3>
-                <p className='aboutLoya'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+                <p className='aboutLoya'>Loya Granite is a family owned business located in Thornton, CO. We proudly serve the Denver Metro area  but have done projects as far as Nebraska. We stand behind our work and strive for customer satisfaction. As a family owned business we understand the importance of quality, performance, and fair pricing.   </p>
             </section>
             <section className='moreAboutLoyaGranite'>
                 <h3 className='loyaGranite'>MORE INFO HERE</h3>
