@@ -25,7 +25,7 @@ const About = () => {
             </section>
             <section className='whoIsLoyaGranite'>
                 <h3 className='loyaGranite'>WHO IS LOYA GRANITE?</h3>
-                <p className='aboutLoya'>Loya Granite is a family owned business located in Thornton, CO. We proudly serve the Denver Metro area  but have done projects as far as Nebraska. We stand behind our work and strive for customer satisfaction. As a family owned business we understand the importance of quality, performance, and fair pricing.   </p>
+                <p className='aboutLoya'>Loya Granite is a family owned and operated business located in Thornton, CO. We proudly serve the Denver Metro area  but have done projects as far as Nebraska. We stand behind our work and strive for customer satisfaction. As a family owned business we understand the importance of quality, performance, and fair pricing.   </p>
             </section>
             <section className='moreAboutLoyaGranite'>
                 <h3 className='loyaGranite'>MORE INFO HERE</h3>
