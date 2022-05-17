@@ -70,7 +70,11 @@ const openModal = (item) => {
 <div className={`modal ${projectToggle ? "show": ""}` }>
       
 <div className={`modal-pictures`}>
-    <div class={`modal-pictures-kitchen ${modalToggle == "kitchen" ? "show": "hide"}`}>  
+<button className={`close-button`} onClick={()=> closeModal(projectToggle)   }>X</button>
+
+    <div class={`${modalToggle == "kitchen" ? "show": "hide"}`}>
+    <h2 className={`modal-header`}>Kitchens</h2>
+    <div class={`modal-pictures-sub`}>  
       {kitchen.map((item,index)=>{
             return(
               <img className={`modal-pictures-picture`} src={item.itemitem}  onClick={()=> closeModal(projectToggle)   }></img>
@@ -78,42 +82,37 @@ const openModal = (item) => {
           }
         )
       }
+      </div>
     </div>
-    <div class={`modal-pictures-bathroom ${modalToggle == "bathroom" ? "show": "hide"}`}>   
+    <div class={` ${modalToggle == "bathroom" ? "show": "hide"}`}>
+    <h2 className={`modal-header`}>Bathroom</h2>  
+    <div class={`modal-pictures-sub`}>  
+
        {bathroom.map((item,index)=>{
           return(
             <img className={`modal-pictures-picture`} src={item.itemitem}  onClick={()=> closeModal(projectToggle)   }></img>
           )
         }
       )
-    }
+    } </div>
     </div>
-    <div class={`modal-pictures-fireplace ${modalToggle == "fireplace" ? "show": "hide"}`}>
+    <div class={` ${modalToggle == "fireplace" ? "show": "hide"}`}>
+    <h2 className={`modal-header`}>Fire Places</h2>
+    <div class={`modal-pictures-sub`}>  
+
     {firePlace.map((item,index)=>{
           return(
             <img className={`modal-pictures-picture`} src={item.itemitem}  onClick={()=> closeModal(projectToggle)   }></img>
           )
         }
       )
-    }
+}
+    </div>
     </div>
 </div>
 
-  <button className={`close-button`} onClick={()=> closeModal(projectToggle)   }>X</button>
-
       </div>
-        
-
-
   </div>
-
-
-
-
-
-
-
-
   )
 }
 
