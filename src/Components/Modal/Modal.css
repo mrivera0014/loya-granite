@@ -1,55 +1,58 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.Modal{
+.Modal {
     display: flex;
     align-items: center;
-     min-height:  25vh;
+    min-height: 25vh;
     justify-content: center;
 
 }
 
-.divImage{
+.divImage {
     position: absolute;
     min-height: 25vh;
-    width:100%;
+    width: 100%;
     background-size: contain;
 
 }
-.divImage:hover{
-    box-shadow: 0 10px 10px rgba(255,255,255,0.2) inset;
+
+.divImage:hover {
+    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.2) inset;
     filter: blur(25px);
 }
-.divBlackMarblePattern{
 
-    background-image: url("./assets/black-marble-patterned-texture-background-marble-thailand-abstract-natural-marble-black-white-design.jpg");
+.divBlackMarblePattern {
+
+    background-image: url("./assets/black-marble-patterned-texture-background.jpg");
 }
 
-.divCloseUpBlackMarble{
+.divCloseUpBlackMarble {
     background-image: url('./assets/close-up-black-marble-textured-background.jpg');
 }
 
-.divStoneFloorTexture{
-    background-image: url( './assets/stone-floor-texture.jpg' );
+.divStoneFloorTexture {
+    background-image: url('./assets/stone-floor-texture.jpg');
 }
+
 /* import back from ;
 import back2 from ;
 import back3 from*/
-.logo{
+.logo {
     z-index: 10;
     padding: 2.5%;
     min-width: 25%;
     min-height: 15%;
     max-height: 25%;
-    border:5px solid  rgba(125,125,125,0.9);
-    color: rgb(225,225,225);
+    border: 5px solid rgba(125, 125, 125, 0.9);
+    color: rgb(225, 225, 225);
     text-align: center;
-    box-shadow: 0 0 1px black,0 0 1px black inset;
+    box-shadow: 0 0 1px black, 0 0 1px black inset;
     text-shadow: 0 0 1px black;
-    
+
 
 }
 
