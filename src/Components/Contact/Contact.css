@@ -3,29 +3,44 @@
     color: white;
 }
 
-.form {
-    min-width: 20rem;
-    max-width: 32rem;
-    float: left;
+.formTitle {
+    color: black;
 }
 
-.name,
-.email,
-.message {
+.form {
+    /* min-width: 20rem; */
+    max-width: 30rem;
+    float: left;
+    /* border-top: #fcdb03 solid 2px;
+    border-left: #fcdb03 solid 2px; */
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+}
+
+#name,
+#email,
+#phone,
+#message {
     /* max-width: 32rem; */
     min-width: 18rem;
     min-height: 4rem;
     font-family: 'Abril Fatface';
     color: 032cfc;
+    margin: 6px 0;
+    background-color: aliceblue;
+    border: none;
 }
 
 .message {
     min-height: 9rem;
 }
 
-.submit {
+#submit {
     display: block;
     margin-left: 41%;
+    cursor: pointer;
 }
 
 .contactInfo {
@@ -45,6 +60,15 @@
     min-width: 18rem;
     padding: .5rem;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* might have to add media query for  */
+
+@media (max-width: 640px) {
+
+    .contactInfo,
+    .loyaHours {
+        margin-left: 1rem;
+    }
+}

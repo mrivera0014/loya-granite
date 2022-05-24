@@ -1,5 +1,5 @@
 import About from '../About/About'
-import Calc from '../Calc/Calc'
+// import Calc from '../Calc/Calc'
 import Contact from '../Contact/Contact'
 import Projects from '../Projects/Projects'
 
