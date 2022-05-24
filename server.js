@@ -1,4 +1,4 @@
-const express = require('express');
+// const express = require('express');
 // const app = express();
 require('dotenv').config();
 // const cors = require('cors');
@@ -70,57 +70,97 @@ initializePassport(
 
 
 // contact form
-const router = express.Router()
+const express = require('express');
 const nodemailer = require('nodemailer')
-const cors = require('cors');
-const { getDefaultNormalizer } = require('@testing-library/react');
-
 const app = express()
+require('dotenv').config();
+// const cors = require('cors');
+
 const port = process.env.PORT || 3001;
+app.listen(port, () => {
+    console.log(`Server is running on port: ${port}`)
+})
 
-app.use('/', router)
-app.listen(port, () => console.log('connected'))
-
-const contactSend = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 587,
-    aut: {
-        user: 'mrivera0014@gmail.com',
-        pass: 'Penny!14'
+let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        type: 'OAuth2',
+        user: process.env.EMAIL,
+        pass: process.env.WORD,
+        clientId: process.env.OAUTH_CLIENTID,
+        clientSecret: process.env.OAUTH_CLIENT_SECRET,
+        refreshToken: process.env.OAUTH_REFRESH_TOKEN,
     }
-});
+})
 
-app.post('/', (req, res) => {
-    const name = req.body.name;
-    const email = req.body.email;
-    const phone = req.body.phone;
-    const message = req.body.message;
-    const mail = {
-        from: name,
-        to: 'mrivera0014@gmail.com',
-        Subject: `Message From ${name}`,
-        html: `
-        <p>Name: ${name}</p>
-        <p>Email: ${email}</p>
-        <p>Phone: ${phone}</p>
-        <p>Message: ${message}</p>`
+transporter.verify((err, success) => {
+    err
+        ? console.log(err)
+        : console.log(`=== Server is ready to take messages: ${success} ===`)
+})
+
+let mailOptions = {
+    from: 'test@email.com',
+    to: process.env.EMAIL,
+    subject: 'Nodemailer API',
+    text: 'Testing nodemailer, if you see this it worked!'
+};
+
+transporter.sendMail(mailOptions, function (err, data) {
+    if (err) {
+        console.log('Error' + err);
+    } else {
+        console.log('Email Sent!')
     }
-    console.log(req)
-    contactSend.sendMail(mail, (error) => {
-        console.log(mail);
-        if (error) {
-            res.json({ status: 'failed' });
-        } else {
-            res.json({
-                status: 'sent'
-            })
-        }
-    })
 })
 
 
+// const app = express()
 
-app.listen(3050)
+
+// app.use('/', router)
+// app.listen(port, () => console.log('connected'))
+
+// const contactSend = nodemailer.createTransport({
+//     host: 'smtp.gmail.com',
+//     port: 587,
+//     aut: {
+//         user: 'mrivera0014@gmail.com',
+//         pass: 'Penny!14'
+//     }
+// });
+
+// app.post('/', (req, res) => {
+//     const name = req.body.name;
+//     const email = req.body.email;
+//     const phone = req.body.phone;
+//     const message = req.body.message;
+//     const mail = {
+//         from: name,
+//         to: 'mrivera0014@gmail.com',
+//         Subject: `Message From ${name}`,
+//         html: `
+//         <p>Name: ${name}</p>
+//         <p>Email: ${email}</p>
+//         <p>Phone: ${phone}</p>
+//         <p>Message: ${message}</p>`
+//     }
+//     console.log(req)
+//     contactSend.sendMail(mail, (error) => {
+//         console.log(mail);
+//         if (error) {
+//             res.json({ status: 'failed' });
+//         } else {
+//             res.json({
+//                 status: 'sent'
+//             })
+//         }
+//     })
+// })
+
+
+
+// app.listen(3050)
 
 // app.post('/api/contact', (req, res) => {
 //     let data = req.body
