@@ -11,7 +11,7 @@
     border-left: #fcdb03 solid 2px;
     /* background: #fcdb03; */
     padding: .5rem;
-    max-width: 20rem;
+    max-width: 25rem;
     float: left;
     margin: 1rem;
     /* border-radius: 1rem; */
@@ -28,11 +28,11 @@
     vertical-align: top;
 }
 
-.whoIsLoyaGranite {
+.reachUs {
     border-bottom: #0390fc solid 2px;
     border-left: #0390fc solid 2px;
     padding: .5rem;
-    max-width: 49rem;
+    max-width: 19rem;
     margin: 1rem;
     float: left;
 }
@@ -56,3 +56,18 @@
     display: inline-block;
     min-height: 78vh;
 } */
+
+@media (max-width: 640px) {
+    .logoImage {
+        display: none;
+    }
+}
+
+@media (min-width: 641px) {
+
+    .aboutLoyaGraniteSection,
+    .reachUs {
+        margin-top: 5rem;
+        margin-left: 5rem;
+    }
+}
