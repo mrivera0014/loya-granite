@@ -31,8 +31,8 @@ const Modal = () => {
       <div className='divBlackMarblePattern divImage'></div>
       <div className='divCloseUpBlackMarble divImage'></div>
       <div className='divStoneFloorTexture divImage'></div>
-      <h2 className={"logo"}>logo</h2>
-      {/* <img className={"logo"} src={logo} /> */}
+      {/* <h2 className={"logo"}>logo</h2> */}
+      <img className={"logo"} src={logo} />
 
 
     </div>

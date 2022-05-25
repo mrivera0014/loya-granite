@@ -43,14 +43,15 @@ import back2 from ;
 import back3 from*/
 .logo {
     z-index: 10;
-    padding: 2.5%;
-    min-width: 25%;
-    min-height: 15%;
-    max-height: 25%;
-    border: 5px solid rgba(125, 125, 125, 0.9);
+    /* padding: 2.5%; */
+    /* min-width: 25%;
+    min-height: 15%; */
+    max-width: 17rem;
+    max-height: 8rem;
+    /* border: 5px solid rgba(125, 125, 125, 0.9); */
     color: rgb(225, 225, 225);
     text-align: center;
-    box-shadow: 0 0 1px black, 0 0 1px black inset;
+    /* box-shadow: 0 0 1px black, 0 0 1px black inset; */
     text-shadow: 0 0 1px black;
 
 
