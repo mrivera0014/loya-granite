@@ -77,7 +77,7 @@ const openModal = (item) => {
     <div class={`modal-pictures-sub`}>  
       {kitchen.map((item,index)=>{
             return(
-              <img className={`modal-pictures-picture`} src={item.itemitem}  onClick={()=> closeModal(projectToggle)   }></img>
+              <img className={`modal-pictures-picture`} src={item.itemitem}  ></img>
             )
           }
         )
@@ -90,7 +90,7 @@ const openModal = (item) => {
 
        {bathroom.map((item,index)=>{
           return(
-            <img className={`modal-pictures-picture`} src={item.itemitem}  onClick={()=> closeModal(projectToggle)   }></img>
+            <img className={`modal-pictures-picture`} src={item.itemitem}  ></img>
           )
         }
       )
@@ -102,7 +102,7 @@ const openModal = (item) => {
 
     {firePlace.map((item,index)=>{
           return(
-            <img className={`modal-pictures-picture`} src={item.itemitem}  onClick={()=> closeModal(projectToggle)   }></img>
+            <img className={`modal-pictures-picture`} src={item.itemitem}  ></img>
           )
         }
       )

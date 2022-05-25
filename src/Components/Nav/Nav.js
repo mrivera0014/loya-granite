@@ -22,7 +22,7 @@ const Nav = () => {
         <div>
             <main>
                 <nav className="fullNav">
-                    {NavItems.map((item, index) => {
+                    {NavItems.map((item, index ) => {
                         return (
                             <section className="container">
                                 <h2 onClick={() => toggle(index)} key={index} className={item.cName}> {item.title}</h2>
