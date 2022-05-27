@@ -1,17 +1,17 @@
-const express = require('express');
-const nodemailer = require('nodemailer')
+const express = require("express");
+const nodemailer = require("nodemailer")
 const app = express()
-require('dotenv').config();
+require("dotenv").config();
 const cors = require('cors');
 
 //middleware
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 
 let transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: "gmail",
     auth: {
-        type: 'OAuth2',
+        type: "OAuth2",
         user: process.env.EMAIL,
         pass: process.env.WORD,
         clientId: process.env.OAUTH_CLIENTID,
@@ -27,7 +27,7 @@ transporter.verify((err, success) => {
 })
 
 
-app.post('/loya-granite', function (req, res) {
+app.post("/loya-granite", function (req, res) {
     let mailOptions = {
         from: `${req.body.mailState.email}`,
         to: process.env.EMAIL,
@@ -38,14 +38,14 @@ app.post('/loya-granite', function (req, res) {
     transporter.sendMail(mailOptions, function (err, data) {
         if (err) {
             res.json({
-                status: 'Fail'
+                status: "Fail",
             })
         } else {
-            console.log('Email Sent!');
-            res.json({ status: "Email Sent!" })
+            console.log("Email Sent!");
+            res.json({ status: "Email Sent!" });
         }
-    })
-})
+    });
+});
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
