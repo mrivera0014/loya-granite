@@ -1,24 +1,21 @@
 import React, {useState,useRef,useEffect} from 'react'
 import {assists,itemOne,itemTwo,itemThree} from './projectAssets/projectAssists';
 import  './projects.css'
-import {gsap} from "gsap/all"
+// import {gsap} from "gsap/all"
 
 
 
 const Projects = () => {
 
 
-  const [kitchenState,setKitchenState] = useState(itemOne);
-  const [bathroomState,setBathroomState] = useState(itemTwo);
-  const [firePlaceState,setFirePlaceState] = useState(itemThree);
   const [projectToggle, setProjectToggle] = useState(false);
   const [modalToggle,setModalToggle] = useState("");
 
 
 
-    let kitchen = kitchenState;
-    let bathroom = bathroomState;
-    let firePlace = firePlaceState;
+    let kitchen =itemOne;
+    let bathroom = itemTwo;
+    let firePlace = itemThree;
   
   
 

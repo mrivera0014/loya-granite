@@ -1,53 +1,50 @@
-const express = require("express");
-const nodemailer = require("nodemailer")
-const app = express()
+const express = require('express');
+const app = express();
 require("dotenv").config();
-const cors = require('cors');
+const bodyParser = require('body-parser');
+const cors = require("cors");
+const nodemailer = require('nodemailer')
 
-//middleware
-app.use(express.json());
-app.use(cors());
 
-let transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-        type: "OAuth2",
-        user: process.env.EMAIL,
-        pass: process.env.WORD,
-        clientId: process.env.OAUTH_CLIENTID,
-        clientSecret: process.env.OAUTH_CLIENT_SECRET,
-        refreshToken: process.env.OAUTH_REFRESH_TOKEN,
-    },
-});
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
 
-transporter.verify((err, success) => {
-    err
-        ? console.log(err)
-        : console.log(`=== Server is ready to take messages: ${success} ===`)
+app.use(cors())
+
+
+app.post("/send_mail", cors(), async (req, res) => {
+    console.log(req.body)
+    let { text, name, email } = req.body;
+    const transport = nodemailer.createTransport({
+        host: process.env.MAIL_HOST,
+        port: process.env.MAIL_PORT,
+        auth: {
+            user: process.env.MAIL_USERNAME,
+            pass: process.env.MAIL_PASSWORD
+        }
+
+    })
+
+    await transport.sendMail({
+        from: process.env.MAIL_FROM,
+        to: "test@test.com",
+        subject: "test email",
+        html: `
+        
+        <div>
+            
+            <p>${name}</p>
+            <p>${email}</p>
+            <p>${text}</p>
+        
+        </div>
+        `
+    })
 })
 
 
-app.post("/loya-granite", function (req, res) {
-    let mailOptions = {
-        from: `${req.body.mailState.email}`,
-        to: process.env.EMAIL,
-        subject: `Message from: ${req.body.mailState.email}`,
-        text: `${req.body.mailState.message}`,
-    };
 
-    transporter.sendMail(mailOptions, function (err, data) {
-        if (err) {
-            res.json({
-                status: "Fail",
-            })
-        } else {
-            console.log("Email Sent!");
-            res.json({ status: "Email Sent!" });
-        }
-    });
-});
 
-const port = process.env.PORT || 3001;
-app.listen(port, () => {
-    console.log(`Server is running on port: ${port}`)
+app.listen(process.env.PORT || 4000, () => {
+    console.log("running on port 4000")
 })

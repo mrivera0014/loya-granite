@@ -1,72 +1,50 @@
+import axios from 'axios'
 import React, { useState } from 'react'
 import './Contact.css'
 
-function Contact(props) {
+const Contact = () => {
 
-    //this is what nodemailer is looking for when we are sending the email
-    const [mailState, setMailState] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-    });
 
-    // this will handle the change when typing into the input boxes
-    function handleStateChange(e) {
-        setMailState((prevState) => ({
-            ...prevState,
-            [e.target.name]: e.target.value,
-        }));
+
+
+    const [sent, setSent] = useState(false);
+    const [text, setText] = useState("");
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+
+
+    const handleSend = async () => {
+        setSent(true)
+        try {
+            await axios.post("http://localhost:4000/send_mail", {
+                text, name, email
+            })
+        } catch (error) {
+            console.log(error);
+        }
     }
 
-    //function that will post to nodemailerAPI route
-    const submitEmail = async (e) => {
-        // console.log('Email being submitted')
-        e.preventDefault();
-        // console.log('prevent default worked')
-        console.log({ mailState });
-        await fetch("/", {
-            method: "POST",
-            headers: {
-                "Content-type": "application/json",
-            },
-            body: JSON.stringify({ mailState }),
-            body: JSON.parse({ mailState }),
-        })
-            // .then(res => res.text)
-            // .then(text => console.log(text))
-            .then((res) => res.json())
-            .then(async (res) => {
-                const resData = await res;
-                console.log(resData);
-                if (resData.status === "success") {
-                    alert("Message Sent!");
-                } else if (resData.status === "fail") {
-                    alert("Message failed to send")
-                }
-            })
-
-            .then(() => {
-                setMailState({
-                    email: "",
-                    name: "",
-                    phone: "",
-                    message: "",
-                });
-            });
-    };
 
     return (
         <div className='contactContain'>
-            {/* creating contact form */}
-            <form id='form' className='form' onSubmit={submitEmail}>
-                <h3 className='formTitle'>Let's talk about your project</h3>
-                <input placeholder='Name' id='name' name="name" onChange={handleStateChange} value={mailState.name} />
-                <input placeholder='Email' id='email' name="email" onChange={handleStateChange} value={mailState.email} />
-                <input placeholder='Phone Number' id='phone' name="phone" onChange={handleStateChange} value={mailState.phone} />
-                <textarea placeholder='Message' id='message' name="message" onChange={handleStateChange} value={mailState.message} />
-                <button id='submit' type='submit'>Send</button>
-            </form>
+
+            {!sent ? (
+
+                <form id='form' onSubmit={handleSend} className='form'>
+                    <h3 className='formTitle'>Let's talk about your project</h3>
+                    <input placeholder='Name' id='name' value={name} onChange={(e) => setName(e.target.value)} />
+                    <input placeholder='Email' id='email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <input placeholder='Phone Number' id='phone' />
+                    <textarea placeholder='Message' id='message' value={text} onChange={(e) => setText(e.target.value)} />
+                    <button id='submit' type='submit'>Send</button>
+                </form>
+
+            ) : (
+                <h1>email Sent</h1>
+
+
+            )}
+
 
             <section className='contactInfo'>
                 <h3>Contact Info</h3>
@@ -82,5 +60,9 @@ function Contact(props) {
         </div>
     )
 }
+
+
+
+
 
 export default Contact
