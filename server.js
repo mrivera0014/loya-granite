@@ -1,23 +1,23 @@
 // const express = require('express');
-// const app = express();
-require('dotenv').config();
-// const cors = require('cors');
-const UseCalc = require('./data/calculations');
-const { config } = require('dotenv');
-const answers = [];
+// // const app = express();
+// require('dotenv').config();
+// // const cors = require('cors');
+// const UseCalc = require('./data/calculations');
+// const { config } = require('dotenv');
+// const answers = [];
 
-const bcrypt = require("bcrypt");
-const passport = require('passport');
+// const bcrypt = require("bcrypt");
+// const passport = require('passport');
 const flash = require("express-flash");
 const session = require('express-session');
-const methodOverride = require('method-override');
+// const methodOverride = require('method-override');
 
-const initializePassport = require('./passport-config');
-initializePassport(
-    passport,
-    email => users.find(user => user.email === email),
-    id => users.find(user => user.id === id)
-)
+// const initializePassport = require('./passport-config');
+// initializePassport(
+//     passport,
+//     email => users.find(user => user.email === email),
+//     id => users.find(user => user.id === id)
+// )
 
 
 
@@ -69,50 +69,55 @@ initializePassport(
 
 
 
-// contact form
-const express = require('express');
-const nodemailer = require('nodemailer')
-const app = express()
-require('dotenv').config();
-// const cors = require('cors');
+// // contact form
+// const express = require('express');
+// const nodemailer = require('nodemailer')
+// const app = express()
+// require('dotenv').config();
+// // const cors = require('cors');
 
-const port = process.env.PORT || 3001;
-app.listen(port, () => {
-    console.log(`Server is running on port: ${port}`)
-})
+// const port = process.env.PORT || 3001;
+// app.listen(port, () => {
+//     console.log(`Server is running on port: ${port}`)
+// })
+// // the sender email
 
-let transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        type: 'OAuth2',
-        user: process.env.EMAIL,
-        pass: process.env.WORD,
-        clientId: process.env.OAUTH_CLIENTID,
-        clientSecret: process.env.OAUTH_CLIENT_SECRET,
-        refreshToken: process.env.OAUTH_REFRESH_TOKEN,
-    }
-})
 
-transporter.verify((err, success) => {
-    err
-        ? console.log(err)
-        : console.log(`=== Server is ready to take messages: ${success} ===`)
-})
 
-let mailOptions = {
-    from: 'test@email.com',
-    to: process.env.EMAIL,
-    subject: 'Nodemailer API',
-    text: 'Testing nodemailer, if you see this it worked!'
-};
+// let transporter = nodemailer.createTransport({
+//     service: 'gmail',
+//     auth: {
+//         type: 'OAuth2',
+//         user: process.env.EMAIL,
+//         pass: process.env.WORD,
+//         clientId: process.env.OAUTH_CLIENTID,
+//         clientSecret: process.env.OAUTH_CLIENT_SECRET,
+//         refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+//     }
+// })
 
-transporter.sendMail(mailOptions, function (err, data) {
-    if (err) {
-        console.log('Error' + err);
-    } else {
-        console.log('Email Sent!')
-    }
-})
+
+
+// transporter.verify((err, success) => {
+//     err
+//         ? console.log(err)
+//         : console.log(`=== Server is ready to take messages: ${success} ===`)
+// })
+
+// let mailOptions = {
+//     from: 'test@email.com',
+//     to: process.env.EMAIL,
+//     subject: 'Nodemailer API',
+//     text: 'Testing nodemailer, if you see this it worked!'
+// };
+
+// transporter.sendMail(mailOptions, function (err, data) {
+//     if (err) {
+//         console.log('Error' + err);
+//     } else {
+//         console.log('Email Sent!')
+//     }
+// })
 
 
 // const app = express()
@@ -197,3 +202,57 @@ transporter.sendMail(mailOptions, function (err, data) {
 //     }
 //     smtpTransport.close()
 // })
+
+
+const express = require('express');
+const app = express();
+require("dotenv").config();
+const bodyParser = require('body-parser');
+const cors = require("cors");
+const nodemailer = require('nodemailer')
+
+
+app.use(bodyParser.urlencoded({extended:true}))
+app.use(bodyParser.json())
+
+app.use(cors())
+
+
+app.post("/send_mail",cors(),async(req,res)=>{
+    console.log(req.body)
+    let {text,name,email} = req.body;
+    const transport = nodemailer.createTransport({
+        host: process.env.MAIL_HOST, 
+        port: process.env.MAIL_PORT,
+        auth:{
+            user:process.env.MAIL_USERNAME,
+            pass: process.env.MAIL_PASSWORD
+        }
+
+    })
+
+    await transport.sendMail({
+        from:process.env.MAIL_FROM,
+        to:"test@test.com",
+        subject:"test email",
+        html:`
+        
+        <div>
+            
+            <p>${name}</p>
+            <p>${email}</p>
+            <p>${text}</p>
+
+        
+        </div>
+
+        `
+    })
+})
+
+
+
+
+app.listen(process.env.PORT || 4000, () =>{
+    console.log("running on port 4000")
+})

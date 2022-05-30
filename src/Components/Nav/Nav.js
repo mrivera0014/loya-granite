@@ -29,9 +29,7 @@ const Nav = () => {
 
                                 {clicked === index ? (
                                     <article>
-                                        <p>
                                             <item.location />
-                                        </p>
                                     </article>
                                 ) : null}
 
