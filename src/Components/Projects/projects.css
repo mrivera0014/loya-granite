@@ -5,9 +5,7 @@
     max-height: 80% !important;
     max-width: 80% !important;
     margin: auto;
-
-    padding-left: 5%;
-    padding-left: 5%;
+    justify-content: center;
 }
 
 .projects_photos{
@@ -16,24 +14,23 @@
 }
 
 .projectItems{
-    padding: 5%;
-    min-height: 100%;
-    min-width: 100%;
-    margin: 3%;
-    border:1px solid black;
-    background:white;
-    overflow: hidden;
+    background: transparent;
+    padding: 3%;
+    border: none;
+
 }
 .projectItems:hover{
-    background-color: black;
-    color: white;
+    
 }
 .project_item-img{
     max-width: 100%;
     max-height: 100%;
 }
 .project_name{
-    position: absolute;
+    color:white;
+    top: -15%;
+    left:50%;
+    font-size: 1.3rem;
 }
 
 .modal{
@@ -56,6 +53,7 @@ z-index: 1000;
 
 .modal-header{
     margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 
@@ -94,7 +92,6 @@ flex-direction: row !important;
    min-width: 2.5rem;
     background-color: black;
     color: white;
-    border-radius: 50%;
    display:flex;
    justify-content: center;
    align-items: center;
