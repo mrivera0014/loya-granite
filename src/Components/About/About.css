@@ -1,3 +1,8 @@
+.aboutContain {
+    background-image: url(../Projects/projectAssets/assets/kitchen_counter_island_counters_lighter_black_cabinet.jpg);
+    background-repeat: no-repeat;
+}
+
 .loyaGranite,
 .aboutLoya {
     /* color: #fcdb03; */
