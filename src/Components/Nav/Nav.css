@@ -13,7 +13,7 @@
     padding: 0 1em;
     font-family: 'Roboto Slab',
         serif;
-    border: azure solid 2px;
+    border-bottom: azure solid 2px;
     transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
@@ -27,6 +27,7 @@
     margin: auto;
     cursor: pointer;
     transition: all 1s cubic-bezier(1, 0, 1, 0);
+    min-height: 5rem;
 }
 
 .about {
