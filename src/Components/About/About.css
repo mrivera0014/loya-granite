@@ -1,9 +1,14 @@
 .aboutContain {
-    background-image: url(../Projects/projectAssets/assets/kitchen_counter_island_counters_lighter_black_cabinet.jpg);
+    /* background-image: url(../Projects/projectAssets/assets/kitchen_counter_island_counters_lighter_black_cabinet.jpg); */
     background-repeat: no-repeat;
     min-height: 100vh;
     background-size: contain;
     background-position: right;
+}
+
+.granite {
+    margin-top: 2rem;
+    float: right;
 }
 
 .loyaGranite,
@@ -20,6 +25,7 @@
     padding: .5rem;
     max-width: 25rem;
     margin: 1rem;
+    float: left;
 }
 
 .loyaGraniteName {
@@ -52,13 +58,21 @@
 }
 
 .logoImage {
-    max-height: 26rem;
+    max-height: 19rem;
+    float: left;
+    margin-top: 2rem;
 }
 
 
 @media (max-width: 640px) {
     .logoImage {
         display: none;
+    }
+
+    .granite {
+        max-width: 20rem;
+        margin-right: 1rem;
+        margin-top: 0;
     }
 }
 
