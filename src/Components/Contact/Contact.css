@@ -1,6 +1,17 @@
 .contactContain {
-    /* display: flex; */
     color: white;
+    max-width: 80%;
+}
+
+@media screen and (min-width:480px) {
+    .contactContain{
+        display: flex;
+        margin: 0 20%;
+
+
+    };
+
+    
 }
 
 .formTitle {
@@ -11,13 +22,15 @@
     /* min-width: 20rem; */
     max-width: 30rem;
     float: left;
-    /* border-top: #fcdb03 solid 2px;
-    border-left: #fcdb03 solid 2px; */
-    margin: 1rem;
+    border-top: #fcdb03 solid 2px;
+    border-left: #fcdb03 solid 2px; 
+    margin: 2rem;
+
     padding: 1rem;
-    background-color: white;
-    color: black;
+    background-image: linear-gradient(to right, transparent,black),url("../Modal/assets/black-marble-patterned-texture-background.jpg");
 }
+
+
 
 #name,
 #email,
@@ -27,9 +40,9 @@
     min-width: 18rem;
     min-height: 4rem;
     font-family: 'Abril Fatface';
-    color: 032cfc;
+    color: white;
     margin: 6px 0;
-    background-color: aliceblue;
+    background-color: #0f0f0f;
     border: none;
 }
 
@@ -41,6 +54,13 @@
     display: block;
     margin-left: 41%;
     cursor: pointer;
+    background:black;
+    color:white;
+    padding: 3% 5%;
+    border: none;
+    border-bottom: 1px solid  #032cfc;
+    border-right: 1px solid #032cfc;
+
 }
 
 .contactInfo {
@@ -59,7 +79,7 @@
     max-width: 17rem;
     min-width: 18rem;
     padding: .5rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
 }
 

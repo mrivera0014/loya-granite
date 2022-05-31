@@ -31,12 +31,12 @@ const Contact = () => {
             {!sent ? (
             
             <form id='form' onSubmit={handleSend} className='form'>
-                <h3 className='formTitle'>Let's talk about your project</h3>
-                <input placeholder='Name' id='name' value={name} onChange={(e)=> setName(e.target.value)} />
-                <input placeholder='Email' id='email'value={email} onChange={(e)=> setEmail(e.target.value)} />
-                <input placeholder='Phone Number' id='phone' />
-                <textarea placeholder='Message' id='message'  value={text} onChange={(e)=> setText(e.target.value)}/>
-                <button id='submit' type='submit'>Send</button>
+                <h3  className='form-title'>Let's talk about your project</h3>
+                <input className='form_input form_name' placeholder='Name' id='name' value={name} onChange={(e)=> setName(e.target.value)} />
+                <input className=' form_input form_email' placeholder='Email' id='email'value={email} onChange={(e)=> setEmail(e.target.value)} />
+                <input className='form_input' placeholder='Phone Number' id='phone' />
+                <textarea className='form_textarea form_message' placeholder='Message' id='message'  value={text} onChange={(e)=> setText(e.target.value)}/>
+                <button className='form_button' id='submit' type='submit'>Send</button>
             </form>
 
 ):(
@@ -45,7 +45,7 @@ const Contact = () => {
 
 )}
 
-
+    <div className='contact sub_section'>
             <section className='contactInfo'>
                 <h3>Contact Info</h3>
                 <p>Phone: (661) 466-3286</p>
@@ -58,6 +58,7 @@ const Contact = () => {
                 <p>Sunday: Closed</p>
             </section>
         </div>
+    </div>
     )
 }
 
