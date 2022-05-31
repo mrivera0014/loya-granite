@@ -5,9 +5,9 @@ import './Nav.css'
 const Nav = () => {
 
     // clicked = initial state // setClicked function that changes initial change
-    const [clicked, setClicked] = useState(false)
-
+    const [clicked, setClicked] = useState(0)
     const toggle = index => {
+
         // console.log('ive been clicked')
 
         if (clicked === index) {
