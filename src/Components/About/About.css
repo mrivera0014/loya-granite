@@ -2,6 +2,8 @@
     background-image: url(../Projects/projectAssets/assets/kitchen_counter_island_counters_lighter_black_cabinet.jpg);
     background-repeat: no-repeat;
     min-height: 100vh;
+    background-size: contain;
+    background-position: right;
 }
 
 .loyaGranite,
@@ -15,12 +17,9 @@
 .aboutLoyaGraniteSection {
     border-bottom: #fcdb03 solid 2px;
     border-left: #fcdb03 solid 2px;
-    /* background: #fcdb03; */
     padding: .5rem;
     max-width: 25rem;
-    float: left;
     margin: 1rem;
-    /* border-radius: 1rem; */
 }
 
 .loyaGraniteName {
