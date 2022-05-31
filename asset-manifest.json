@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/loya-granite/static/css/main.d0548f82.css",
-    "main.js": "/loya-granite/static/js/main.df529ccc.js",
+    "main.css": "/loya-granite/static/css/main.73b29208.css",
+    "main.js": "/loya-granite/static/js/main.d666d0cd.js",
     "static/media/close-up-black-marble-textured-background.jpg": "/loya-granite/static/media/close-up-black-marble-textured-background.ba96c168bbae7f8700dd.jpg",
     "static/media/black-marble-patterned-texture-background.jpg": "/loya-granite/static/media/black-marble-patterned-texture-background.f7e66ac50e972c89f613.jpg",
     "static/media/stone-floor-texture.jpg": "/loya-granite/static/media/stone-floor-texture.44556210ac5bd06d0b65.jpg",
@@ -28,11 +28,11 @@
     "static/media/fireplace_lighter.jpg": "/loya-granite/static/media/fireplace_lighter.62b37c970dd96fc05d5e.jpg",
     "static/media/kitchen_white_counters.jpg": "/loya-granite/static/media/kitchen_white_counters.232bd58444dddde4166f.jpg",
     "index.html": "/loya-granite/index.html",
-    "main.d0548f82.css.map": "/loya-granite/static/css/main.d0548f82.css.map",
-    "main.df529ccc.js.map": "/loya-granite/static/js/main.df529ccc.js.map"
+    "main.73b29208.css.map": "/loya-granite/static/css/main.73b29208.css.map",
+    "main.d666d0cd.js.map": "/loya-granite/static/js/main.d666d0cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0548f82.css",
-    "static/js/main.df529ccc.js"
+    "static/css/main.73b29208.css",
+    "static/js/main.d666d0cd.js"
   ]
 }
