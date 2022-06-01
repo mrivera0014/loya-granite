@@ -4,7 +4,7 @@
     text-align: center;
     justify-self: center;
     position: relative;
-    height: 100vh;
+    min-height: 100%;
     background: black;
     transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
@@ -26,7 +26,7 @@
     margin: auto;
     cursor: pointer;
     transition: all 1s cubic-bezier(1, 0, 1, 0);
-    min-height: 5rem;
+    min-height: 10rem;
 }
 
 .about {

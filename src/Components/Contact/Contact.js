@@ -1,10 +1,15 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Contact.css'
+import { gsap } from 'gsap/all'
 
 const Contact = () => {
 
+    useEffect(() => {
 
+        gsap.from('.contactContain', { duration: 2.5, x: '100', ease: 'power3.out', opacity: 0 })
+
+    })
 
 
     const [sent, setSent] = useState(false);
