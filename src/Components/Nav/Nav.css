@@ -19,9 +19,8 @@
 
 .about,
 .contact,
-.projects,
+.projectsTab,
 .estimations {
-    color: white;
     max-width: 40rem;
     /* border: azure solid 2px; */
     margin: auto;
@@ -32,6 +31,10 @@
 
 .about {
     color: #fcdb03;
+}
+
+.projectsTab {
+    color: #fc0303;
 }
 
 .contact {
