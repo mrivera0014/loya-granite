@@ -1,5 +1,5 @@
-.projects{
-    color: white;
+.projects {
+    /* color: #fc0303; */
     display: flex;
     flex-wrap: wrap;
     max-height: 80% !important;
@@ -8,101 +8,137 @@
     justify-content: center;
 }
 
-.projects_photos{
+.projectsInfo,
+.projectsInfo2 {
+    cursor: default;
+    float: left;
+    max-width: 30rem;
+    margin: auto;
+    font-size: 1.3rem;
+    text-align: left;
+    color: #929292;
+    border-bottom: #fcdb03 solid 2px;
+    border-left: #fcdb03 solid 2px;
+    padding: .5rem;
+}
+
+.projectsInfo {
+    border-bottom: #0390fC solid 2px;
+    border-left: #0390fC solid 2px
+}
+
+.projectsInfo2 {}
+
+.projects_photos {
     max-height: 30%;
     max-width: 30%;
 }
+
 @media screen and (max-width: 480px) {
-    .projects{
+    .projects {
         flex-direction: column;
     }
-    .projects_photos{
+
+    .projects_photos {
         max-width: 100vw;
+    }
+
+    .projectsInfo2 {
+        margin-top: 1rem;
     }
 }
 
-.projectItems{
+.projectItems {
     background: transparent;
     padding: 3%;
     border: none;
 
 }
 
-.project_item-img{
+.project_item-img {
     max-width: 100%;
     max-height: 100%;
+    cursor: pointer;
 }
-.project_name{
-    color:white;
+
+.project_name {
+    color: white;
     top: -15%;
-    left:50%;
+    left: 50%;
     font-size: 1.3rem;
 }
 
-.modal{
+.modal {
     display: none;
     min-height: 30vh;
     min-width: 80%;
-    left:50%;
-    top:20%;
+    left: 50%;
+    top: 20%;
     /* position: absolute; */
     overflow-x: scroll;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
 
     position: absolute;
-box-shadow: 0 0 20rem black;
-background:rgb(0,0,0);
-z-index: 1000;
+    box-shadow: 0 0 20rem black;
+    background: rgb(0, 0, 0);
+    z-index: 1000;
 
 }
 
 
-.modal-header{
+.modal-header {
     margin-bottom: 5%;
     margin-top: 5%;
 }
 
 
-.modal-pictures{
-min-width: 80vw;
-min-height: 80vh;
-background-color: rgba(0,0,0,0.2);
+.modal-pictures {
+    min-width: 80vw;
+    min-height: 80vh;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 
-.modal-pictures-picture{
-max-width: 20rem;
-margin: auto 1px ;
+.modal-pictures-picture {
+    max-width: 20rem;
+    margin: auto 1px;
 }
 
 
 
-.modal-pictures-sub{
-flex-direction: row !important;
+.modal-pictures-sub {
+    flex-direction: row !important;
 
 }
 
 
-.hide{
+.hide {
     display: none;
 }
 
-.show{
+.show {
     display: flex;
     flex-direction: column;
     position: absolute;
+    border: 1px solid white;
 }
 
 
-.close-button{
+.close-button {
     min-height: 2.5rem;
-   min-width: 2.5rem;
+    min-width: 2.5rem;
     background-color: black;
     color: white;
-   display:flex;
-   justify-content: center;
-   align-items: center;
-   position: absolute;
-   right:0;
-   z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: white;
+    color: black;
 }

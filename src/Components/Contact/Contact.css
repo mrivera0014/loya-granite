@@ -4,14 +4,16 @@
 }
 
 @media screen and (min-width:480px) {
-    .contactContain{
+    .contactContain {
         display: flex;
         margin: 0 20%;
 
 
-    };
+    }
 
-    
+    ;
+
+
 }
 
 .formTitle {
@@ -23,11 +25,11 @@
     max-width: 30rem;
     float: left;
     border-top: #fcdb03 solid 2px;
-    border-left: #fcdb03 solid 2px; 
+    border-left: #fcdb03 solid 2px;
     margin: 2rem;
 
     padding: 1rem;
-    background-image: linear-gradient(to right, transparent,black),url("../Modal/assets/black-marble-patterned-texture-background.jpg");
+    background-image: linear-gradient(to right, transparent, black), url("../Modal/assets/black-marble-patterned-texture-background.jpg");
 }
 
 
@@ -54,13 +56,17 @@
     display: block;
     margin-left: 41%;
     cursor: pointer;
-    background:black;
-    color:white;
+    background: black;
+    color: white;
     padding: 3% 5%;
     border: none;
-    border-bottom: 1px solid  #032cfc;
+    border-bottom: 1px solid #032cfc;
     border-right: 1px solid #032cfc;
 
+}
+
+.sub_section {
+    margin: auto;
 }
 
 .contactInfo {
@@ -70,6 +76,7 @@
     max-width: 18rem;
     padding: .5rem;
     margin-top: 2rem;
+    /* margin: auto; */
 }
 
 .loyaHours {
@@ -87,8 +94,7 @@
 
 @media (max-width: 640px) {
 
-    .contactInfo,
-    .loyaHours {
-        margin-left: 1rem;
+    .sub_section {
+        margin-left: 2rem;
     }
 }

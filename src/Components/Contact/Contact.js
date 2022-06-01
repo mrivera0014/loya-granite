@@ -1,10 +1,15 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Contact.css'
+import { gsap } from 'gsap/all'
 
 const Contact = () => {
 
+    useEffect(() => {
 
+        gsap.from('.contactContain', { duration: 2.5, x: '100', ease: 'power3.out', opacity: 0 })
+
+    })
 
 
     const [sent, setSent] = useState(false);
@@ -40,12 +45,12 @@ const Contact = () => {
                 </form>
 
             ) : (
-                <h1>email Sent</h1>
+                <h1>Email Sent</h1>
 
 
             )}
 
-            <div className='contact sub_section'>
+            <div className='contactForm sub_section'>
                 <section className='contactInfo'>
                     <h3>Contact Info</h3>
                     <p>Phone: (661) 466-3286</p>
