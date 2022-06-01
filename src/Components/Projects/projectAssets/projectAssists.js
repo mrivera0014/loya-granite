@@ -19,8 +19,6 @@ import kitchenTwo from './assets/kitchen_counter_island_lighter.jpg'
 import kitchenThree from './assets/kitchen_counter_island_lighter_black_cabiniet.jpg'
 
 import kitchenFour from './assets/kitchen_counter_island_counters_lighter_black_cabinet.jpg'
-import kitchenFive from './assets/kitchen_counter_island_lighter_black_cabiniet.jpg'
-
 import kitchenSix from './assets/kitchen_counter_angle_2.jpg'
 import kitchenSeven from './assets/kitchen_counter_angle.jpg'
 
@@ -78,7 +76,6 @@ export const itemOne =[
     {itemitem:kitchenTwo},
     {itemitem:kitchenThree},
     {itemitem:kitchenFour},
-    {itemitem:kitchenFive},
     {itemitem:kitchenSix},
     {itemitem:kitchenSeven},
     {itemitem:kitchenEight},
