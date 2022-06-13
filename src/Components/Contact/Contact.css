@@ -7,13 +7,9 @@
     .contactContain {
         display: flex;
         margin: 0 20%;
-
-
     }
 
     ;
-
-
 }
 
 .formTitle {
@@ -90,10 +86,7 @@
     margin-bottom: 1rem;
 }
 
-/* might have to add media query for  */
-
 @media (max-width: 640px) {
-
     .sub_section {
         margin-left: 2rem;
     }
