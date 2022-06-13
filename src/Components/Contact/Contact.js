@@ -7,7 +7,7 @@ const Contact = () => {
 
     useEffect(() => {
 
-        gsap.from('.contactContain', { duration: 2.5, x: '100', ease: 'power3.out', opacity: 0 })
+        gsap.from('.contactContain', { duration: 2.5, x: '100', ease: 'power3.out', })
 
     })
 
