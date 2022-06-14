@@ -27,22 +27,20 @@ app.post("/send_mail", cors(), async (req, res) => {
 
     await transport.sendMail({
         from: process.env.MAIL_FROM,
-        to: "test@test.com",
+        to: "mrivera0014@gmail.com",
         subject: "test email",
         html: `
-        
+
         <div>
-            
+
             <p>${name}</p>
             <p>${email}</p>
             <p>${text}</p>
-        
+
         </div>
         `
     })
 })
-
-
 
 
 app.listen(process.env.PORT || 4000, () => {
