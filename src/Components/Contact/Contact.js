@@ -21,7 +21,7 @@ const Contact = () => {
     const handleSend = async () => {
         setSent(true)
         try {
-            await axios.post("/send_mail", {
+            await axios.post("http://localhost:4000/send_mail", {
                 text, name, email
             })
         } catch (error) {
