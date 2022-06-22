@@ -5,11 +5,11 @@ import { gsap } from 'gsap/all'
 
 const Contact = () => {
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        gsap.from('.contactContain', { duration: 2.5, x: '100', ease: 'power3.out', opacity: 0 })
+    //     gsap.from('.contactContain', { duration: 2.5, x: '100', ease: 'power3.out', opacity: 0 })
 
-    })
+    // })
 
 
     const [sent, setSent] = useState(false);
@@ -21,7 +21,7 @@ const Contact = () => {
     const handleSend = async () => {
         setSent(true)
         try {
-            await axios.post("http://localhost:4000/send_mail", {
+            await axios.post("/send_mail", {
                 text, name, email
             })
         } catch (error) {
