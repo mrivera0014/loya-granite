@@ -18,6 +18,7 @@ const Contact = () => {
 
 
     const handleSend = async () => {
+        e.preventDefault();
         setSent(true)
         try {
             await axios.post("/send_mail", {
