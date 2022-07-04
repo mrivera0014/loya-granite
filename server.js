@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 
-app.post("/send_mail", cors(), async (req, res) => {
+app.post("/", cors(), async (req, res) => {
     console.log(req.body)
     let { text, name, email } = req.body;
     const transport = nodemailer.createTransport({

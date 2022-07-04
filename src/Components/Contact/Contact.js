@@ -21,7 +21,7 @@ const Contact = () => {
         e.preventDefault();
         setSent(true)
         try {
-            await axios.post("/send_mail", {
+            await axios.post("/", {
                 text, name, email
             })
         } catch (error) {
