@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 
-app.post("/send_mail", cors(), async (req, res) => {
+app.post("/", cors(), async (req, res) => {
     console.log(req.body)
     let { text, name, email } = req.body;
     const transport = nodemailer.createTransport({
@@ -27,7 +27,7 @@ app.post("/send_mail", cors(), async (req, res) => {
 
     await transport.sendMail({
         from: process.env.MAIL_FROM,
-        to: "mrivera0014@gmail.com",
+        to: "chrisbwatkins@gmail.com",
         subject: "test email",
         html: `
 
