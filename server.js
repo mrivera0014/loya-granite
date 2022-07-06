@@ -27,7 +27,6 @@ app.post("/", cors(), async (req, res) => {
 
     await transport.sendMail({
         from: process.env.MAIL_FROM,
- makingAnotherBrANCH
         to: "chrisbwatkins@gmail.com",
         subject: "test email",
         html: `
