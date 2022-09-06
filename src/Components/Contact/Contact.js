@@ -6,7 +6,7 @@ import { gsap } from 'gsap/all'
 const Contact = () => {
 
     // useEffect(() => {
-        gsap.from('.contactContain', { duration: 2.5, x: '100', ease: 'power3.out', })
+    gsap.from('.contactContain', { duration: 2.5, x: '100', ease: 'power3.out', })
 
     // })
 
@@ -33,7 +33,7 @@ const Contact = () => {
     return (
         <div className='contactContain'>
 
-            {!sent ? (
+            {/* {!sent ? (
 
                 <form id='form' onSubmit={handleSend} className='form'>
                     <h3 className='form-title'>Let's talk about your project</h3>
@@ -48,7 +48,7 @@ const Contact = () => {
                 <h1>Email Sent</h1>
 
 
-            )}
+            )} */}
 
             <div className='contactForm sub_section'>
                 <section className='contactInfo'>
