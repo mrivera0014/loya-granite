@@ -33,12 +33,13 @@ const Contact = () => {
     return (
         <div className='contactContain'>
 
-            {/* {!sent ? (
+            {!sent ? (
 
-                <form id='form' onSubmit={handleSend} className='form'>
+                <form id='form' method='POST' action='https://formsubmit.co/dieguito.loyagranite19@gmail.com' onSubmit={handleSend} className='form'>
                     <h3 className='form-title'>Let's talk about your project</h3>
                     <input className='form_input form_name' placeholder='Name' id='name' value={name} onChange={(e) => setName(e.target.value)} required />
                     <input className=' form_input form_email' placeholder='Email' id='email' value={email} onChange={(e) => setEmail(e.target.value)} required />
+                    <input type="hidden" name="_next" value="https://loyagranite.com"></input>
                     <input className='form_input' placeholder='Phone Number' id='phone' required />
                     <textarea className='form_textarea form_message' placeholder='Message' id='message' value={text} onChange={(e) => setText(e.target.value)} required />
                     <button className='form_button' id='submit' type='submit'>Send</button>
@@ -48,7 +49,7 @@ const Contact = () => {
                 <h1>Email Sent</h1>
 
 
-            )} */}
+            )}
 
             <div className='contactForm sub_section'>
                 <section className='contactInfo'>
