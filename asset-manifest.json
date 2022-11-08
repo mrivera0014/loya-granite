@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.470694ad.css",
-    "main.js": "/static/js/main.184957c6.js",
+    "main.js": "/static/js/main.52aa9ab5.js",
     "static/media/close-up-black-marble-textured-background.jpg": "/static/media/close-up-black-marble-textured-background.ba96c168bbae7f8700dd.jpg",
     "static/media/black-marble-patterned-texture-background.jpg": "/static/media/black-marble-patterned-texture-background.f7e66ac50e972c89f613.jpg",
     "static/media/stone-floor-texture.jpg": "/static/media/stone-floor-texture.44556210ac5bd06d0b65.jpg",
@@ -29,10 +29,10 @@
     "static/media/kitchen_white_counters.jpg": "/static/media/kitchen_white_counters.232bd58444dddde4166f.jpg",
     "index.html": "/index.html",
     "main.470694ad.css.map": "/static/css/main.470694ad.css.map",
-    "main.184957c6.js.map": "/static/js/main.184957c6.js.map"
+    "main.52aa9ab5.js.map": "/static/js/main.52aa9ab5.js.map"
   },
   "entrypoints": [
     "static/css/main.470694ad.css",
-    "static/js/main.184957c6.js"
+    "static/js/main.52aa9ab5.js"
   ]
 }
