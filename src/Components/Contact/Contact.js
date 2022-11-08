@@ -17,7 +17,7 @@ const Contact = () => {
     const [email, setEmail] = useState("");
 
 
-    const handleSend = async () => {
+    const handleSend = async (e) => {
         e.preventDefault();
         setSent(true)
         try {
