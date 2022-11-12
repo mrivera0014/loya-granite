@@ -44,7 +44,7 @@ const Contact = () => {
                 //     <textarea className='form_textarea form_message' placeholder='Message' id='message' value={text} onChange={(e) => setText(e.target.value)} required />
                 //     <button className='form_button' id='submit' type='submit'>Send</button>
                 // </form>
-                <form id='contactForm' method='POST' action='https://formsubmit.co/dieguito.loyagranite19@gmail.com' encType='multipart/form-data'>
+                <form id='contactForm' method='POST' action='https://formsubmit.co/88c64532444798a1448f19cc7ca8e7be' encType='multipart/form-data'>
                     {/* <input type="hidden" name="_captcha" value="false"></input> */}
                     <input type="hidden" name="_autoresponse" value="Loya Granite has received your message and will reply as soon as possible. We look forward to working with you! "></input>
                     <input type="hidden" name="_subject" value="Loya Granite Submission"></input>
