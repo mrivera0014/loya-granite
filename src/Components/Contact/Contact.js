@@ -35,14 +35,37 @@ const Contact = () => {
 
             {!sent ? (
 
-                <form id='form' method='POST' action='https://formsubmit.co/dieguito.loyagranite19@gmail.com' onSubmit={handleSend} className='form'>
-                    <h3 className='form-title'>Let's talk about your project</h3>
-                    <input className='form_input form_name' placeholder='Name' id='name' value={name} onChange={(e) => setName(e.target.value)} required />
-                    <input className=' form_input form_email' placeholder='Email' id='email' value={email} onChange={(e) => setEmail(e.target.value)} required />
-                    <input type="hidden" name="_next" value="https://loyagranite.com"></input>
-                    <input className='form_input' placeholder='Phone Number' id='phone' required />
-                    <textarea className='form_textarea form_message' placeholder='Message' id='message' value={text} onChange={(e) => setText(e.target.value)} required />
-                    <button className='form_button' id='submit' type='submit'>Send</button>
+                // <form id='form' method='POST' action='https://formsubmit.co/mrivera0896@gmail.com' encType='multipart/form-data' className='form'>
+                //     <h3 className='form-title'>Let's talk about your project</h3>
+                //     <input className='form_input form_name' placeholder='Name' id='name' type='hidden' name='name' value='false' required />
+                //     <input className=' form_input form_email' placeholder='Email' id='email' type='email' name='email' required />
+                //     <input type="hidden" name="_next" value="https://loyagranite.com"></input>
+                //     <input className='form_input' placeholder='Phone Number' id='phone' required />
+                //     <textarea className='form_textarea form_message' placeholder='Message' id='message' value={text} onChange={(e) => setText(e.target.value)} required />
+                //     <button className='form_button' id='submit' type='submit'>Send</button>
+                // </form>
+                <form id='contactForm' method='POST' action='https://formsubmit.co/dieguito.loyagranite19@gmail.com' encType='multipart/form-data'>
+                    {/* <input type="hidden" name="_captcha" value="false"></input> */}
+                    <input type="hidden" name="_autoresponse" value="Loya Granite has received your message and will reply as soon as possible. We look forward to working with you! "></input>
+                    <input type="hidden" name="_subject" value="Loya Granite Submission"></input>
+                    <div className="nameSection">
+                        <p className="formText">Name:</p>
+                        <input type="text" className="userInput" name='name' required />
+                    </div>
+                    <div className="nameSection">
+                        <p className="formText">Phone Number:</p>
+                        <input type="text" className="userInput" name='phone' required />
+                    </div>
+                    <div className="emailSection">
+                        <p className="formText">Email:</p>
+                        <input type="email" className="userInput" name='email' required />
+                    </div>
+                    <input type="hidden" name="_next" value="https://loyagranite.com/"></input>
+                    <div className="messageSection">
+                        <p className="formText">Message:</p>
+                        <textarea className="userInput" name='message' required></textarea>
+                    </div>
+                    <button type="submit" className="button" value="submit">Submit</button>
                 </form>
 
             ) : (
