@@ -9,7 +9,7 @@ const About = () => {
 
     useEffect(() => {
 
-        gsap.from('.granite', { duration: 2.5, x: '100', ease: 'power3.out', opacity: 0 })
+        // gsap.from('.granite', { duration: 2.5, x: '100', ease: 'power3.out', opacity: 0 })
         gsap.from('.logoImage', { duration: 2.5, x: '-100', ease: 'power3.out', opacity: 0 })
         gsap.from('.aboutLoyaGraniteSection', { duration: 2.5, x: '-100', opacity: 0 })
         gsap.from('.reachUs', { duration: 2.5, x: '-100', opacity: 0 })
@@ -17,8 +17,10 @@ const About = () => {
     })
 
     return (
-        <div className='aboutContain'>
-            <img className='granite' src={graniteImage} />
+        
+        <div className='aboutContain'> 
+         <div className='granite' src={graniteImage}  ></div>
+         <div className='aboutbottom'>         
             <section className='aboutLoyaGraniteSection'>
                 <h3 className='loyaGranite'>ABOUT LOYA GRANITE</h3>
                 <p className='loyaGraniteName'>Loya Granite</p><p className='aboutLoya'> is a family owned and operated business located in Thornton, CO. We proudly serve the Denver Metro area and have done projects as far as Nebraska! As a small business we understand the importance of high quality granite and fair pricing. We proudly stand behind our work and are committed to bring our customers' ideas to life. We have experience in kitchen counters, bathrooms, fireplaces, and more! </p>
@@ -33,6 +35,7 @@ const About = () => {
             </section> */}
             {/* <div className='sidebar'></div> */}
             <img className='logoImage' src={logoImage} alt='loya-granite-logo-without-text' />
+            </div>
 
         </div>
     )
