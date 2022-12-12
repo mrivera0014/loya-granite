@@ -1,11 +1,11 @@
 import About from '../About/About'
 // import Calc from '../Calc/Calc'
-import Contact from '../Contact/Contact'
+import Form from '../Form/Form'
 import Projects from '../Projects/Projects'
 
 export const NavItems = [
 
-    
+
     {
         title: 'About Us',
         cName: 'about',
@@ -21,7 +21,7 @@ export const NavItems = [
     {
         title: 'Contact Us!',
         cName: 'contact',
-        location: Contact
+        location: Form
     },
 
 

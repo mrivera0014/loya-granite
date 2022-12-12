@@ -1,8 +1,12 @@
 import React from 'react'
+import ProjectsView from '../../Components/Projects/Projects'
 
 function Projects() {
     return (
-        <div>Projects</div>
+        <div>
+            <ProjectsView />
+
+        </div>
     )
 }
 

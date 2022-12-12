@@ -1,5 +1,5 @@
 .contactContain {
-    color: white;
+    color: #929292;
     max-width: 80%;
 }
 
@@ -16,16 +16,17 @@
     color: black;
 }
 
-.form {
+#contactForm {
     /* min-width: 20rem; */
     max-width: 30rem;
     float: left;
-    border-top: #fcdb03 solid 2px;
-    border-left: #fcdb03 solid 2px;
+    border: #fcdb03 solid 2px;
+    border-radius: 7px;
+    /* border-left: #fcdb03 solid 2px; */
     margin: 2rem;
 
     padding: 1rem;
-    background-image: linear-gradient(to right, transparent, black), url("../Modal/assets/black-marble-patterned-texture-background.jpg");
+    /* background-image: linear-gradient(to right, transparent, black), url("../Modal/assets/black-marble-patterned-texture-background.jpg"); */
 }
 
 
@@ -53,7 +54,7 @@
     margin-left: 41%;
     cursor: pointer;
     background: black;
-    color: white;
+    color: #929292;
     padding: 3% 5%;
     border: none;
     border-bottom: 1px solid #032cfc;

@@ -1,8 +1,11 @@
 import React from 'react'
+import About from '../../Components/About/About'
 
 function Home() {
     return (
-        <div>Home</div>
+        <div>
+            < About />
+        </div>
     )
 }
 
