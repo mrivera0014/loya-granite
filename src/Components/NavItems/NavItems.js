@@ -1,27 +1,22 @@
-import About from '../About/About'
-// import Calc from '../Calc/Calc'
-import Form from '../Form/Form'
-import Projects from '../Projects/Projects'
-
 export const NavItems = [
 
 
     {
         title: 'About Us',
-        cName: 'about',
-        location: About
+        cName: 'about navItem',
+        path: '/'
     },
     {
         title: 'Projects',
-        cName: 'projectsTab',
+        cName: 'projectsTab navItem',
         info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec aliquet ornare justo quis aliquet.Cras dui tellus, cursus at tempor vel, ornare vehicula eros.Integer scelerisque venenatis pulvinar.Praesent vel tincidunt erat.Donec rhoncus ut mi non tempor.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Quisque eu interdum elit.Nunc felis sapien, dignissim nec urna sit amet, vestibulum congue est.Nunc auctor pharetra libero vel rhoncus.Quisque efficitur lorem velit, sed posuere orci tincidunt quis.',
-        location: Projects
+        path: '/Projects'
 
     },
     {
-        title: 'Contact Us!',
-        cName: 'contact',
-        location: Form
+        title: 'Contact Us',
+        cName: 'contact navItem',
+        path: '/Contact'
     },
 
 

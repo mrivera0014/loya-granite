@@ -44,7 +44,7 @@ import back3 from*/
 .logo {
     z-index: 10;
     max-width: 17rem;
-    max-height: 10rem;
+    max-height: 7rem;
     color: rgb(225, 225, 225);
     text-align: center;
     text-shadow: 0 0 1px black;
