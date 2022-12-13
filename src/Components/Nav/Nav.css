@@ -1,54 +1,33 @@
-.fullNav {
+.nav {
     display: flex;
-    flex-direction: column;
+    list-style: none;
     text-align: center;
-    justify-self: center;
-    position: relative;
-    min-height: 100%;
-    background: black;
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+    justify-content: center;
+    min-height: 4rem;
+    /* background-color: #959eac; */
+    border-bottom: solid 1px #929292;
 }
 
-.container {
-    padding: 0 1em;
-    font-family: 'Roboto Slab',
-        serif;
-    border-bottom: azure solid 2px;
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+.navItem {
+    min-width: 7rem;
+    max-width: 10rem;
+    padding-top: 1rem;
+    font-weight: 700;
+    font-family:
+        'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
+    font-size: 18px;
+    text-decoration: none !important;
 }
 
-.about,
-.contact,
-.projectsTab,
-.estimations {
-    max-width: 40rem;
-    /* border: azure solid 2px; */
-    margin: auto;
-    cursor: pointer;
-    transition: all 1s cubic-bezier(1, 0, 1, 0);
-    min-height: 10rem;
-}
-
-.about {
-    color: #fcdb03;
-}
-
-.projectsTab {
-    color: #fc0303;
-}
-
-.contact {
-    color: #0390fc;
-}
-
-.content {
-    display: flex;
-    overflow: hidden;
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
-}
-
-.content.show {
-    height: auto;
-    max-height: 100vh;
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+a {
+    text-decoration: none;
+    color: #252d37;
 }

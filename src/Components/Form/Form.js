@@ -1,14 +1,14 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
-import './Contact.css'
+import './Form.css'
 import { gsap } from 'gsap/all'
 
-const Contact = () => {
+const Form = () => {
 
-    // useEffect(() => {
-    gsap.from('.contactContain', { duration: 2.5, x: '100', ease: 'power3.out', })
+    useEffect(() => {
+        gsap.from('.contactContain', { duration: 2.5, x: '100', ease: 'power3.out', })
 
-    // })
+    })
 
 
     const [sent, setSent] = useState(false);
@@ -35,15 +35,6 @@ const Contact = () => {
 
             {!sent ? (
 
-                // <form id='form' method='POST' action='https://formsubmit.co/mrivera0896@gmail.com' encType='multipart/form-data' className='form'>
-                //     <h3 className='form-title'>Let's talk about your project</h3>
-                //     <input className='form_input form_name' placeholder='Name' id='name' type='hidden' name='name' value='false' required />
-                //     <input className=' form_input form_email' placeholder='Email' id='email' type='email' name='email' required />
-                //     <input type="hidden" name="_next" value="https://loyagranite.com"></input>
-                //     <input className='form_input' placeholder='Phone Number' id='phone' required />
-                //     <textarea className='form_textarea form_message' placeholder='Message' id='message' value={text} onChange={(e) => setText(e.target.value)} required />
-                //     <button className='form_button' id='submit' type='submit'>Send</button>
-                // </form>
                 <form id='contactForm' method='POST' action='https://formsubmit.co/88c64532444798a1448f19cc7ca8e7be' encType='multipart/form-data'>
                     {/* <input type="hidden" name="_captcha" value="false"></input> */}
                     <input type="hidden" name="_autoresponse" value="Loya Granite has received your message and will reply as soon as possible. We look forward to working with you! "></input>
@@ -95,4 +86,4 @@ const Contact = () => {
 
 
 
-export default Contact
+export default Form

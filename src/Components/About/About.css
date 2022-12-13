@@ -9,7 +9,7 @@
 .granite {
     /* margin-top: 2rem;
     float: right; */
-   background-image: url("../Projects/projectAssets/assets/kitchen_counter_island_counters_lighter_black_cabinet.jpg");
+    background-image: url("../Projects/projectAssets/assets/kitchen_counter_island_counters_lighter_black_cabinet.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -17,15 +17,16 @@
     background-size: cover;
 
 }
-.aboutbottom{
+
+.aboutbottom {
     height: 1000px;
-    
+    /* background-color: black; */
 }
 
 .loyaGranite,
 .aboutLoya {
     /* color: #fcdb03; */
-    color: white;
+    color: #929292;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -41,7 +42,7 @@
 
 .loyaGraniteName {
     font-weight: 700;
-    color: white;
+    color: #929292;
 }
 
 .loyaGraniteName,

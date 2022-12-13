@@ -5,7 +5,7 @@ import { gsap } from "gsap/all"
 
 
 
-const Projects = () => {
+const ProjectsView = () => {
 
 
   const [projectToggle, setProjectToggle] = useState(false);
@@ -79,7 +79,7 @@ const Projects = () => {
         <div className={`modal-pictures`}>
           <button className={`close-button`} onClick={() => closeModal(projectToggle)}>X</button>
 
-          <div class={`${modalToggle == "kitchen" ? "show" : "hide"}`}>
+          <div className={`${modalToggle == "kitchen" ? "show" : "hide"}`}>
             <h2 className={`modal-header`}>Kitchens</h2>
             <div className={`modal-pictures-sub`}>
               {kitchen.map((item, index) => {
@@ -91,9 +91,9 @@ const Projects = () => {
               }
             </div>
           </div>
-          <div class={` ${modalToggle == "bathroom" ? "show" : "hide"}`}>
+          <div className={` ${modalToggle == "bathroom" ? "show" : "hide"}`}>
             <h2 className={`modal-header`}>Bathroom</h2>
-            <div class={`modal-pictures-sub`}>
+            <div className={`modal-pictures-sub`}>
 
               {bathroom.map((item, index) => {
                 return (
@@ -103,9 +103,9 @@ const Projects = () => {
               )
               } </div>
           </div>
-          <div class={` ${modalToggle == "fireplace" ? "show" : "hide"}`}>
+          <div className={` ${modalToggle == "fireplace" ? "show" : "hide"}`}>
             <h2 className={`modal-header`}>Fire Places</h2>
-            <div class={`modal-pictures-sub`}>
+            <div className={`modal-pictures-sub`}>
 
               {firePlace.map((item, index) => {
                 return (
@@ -119,8 +119,8 @@ const Projects = () => {
         </div>
 
       </div>
-    </div>
+    </div >
   )
 }
 
-export default Projects
+export default ProjectsView
