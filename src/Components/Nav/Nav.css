@@ -1,17 +1,39 @@
 .nav {
-    display: flex;
+    width: 100%;
+    display: block;
     list-style: none;
     text-align: center;
-    justify-content: center;
     min-height: 4rem;
-    /* background-color: #959eac; */
+    background-color: rgba(255, 255, 255, .5);
     border-bottom: solid 1px #929292;
+    position: fixed;
+}
+
+.logo {
+    max-width: 17rem;
+    max-height: 7rem;
+    float: left;
+}
+
+.navInfo {
+    display: block;
+    padding: 2.85rem;
+    max-width: 20%;
+    /* margin: 0rem 10rem 0rem 0rem; */
+    background-color: #7c8798;
+    float: right;
+}
+
+.icon:hover {
+    color: #252d37;
+
 }
 
 .navItem {
     min-width: 7rem;
     max-width: 10rem;
-    padding-top: 1rem;
+    padding: 3rem 2rem 0rem 2rem;
+    float: left;
     font-weight: 700;
     font-family:
         'Segoe UI',
@@ -27,7 +49,54 @@
     text-decoration: none !important;
 }
 
+.phoneNumber {
+    font-weight: 700;
+    font-family:
+        'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+.icon {
+    padding: 0rem 1rem 0rem 0rem
+}
+
 a {
     text-decoration: none;
-    color: #252d37;
+    color: #ffffff;
+    ;
+    padding-bottom: 1em;
 }
+
+/* option 2 */
+.about :hover {
+    color: #7c8798;
+    text-decoration: underline;
+}
+
+.projectsTab :hover {
+    color: #7c8798;
+    text-decoration: underline;
+}
+
+.contact :hover {
+    color: #7c8798;
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+    color: #7c8798;
+}
+
+/* @media only screen and (min-device-width:320px) and (max-device-width:480px) {
+    .logo {
+        float: none;
+    }
+} */
