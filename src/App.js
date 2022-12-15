@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
 
-      <Modal />
+      {/* <Modal /> */}
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} ></Route>

@@ -3,7 +3,7 @@ export const NavItems = [
 
     {
         title: 'About Us',
-        cName: 'about navItem',
+        cName: 'about navItem active',
         path: '/'
     },
     {
