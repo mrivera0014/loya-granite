@@ -16,17 +16,17 @@ function Navbar() {
                 {/* ------Mapping over NavItems------ */}
                 {NavItems.map((item, index) => {
                     return (
-                        <li key={index} className={item.cName}>
-                            <Link to={item.path}>
+                        <li key={index} >
+                            <Link className={item.cName} to={item.path}>
                                 {item.title}
                             </Link>
                         </li>
                     )
                 })}
-                <div className="navInfo">
-                    <a href="tel: 661-466-3286" className="phoneNumber icon"><BsFillTelephoneFill /> (661) 466-3286</a>
-                    <a href="https://www.facebook.com/loyagranite" target='_blank' rel='noreferrer' className="facebook icon"><BsFacebook /></a>
-                    <Link className="icon" to='/Contact'><AiOutlineMail /> </Link>
+                <div className="navQuickInfo">
+                    <a className='phoneNumber navInfo icon' href="tel: 303-997-6166"><BsFillTelephoneFill /> 303-997-6166</a>
+                    <a className="facebook icon navInfo" href="https://www.facebook.com/loyagranite" target='_blank' rel='noreferrer'><BsFacebook /></a>
+                    <Link className="icon navInfo" to='/Contact'><AiOutlineMail /> </Link>
                 </div>
 
             </nav>

@@ -15,7 +15,7 @@ export const NavItems = [
     },
     {
         title: 'Contact Us',
-        cName: 'contact navItem',
+        cName: 'navContact navItem',
         path: '/Contact'
     },
 

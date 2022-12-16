@@ -15,7 +15,7 @@
     float: left;
 }
 
-.navInfo {
+.navQuickInfo {
     display: block;
     padding: 2.85rem;
     max-width: 20%;
@@ -34,6 +34,7 @@
     max-width: 10rem;
     padding: 3rem 2rem 0rem 2rem;
     float: left;
+    color: #ffffff;
     font-weight: 700;
     font-family:
         'Segoe UI',
@@ -67,33 +68,22 @@
     padding: 0rem 1rem 0rem 0rem
 }
 
-a {
+.navInfo {
     text-decoration: none;
     color: #ffffff;
     ;
     padding-bottom: 1em;
 }
 
-/* option 2 */
-.about :hover {
+.navItem:hover {
     color: #7c8798;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
-.projectsTab :hover {
-    color: #7c8798;
-    text-decoration: underline;
-}
-
-.contact :hover {
-    color: #7c8798;
-    text-decoration: underline;
-}
-
-.active {
+/* .active {
     text-decoration: underline;
     color: #7c8798;
-}
+} */
 
 /* @media only screen and (min-device-width:320px) and (max-device-width:480px) {
     .logo {
