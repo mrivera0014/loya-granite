@@ -27,8 +27,8 @@ function Navbar() {
 
 
     return (
-        <div>
-            <nav className="nav">
+        <header className="nav">
+            <div className="navbar">
                 <Link to='/'><img className={"logo"} src={logo}
                     alt='loya-granite-logo' /></Link>
 
@@ -56,8 +56,8 @@ function Navbar() {
                     <Link className="icon navInfo" to='/Contact'><AiOutlineMail /> </Link>
                 </div>
 
-            </nav>
-        </div>
+            </div>
+        </header>
     )
 }
 
