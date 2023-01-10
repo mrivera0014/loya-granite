@@ -1,12 +1,17 @@
 .nav {
-    width: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     list-style: none;
-    text-align: center;
-    min-height: 4rem;
-    background-color: rgba(255, 255, 255, .5);
-    border-bottom: solid 1px #929292;
-    position: fixed;
+    /* background-color: #434a56; */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 1); */
 }
 
 .logo {
@@ -15,25 +20,29 @@
     float: left;
 }
 
-.navInfo {
+.navQuickInfo {
     display: block;
-    padding: 2.85rem;
-    max-width: 20%;
-    /* margin: 0rem 10rem 0rem 0rem; */
+    max-width: 22%;
     background-color: #7c8798;
     float: right;
+    font-size: 18px;
+    min-height: 7rem;
+    min-width: 9rem;
+    margin: auto;
+    margin-right: 0;
+    padding: 1rem;
 }
 
 .icon:hover {
-    color: #252d37;
-
+    color: #ffffff;
 }
 
 .navItem {
     min-width: 7rem;
     max-width: 10rem;
     padding: 3rem 2rem 0rem 2rem;
-    float: left;
+    color: #7c8798;
+    /* color: #ffffff; */
     font-weight: 700;
     font-family:
         'Segoe UI',
@@ -63,40 +72,52 @@
         sans-serif;
 }
 
-.icon {
-    padding: 0rem 1rem 0rem 0rem
+.espanol {
+    margin-bottom: .5rem !important;
+    font-weight: 700;
 }
 
-a {
+.icon {
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.navInfo {
     text-decoration: none;
     color: #ffffff;
-    ;
-    padding-bottom: 1em;
+    margin: auto;
 }
 
-/* option 2 */
-.about :hover {
-    color: #7c8798;
-    text-decoration: underline;
+.navItem:hover {
+    /* color: #7c8798; */
+    text-decoration: underline !important;
 }
 
-.projectsTab :hover {
-    color: #7c8798;
-    text-decoration: underline;
+.mobile {
+    color: #ffffff;
 }
 
-.contact :hover {
-    color: #7c8798;
-    text-decoration: underline;
+.bar {
+    color: #ffffff;
+    background-color: black;
 }
 
-.active {
-    text-decoration: underline;
-    color: #7c8798;
+.mobile {
+    display: none;
 }
 
-/* @media only screen and (min-device-width:320px) and (max-device-width:480px) {
-    .logo {
-        float: none;
+@media (max-width: 822px) {
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: rgba(255, 255, 255, .5);
+        position: fixed;
     }
-} */
+
+    .navQuickInfo {
+        display: none;
+    }
+}

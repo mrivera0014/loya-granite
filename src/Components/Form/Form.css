@@ -29,8 +29,6 @@
     /* background-image: linear-gradient(to right, transparent, black), url("../Modal/assets/black-marble-patterned-texture-background.jpg"); */
 }
 
-
-
 #name,
 #email,
 #phone,
@@ -43,6 +41,16 @@
     margin: 6px 0;
     background-color: #0f0f0f;
     border: none;
+}
+
+.number {
+    color: #929292;
+    text-decoration: none;
+}
+
+.number:hover {
+    color: #252d37;
+    text-decoration: underline;
 }
 
 .message {
