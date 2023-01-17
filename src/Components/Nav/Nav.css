@@ -4,6 +4,7 @@
     justify-content: space-between;
     list-style: none;
     background-color: #ffffff;
+    border-bottom: solid 1px #7c8798;
 }
 
 .navbar {

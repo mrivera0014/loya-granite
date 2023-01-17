@@ -1,3 +1,7 @@
+.contactContain {
+    height: 1000px;
+}
+
 .title {
 
     font-size: 3rem;
@@ -7,7 +11,8 @@
 #contactForm {
     padding: 1rem;
     display: grid;
-    width: 50%;
+    max-width: 80%;
+    min-width: 50%;
     margin: auto;
     /* background-color: aqua; */
     float: left;
@@ -41,9 +46,7 @@
 .phoneSection,
 .nameSection,
 .messageSection {
-    /* float: left; */
     width: 70%;
-    /* margin-right: 1rem; */
 }
 
 .inputEmail,
@@ -60,7 +63,7 @@
 
 .button {
     height: 2rem;
-    width: 10%;
+    width: 100%;
     font-size: inherit;
     font-weight: 700;
     color: #ffff;
@@ -91,6 +94,20 @@
 
 .spanish {
     margin-top: 1rem;
+}
+
+@media screen and (min-width: 822px) {
+
+    #contactForm {
+        float: none;
+    }
+
+    .emailSection,
+    .phoneSection,
+    .nameSection,
+    .messageSection {
+        width: 100%;
+    }
 }
 
 /* .contactContain {
