@@ -1,4 +1,99 @@
-.contactContain {
+.title {
+
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#contactForm {
+    padding: 1rem;
+    display: grid;
+    width: 50%;
+    margin: auto;
+    /* background-color: aqua; */
+    float: left;
+}
+
+.formText {
+    font-family:
+        'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
+    font-weight: 500;
+    margin: 1rem 1rem 0rem 0rem
+}
+
+.userInput {
+    min-height: 2rem;
+    /* max-width: 18rem; */
+}
+
+/* .inputName {
+    width: 30%;
+} */
+
+.emailSection,
+.phoneSection,
+.nameSection,
+.messageSection {
+    /* float: left; */
+    width: 70%;
+    /* margin-right: 1rem; */
+}
+
+.inputEmail,
+.inputPhone,
+.inputName {
+    width: 100%;
+}
+
+.inputText {
+    resize: none;
+    height: 10rem;
+    width: 100%;
+}
+
+.button {
+    height: 2rem;
+    width: 10%;
+    font-size: inherit;
+    font-weight: 700;
+    color: #ffff;
+    background: #7c8798;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.sub_section {
+    background-color: #f2f2f2;
+    display: block;
+    max-width: 25rem;
+    min-width: 10rem;
+    float: left;
+    padding: 1rem;
+}
+
+.formLogo {
+    display: block;
+    max-height: 14rem;
+    margin: auto;
+}
+
+.questionsEnglish {
+    border-top: solid 2px black;
+}
+
+.spanish {
+    margin-top: 1rem;
+}
+
+/* .contactContain {
     color: #929292;
     max-width: 80%;
 }
@@ -14,26 +109,26 @@
 
 .formTitle {
     color: black;
-}
+} */
 
-#contactForm {
-    /* min-width: 20rem; */
+/* #contactForm {
+    min-width: 20rem;
     max-width: 30rem;
     float: left;
     border: #fcdb03 solid 2px;
     border-radius: 7px;
-    /* border-left: #fcdb03 solid 2px; */
+    border-left: #fcdb03 solid 2px;
     margin: 2rem;
 
     padding: 1rem;
-    /* background-image: linear-gradient(to right, transparent, black), url("../Modal/assets/black-marble-patterned-texture-background.jpg"); */
+    background-image: linear-gradient(to right, transparent, black), url("../Modal/assets/black-marble-patterned-texture-background.jpg");
 }
 
 #name,
 #email,
 #phone,
 #message {
-    /* max-width: 32rem; */
+    max-width: 32rem;
     min-width: 18rem;
     min-height: 4rem;
     font-family: 'Abril Fatface';
@@ -81,7 +176,7 @@
     max-width: 18rem;
     padding: .5rem;
     margin-top: 2rem;
-    /* margin: auto; */
+    margin: auto;
 }
 
 .loyaHours {
@@ -99,4 +194,4 @@
     .sub_section {
         margin-left: 2rem;
     }
-}
+} */

@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    /* background-color: #434a56; */
+    background-color: #ffffff;
 }
 
 .navbar {
@@ -113,7 +113,7 @@
         list-style: none;
         align-items: flex-start;
         justify-content: flex-start;
-        background-color: rgba(255, 255, 255, .5);
+        /* background-color: rgba(255, 255, 255, .5); */
         position: fixed;
     }
 
