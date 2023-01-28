@@ -10,9 +10,13 @@ const Banner = () => {
         gsap.registerEffect({
             name: 'spanish',
             effect: (targets, config) => {
+                //creating timeline that will be delayed by two seconds for each target 
                 let tl = gsap.timeline({ delay: 2 });
+                // target opacity will start at completely transparent effect will last for 1 second
                 tl.to(targets, { opacity: 0, duration: config.duration / 2 });
+                //the effect will target the text
                 tl.add(() => targets[0].innerText = config.text);
+                //the target opacity will end non-transparent
                 tl.to(targets, { opacity: 1, duration: config.duration });
                 return tl
             },
