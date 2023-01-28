@@ -3,11 +3,12 @@ import React, { useState, useEffect } from 'react'
 import './Form.css'
 import { gsap } from 'gsap/all'
 import logoImage from '../../assets/LOYA-Logo-Color-WO-Text.png'
+import Banner from '../Banner/banner'
 
 const Form = () => {
 
     useEffect(() => {
-        gsap.from('.contactContain', { duration: 2.5, x: '100', ease: 'power3.out', })
+
 
     })
 
@@ -33,9 +34,7 @@ const Form = () => {
 
     return (
         <div className='contactContain'>
-
-            <header className='title'>Contact Us</header>
-
+            <Banner />
             {!sent ? (
 
                 <form id='contactForm' method='POST' action='https://formsubmit.co/88c64532444798a1448f19cc7ca8e7be' encType='multipart/form-data'>
