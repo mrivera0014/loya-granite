@@ -24,7 +24,7 @@ const Banner = () => {
         var languageSwap = gsap.timeline({ repeat: -1 });
         //swaps text to spanish
         languageSwap.spanish('.title', { text: 'Preguntas?' })
-            .spanish('.questions', { text: 'Por favor, envienos un mensaje o llamenos por telefono.', delay: 0 })
+            .spanish('.questions', { text: 'Por favor, envienos un mensaje o llamenos por telefono.' })
             //swap text back to english
             .spanish('.title', { text: 'Lets talk about your project' })
             .spanish('.questions', { text: 'Have questions about materials? Pricing? Reach out to us, we would love to discuss your options!' });

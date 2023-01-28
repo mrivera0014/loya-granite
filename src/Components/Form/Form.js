@@ -9,25 +9,6 @@ const Form = () => {
 
     useEffect(() => {
 
-        let tl = gsap.timeline()
-
-        // tl.from('.header', { duration: 6, x: '300', ease: 'expo.out' })
-        gsap.from('#contactForm', { duration: 2.5, y: '100', ease: 'power3.out', })
-
-        // let textTimeline = gsap.timeline({ repeat: -1 })
-
-        // textTimeline
-        // .from('.englishHeader', { duration: 6, x: '100', ease: 'expo.out', opacity: 50 })
-        // .from('.englishHeader', { duration: 2, opacity: 0, x: '-300', ease: 'power.out' })
-        // tl.addLabel('englishOutro', '+=6');
-        // tl.to('englishHeader', { duration: 20, opacity: 10, x: '-300', ease: 'power3.out' }, 'englishOutro')
-
-        // .to('.espanolhHeader', { duration: 6, x: '300', ease: 'expo.out' }, '+=6')
-        // .to('.espanolHeader', { duration: 6, x: '-300', ease: 'expo.out', opacity: 0 })
-
-
-
-
 
     })
 
