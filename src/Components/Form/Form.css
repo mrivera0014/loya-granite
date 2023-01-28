@@ -23,7 +23,7 @@
     max-width: 80%;
     min-width: 50%;
     margin: auto;
-    /* background-color: aqua; */
+    justify-items: center;
     margin-top: 3rem;
     box-shadow: 1px 1px 5px 5px #7c8798;
 }
@@ -73,7 +73,7 @@
 
 .button {
     height: 2rem;
-    width: 100%;
+    width: 70%;
     font-size: inherit;
     font-weight: 700;
     color: #ffff;
@@ -121,7 +121,8 @@
     .emailSection,
     .phoneSection,
     .nameSection,
-    .messageSection {
+    .messageSection,
+    .button {
         width: 100%;
     }
 }
