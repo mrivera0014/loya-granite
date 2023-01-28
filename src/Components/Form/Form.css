@@ -24,7 +24,8 @@
     min-width: 50%;
     margin: auto;
     /* background-color: aqua; */
-    float: left;
+    margin-top: 3rem;
+    box-shadow: 1px 1px 5px 5px #7c8798;
 }
 
 .formText {
@@ -105,10 +106,16 @@
     margin-top: 1rem;
 }
 
-@media screen and (min-width: 822px) {
+@media only screen and (max-width: 822px) {
 
     #contactForm {
         float: none;
+        margin: auto;
+
+    }
+
+    .banner {
+        margin-bottom: 3rem;
     }
 
     .emailSection,
