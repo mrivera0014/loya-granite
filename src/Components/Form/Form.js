@@ -8,7 +8,8 @@ import Banner from '../Banner/banner'
 const Form = () => {
 
     useEffect(() => {
-
+        gsap.from('#contactForm', { duration: 2.5, y: '100', ease: 'power3.out', })
+        gsap.from('.banner', { duration: 2.5, x: '100', ease: 'power3.out', })
 
     })
 
@@ -34,7 +35,7 @@ const Form = () => {
 
     return (
         <div className='contactContain'>
-            <Banner />
+            <Banner className='banner' />
             {!sent ? (
 
                 <form id='contactForm' method='POST' action='https://formsubmit.co/88c64532444798a1448f19cc7ca8e7be' encType='multipart/form-data'>
@@ -42,19 +43,19 @@ const Form = () => {
                     <input type="hidden" name="_autoresponse" value="Loya Granite has received your message and will reply as soon as possible. We look forward to working with you! "></input>
                     <input type="hidden" name="_subject" value="Loya Granite Submission"></input>
                     <div className="nameSection">
-                        <p className="formText">Name:</p>
+                        <p className="formText">Name (Nombre):</p>
                         <input type="text" className="userInput inputName" name='name' required />
                     </div>
                     <div className="emailSection">
-                        <p className="formText">Email:</p>
+                        <p className="formText">Email (Correo Electronico):</p>
                         <input type="email" className="userInput inputEmail" name='email' required />
                     </div>
                     <div className="phoneSection">
-                        <p className="formText">Phone Number:</p>
+                        <p className="formText">Phone Number (Numero de Telefono):</p>
                         <input type="text" className="userInput inputPhone" name='phone' required />
                     </div>
                     <div className="messageSection">
-                        <p className="formText commentSection">Questions/Comments:</p>
+                        <p className="formText commentSection">Questions/Comments(Preguntas/Comentarios):</p>
                         <textarea className="userInput inputText" name='message' required></textarea>
                     </div>
                     <button type="submit" className="button" value="submit">Submit</button>
@@ -68,7 +69,7 @@ const Form = () => {
             )}
 
 
-            <div className='contactForm sub_section'>
+            {/* <div className='contactForm sub_section'>
                 <img className='formLogo' src={logoImage} alt='loya-grantie-logo' />
                 <section className='questionsEnglish'>
                     <p> Have questions? Shoot us a message or give us a call! We can get you an estimate and are always willing to work with your budget. We work with many materials such as granite, marble, quartz, and porcelain.</p>
@@ -77,7 +78,7 @@ const Form = () => {
                     <p>Preguntas? Envienos un mensaje o llamenos por telefono!
                     </p>
                 </section>
-                {/* <section className='contactInfo'>
+                <section className='contactInfo'>
                     <h3>Contact Info</h3>
                     <a href="tel: 303-997-6166" className='contact number'>Phone: 303-997-6166</a>
                     <p className='contact'>Email: dieguito.loyagranite19@gmail.com</p>
@@ -87,8 +88,8 @@ const Form = () => {
                     <p>Monday-Friday: 9am- 5pm</p>
                     <p>Saturday: Closed</p>
                     <p>Sunday: Closed</p>
-                </section> */}
-            </div>
+                </section>
+            </div> */}
         </div>
     )
 }
