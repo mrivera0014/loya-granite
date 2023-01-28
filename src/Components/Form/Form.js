@@ -3,11 +3,31 @@ import React, { useState, useEffect } from 'react'
 import './Form.css'
 import { gsap } from 'gsap/all'
 import logoImage from '../../assets/LOYA-Logo-Color-WO-Text.png'
+import Banner from '../Banner/banner'
 
 const Form = () => {
 
     useEffect(() => {
-        gsap.from('.contactContain', { duration: 2.5, x: '100', ease: 'power3.out', })
+
+        let tl = gsap.timeline()
+
+        // tl.from('.header', { duration: 6, x: '300', ease: 'expo.out' })
+        gsap.from('#contactForm', { duration: 2.5, y: '100', ease: 'power3.out', })
+
+        // let textTimeline = gsap.timeline({ repeat: -1 })
+
+        // textTimeline
+        // .from('.englishHeader', { duration: 6, x: '100', ease: 'expo.out', opacity: 50 })
+        // .from('.englishHeader', { duration: 2, opacity: 0, x: '-300', ease: 'power.out' })
+        // tl.addLabel('englishOutro', '+=6');
+        // tl.to('englishHeader', { duration: 20, opacity: 10, x: '-300', ease: 'power3.out' }, 'englishOutro')
+
+        // .to('.espanolhHeader', { duration: 6, x: '300', ease: 'expo.out' }, '+=6')
+        // .to('.espanolHeader', { duration: 6, x: '-300', ease: 'expo.out', opacity: 0 })
+
+
+
+
 
     })
 
@@ -33,9 +53,7 @@ const Form = () => {
 
     return (
         <div className='contactContain'>
-
-            <header className='title'>Contact Us</header>
-
+            <Banner />
             {!sent ? (
 
                 <form id='contactForm' method='POST' action='https://formsubmit.co/88c64532444798a1448f19cc7ca8e7be' encType='multipart/form-data'>
