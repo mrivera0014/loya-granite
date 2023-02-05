@@ -26,18 +26,20 @@ function Navbar() {
     }
 
 
+
+
     return (
         <header className="nav">
-            <div className="navbar">
-                <Link to='/'><img className={"logo"} src={logo}
-                    alt='loya-granite-logo' /></Link>
-
+            <Link className="logoLink" to='/'><img className={"logo"} src={logo}
+                alt='loya-granite-logo' /></Link>
+            <div className={clicked === false ? 'navbar active' : 'navbar'}>
                 <div className="mobile">
                     {clicked === false ? (
                         //calling handleClick function to open/close
-                        <AiOutlineMenu onClick={handleClick} />
-                    ) : <AiOutlineClose onClick={handleClick} />}
+                        <AiOutlineMenu className="menuBars" onClick={handleClick} />
+                    ) : <AiOutlineClose className="menuClose" onClick={handleClick} />}
                 </div>
+
 
                 {/* ------Mapping over NavItems------ */}
                 {NavItems.map((item, index) => {
