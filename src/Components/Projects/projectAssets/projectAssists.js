@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import kitchenOne from '../projectAssets/assets/kitchen_counter_island_grey.jpg'
+import kitchenOne from './assets/kitchen_counter_island_grey.jpg'
 import bathroomOne from './assets/bathroom_shells.jpg'
 import firePlaceOne from './assets/fireplace_darker.jpg'
 import firePlaceTwo from './assets/fireplace_lighter.jpg'
@@ -31,10 +31,12 @@ import kitchenEleven from './assets/kitchen_island.jpg'
 import kitchenTwelve from './assets/kitchen_t_island.jpg'
 
 import kitchenThirteen from './assets/kitchen_white_counters.jpg'
-
+import kitchenFinishedOne from '../../../../src/assets/kitchen-grey-island.jpg'
+import kitchenFinishedTwo from '../../../../src/assets/complete-kitchen-white-granite-grey-cabinets.jpg'
+import kitchenFinishedThree from '../../../../src/assets/kitchen-black-granite.jpg'
 export const assists = [
 
-    {item:kitchenOne,
+    {item:kitchenFinishedOne,
         name:"Kitchens Counters"
 
     },
@@ -72,13 +74,12 @@ export const itemTwo =[
 ]
 
 export const itemOne =[
-    {itemitem:kitchenOne},
-    {itemitem:kitchenTwo},
-    {itemitem:kitchenThree},
+    {itemitem:kitchenFinishedOne},
+    {itemitem:kitchenFinishedTwo},
+    {itemitem:kitchenFinishedThree},
     {itemitem:kitchenFour},
     {itemitem:kitchenSix},
     {itemitem:kitchenSeven},
-    {itemitem:kitchenEight},
     {itemitem:kitchenNine},
     {itemitem:kitchenTen},
     {itemitem:kitchenEleven},
