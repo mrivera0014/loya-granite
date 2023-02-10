@@ -71,17 +71,19 @@ nav {
         align-items: flex-start;
         justify-content: flex-start;
         position: fixed;
-        top: 100px;
+        top: 122px;
         right: -300px;
         width: 300px;
         height: 100vh;
         background-color: #7c8798;
         padding: 40px 0 0 10px;
         transition: 0.3s ease-in-out;
+        z-index: 2;
     }
 
     .navbar.active {
         right: 0px;
+        z-index: 2;
     }
 
     .navbar li {
