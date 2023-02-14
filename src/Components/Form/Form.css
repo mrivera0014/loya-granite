@@ -2,20 +2,6 @@
     height: 1000px;
 }
 
-.backgroundImg {
-    background-image: url('../../assets/complete-kitchen-white-granite-grey-cabinets-medium.jpg');
-    background-position: center;
-    background-color: #7c8798;
-    background-repeat: no-repeat;
-    padding: 20em;
-    /* background-size: cover; */
-    outline: 2px solid black;
-
-    /* background-blend-mode: multiply or lighten; */
-
-}
-
-
 
 #contactForm {
     padding: 1rem;
@@ -45,12 +31,8 @@
 
 .userInput {
     min-height: 2rem;
-    /* max-width: 18rem; */
 }
 
-/* .inputName {
-    width: 30%;
-} */
 
 .emailSection,
 .phoneSection,

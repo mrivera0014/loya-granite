@@ -1,5 +1,4 @@
 .aboutContain {
-    /* background-image: url(../Projects/projectAssets/assets/kitchen_counter_island_counters_lighter_black_cabinet.jpg); */
     background-repeat: no-repeat;
     min-height: 100vh;
     background-size: contain;
@@ -7,60 +6,48 @@
 }
 
 .granite {
-    /* margin-top: 2rem;
-    float: right; */
-    background-image: url("../Projects/projectAssets/assets/kitchen_counter_island_counters_lighter_black_cabinet.jpg");
+    background-image: url("../../assets/kitchen1.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .aboutbottom {
     height: 1000px;
-    /* background-color: black; */
 }
 
 .loyaGranite,
 .aboutLoya {
-    /* color: #fcdb03; */
-    color: #929292;
-    font-family: 'Roboto Slab', serif;
+    color: #ffff;
+    font-family: "Roboto Slab", serif;
 }
 
-
 .aboutLoyaGraniteSection {
-    border-bottom: #fcdb03 solid 2px;
-    border-left: #fcdb03 solid 2px;
-    clip-path: polygon(50% 0%,
-            100% 25%,
-            100% 75%,
-            50% 100%,
-            0% 75%,
-            0% 25%);
-    padding: .5rem;
+    padding: 0.5rem;
     max-width: 25rem;
     margin: 1rem;
     float: left;
+    background-color: #929292;
+    box-shadow: 0px 5px 10px 0px #929292;
 }
 
 .loyaGraniteName {
     font-weight: 700;
-    color: #929292;
 }
 
 .loyaGraniteName,
 .aboutLoya {
     display: contents;
     vertical-align: top;
+    color: #ffff;
 }
 
 .reachUs {
-    border-bottom: #0390fc solid 2px;
-    border-left: #0390fc solid 2px;
-    padding: .5rem;
+    background-color: #929292;
+    box-shadow: 0px 5px 10px 0px #929292;
+    padding: 0.5rem;
     max-width: 19rem;
     margin: 1rem;
     float: left;
@@ -69,7 +56,7 @@
 .moreAboutLoyaGranite {
     border-bottom: #fc0303 solid 2px;
     border-left: #fc0303 solid 2px;
-    padding: .5rem;
+    padding: 0.5rem;
     max-width: 49rem;
     margin: 1rem;
     float: left;
@@ -80,7 +67,6 @@
     float: left;
     margin-top: 2rem;
 }
-
 
 @media (max-width: 640px) {
     .logoImage {
