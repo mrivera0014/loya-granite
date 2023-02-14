@@ -44,6 +44,12 @@
     color: #ffff;
 }
 
+.fireplace {
+    max-height: 35rem;
+    margin-top: 10rem;
+    box-shadow: 20px 20px rgba(0, 0, 0, .15);
+}
+
 .reachUs {
     background-color: #929292;
     box-shadow: 0px 5px 10px 0px #929292;
@@ -77,6 +83,10 @@
         max-width: 100%;
         margin-right: 1rem;
         margin-top: 0;
+    }
+
+    .fireplace {
+        max-width: 20rem;
     }
 }
 

@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import './Form.css'
 import { gsap } from 'gsap/all'
-import logoImage from '../../assets/LOYA-Logo-Color-WO-Text.png'
+
 import Banner from '../Banner/banner'
 
 const Form = () => {
