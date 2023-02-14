@@ -34,6 +34,12 @@
 .aboutLoyaGraniteSection {
     border-bottom: #fcdb03 solid 2px;
     border-left: #fcdb03 solid 2px;
+    clip-path: polygon(50% 0%,
+            100% 25%,
+            100% 75%,
+            50% 100%,
+            0% 75%,
+            0% 25%);
     padding: .5rem;
     max-width: 25rem;
     margin: 1rem;
