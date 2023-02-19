@@ -65,7 +65,7 @@ const ProjectsView = () => {
   <section className='projectsInfo2'>
     <p>Choose from materials such as granite, quartz, marble, and much more! </p>
   </section>
-</div> : <img className='bigPicture'src={bigPicToggle}></img>}
+</div> : <img className={`bigPicture `}src={bigPicToggle}></img>}
           
 
       {/* mapping the projects */}
@@ -101,7 +101,7 @@ return (
               {kitchen.map((item, index) => {
                 return (
                   <div className={`picture-container`} onClick={() => bigPicFunction(item)}>
-                  <img className={`modal-pictures-picture`} src={item.itemitem}  ></img>
+                  <img className={`modal-pictures-picture ${item.itemitem}`} src={item.itemitem}></img>
                   </div>
                 )
               }
@@ -116,7 +116,7 @@ return (
               {bathroom.map((item, index) => {
                 return (
                   <div className={`picture-container`} onClick={() => bigPicFunction(item)}>
-                  <img className={`modal-pictures-picture`} src={item.itemitem}  ></img>
+                  <img className={`modal-pictures-picture ${item.itemitem}`} src={item.itemitem}></img>
                   </div>
                 )
               }
@@ -131,7 +131,7 @@ return (
                 return (
                   
                   <div className={`picture-container`} onClick={() => bigPicFunction(item)}>
-                  <img className={`modal-pictures-picture`} src={item.itemitem}  ></img>
+                  <img className={`modal-pictures-picture ${item.itemitem}`} src={item.itemitem}></img>
                   </div>
                 )
               }
