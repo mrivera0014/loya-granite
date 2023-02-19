@@ -5,6 +5,21 @@
     background-position: right;
 }
 
+.aboutTitle {
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family:
+        'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
 .granite {
     background-image: url("../../assets/kitchen1.jpg");
     min-height: 500px;
@@ -16,21 +31,42 @@
 
 .aboutbottom {
     height: 1000px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-.loyaGranite,
+/* .loyaGranite,
 .aboutLoya {
     color: #ffff;
-    font-family: "Roboto Slab", serif;
-}
+    font-family:
+        'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
+} */
 
 .aboutLoyaGraniteSection {
     padding: 0.5rem;
-    max-width: 25rem;
+    max-width: 30rem;
     margin: 1rem;
     float: left;
     background-color: #929292;
     box-shadow: 0px 5px 10px 0px #929292;
+    color: #ffff;
+    font-family:
+        'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
 }
 
 .loyaGraniteName {
@@ -46,7 +82,7 @@
 
 .fireplace {
     max-height: 35rem;
-    margin-top: 10rem;
+    margin-top: 5rem;
     box-shadow: 20px 20px rgba(0, 0, 0, .15);
 }
 
@@ -74,6 +110,12 @@
     margin-top: 2rem;
 }
 
+@media only screen and (min-width: 992px) {
+    .aboutLoyaGraniteSection {
+        margin-right: 10rem;
+    }
+}
+
 @media (max-width: 640px) {
     .logoImage {
         display: none;
@@ -83,6 +125,11 @@
         max-width: 100%;
         margin-right: 1rem;
         margin-top: 0;
+    }
+
+    .aboutLoyaGraniteSection {
+        margin: auto;
+        float: none;
     }
 
     .fireplace {
