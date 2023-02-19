@@ -1,25 +1,25 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { reviewItems } from '../ReviewItems/ReviewItems'
 
-class Reviews extends Component {
+function Reviews() {
+    return (
+        <div>
+            <article>
+                {reviewItems.map((item, index) => {
+                    return (
+                        <div className={item.cName} key={item.reviewID}>
+                            <h4>{item.ratingValue} {item.firstName} {item.lastName}</h4>
+                            <h5>{item.reviewTitle}</h5>
+                            <p>{item.review}</p>
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            items: [],
-            isLoaded: false,
-        }
-    }
+                        </div>
 
+                    )
+                })}
+            </article>
 
-
-    render() {
-
-
-
-        return (
-            <div>Reviews</div>
-        )
-    }
+        </div>
+    )
 }
 
 export default Reviews
