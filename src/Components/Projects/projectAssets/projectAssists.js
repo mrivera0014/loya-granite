@@ -52,24 +52,20 @@ export const assists = [
 
 
 export const itemTwo =[
-    {itemitem:bathroomOne,
-        itemname:"name"
-    },
-    {itemitem:bathroomTwo,
-        itemname:"name"
-    },
-    {itemitem:bathroomThree,
-        itemname:"name"
-    },
-    {itemitem:bathroomFour,
-        itemname:"name"
-    },
-    {itemitem:bathroomFive,
-        itemname:"name"
-    },
-    {itemitem:bathroomSix,
-        itemname:"name"
-    },
+    {itemitem:bathroomOne},
+    {itemitem:bathroomTwo},
+    {itemitem:bathroomThree},
+    {itemitem:bathroomFour},
+    {itemitem:bathroomFive},
+    {itemitem:bathroomSix},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+
 
 ]
 
@@ -84,12 +80,28 @@ export const itemOne =[
     {itemitem:kitchenTen},
     {itemitem:kitchenEleven},
     {itemitem:kitchenTwelve},
-    {itemitem:kitchenThirteen}
+    {itemitem:kitchenThirteen},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+
+    
 ]
 
 export const itemThree =[
     {itemitem:firePlaceOne},
     {itemitem:firePlaceTwo},
     {itemitem:firePlaceThree},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+    {itemitem:"filler"},
+
+
 ]
 

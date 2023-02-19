@@ -11,7 +11,7 @@ const ProjectsView = () => {
 
   const [projectToggle, setProjectToggle] = useState(false);
   const [modalToggle, setModalToggle] = useState("");
-  const [bigPicToggle,setBigPicToggle] = useState("");
+  const [bigPicToggle,setBigPicToggle] = useState("filler");
 
 
 
@@ -43,6 +43,7 @@ const ProjectsView = () => {
   }
   let bigPicFunction = (item) =>{
   
+
     setBigPicToggle(item.itemitem);
     
   }
@@ -55,19 +56,21 @@ const ProjectsView = () => {
   return (
 
     <div className={`projects`}>
-        <img className='bigPicture' src={bigPicToggle}></img>
+   
+     {bigPicToggle == "filler" ? <div className='bigPicture bigPictureDiv' >
+
+  <section className='projectsInfo'>
+    <p>At Loya Granite we take pride in our work and are not afraid to take on a challenge. We look forward to collaborating with out customers to develop a plan that will ensure customer satisfaction.</p>
+  </section>
+  <section className='projectsInfo2'>
+    <p>Choose from materials such as granite, quartz, marble, and much more! </p>
+  </section>
+</div> : <img className='bigPicture'src={bigPicToggle}></img>}
+          
 
       {/* mapping the projects */}
 
-      <div className='projectsDisc'>
-
-      <section className='projectsInfo'>
-        <p>At Loya Granite we take pride in our work and are not afraid to take on a challenge. We look forward to collaborating with out customers to develop a plan that will ensure customer satisfaction.</p>
-      </section>
-      <section className='projectsInfo2'>
-        <p>Choose from materials such as granite, quartz, marble, and much more! </p>
-      </section>
-      </div>    
+   
       <div className='photoCollection'>
       <div className='photoMenu'>
       {assists.map((item, index) => {
@@ -139,7 +142,7 @@ return (
         </div>
 
       </div>
-    </div >
+    </div>
     </div>
   )
 }

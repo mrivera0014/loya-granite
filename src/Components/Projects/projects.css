@@ -2,23 +2,34 @@
 
 .projects{
     display: flex;
-    background: rgba(0,0,0,0.1);
     overflow: hidden;
-
+    min-height: 80vh;
 }
 .bigPicture{
-    min-width: 540px;
-    max-height: 700px;
+    position:fixed;
+    color: white;
+    text-transform: uppercase;
+    background: #3b414a;
+    width: 36vw;
+    height: 77vh;
     margin: .4rem;
+    margin-left: 2%;
     -webkit-clip-path: polygon(50% 0%,100% 25%,100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%,100% 25%,100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.bigPictureDiv{
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* description sub section. */
 
 .photoMenu{
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    
 }
 .projects_photos,.projectItems{
     display: block;
@@ -26,27 +37,35 @@
     min-height: 15vh;
     min-width: 33%;
     z-index: 100;
+    cursor: pointer;
+    background: transparent;
+    color: 3b414a;
+    
 }
+
 .projectItems{
     width: 100%;
+
+}
+.projectItems:active,.projectItems:hover{
+    background:#3b414a;
+    color: white;
 }
 
 .projectsDisc{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     max-width: 15vw;
     
 }
 .projectsInfo,.projectsInfo2{
     font-size: 1.2rem;
-    
-    padding: 1.5rem;
-    padding-top: 25%;
+    padding-top: 2%;   
 }
 
 /* photos sub section */
 .modal-pictures-picture,.project_item-img{
+    background:#3b414a;
     width: 100%;
     height: auto;
     display: block;
@@ -57,7 +76,7 @@
     /*gallery*/
     display: grid;
     grid-template-columns: repeat(8,1fr);
-    grid-auto-rows:245px;
+    grid-auto-rows:15%;
     grid-gap:1.5px;
 }
 .picture-container{
@@ -65,8 +84,8 @@
     cursor: pointer;
     display:flex;
     position: relative;
-    min-width: 280px;
-    min-height: 325px;
+    width: 15vw;
+    min-height: 40vh;
     opacity: 50%;
 
     -webkit-clip-path: polygon(50% 0%,100% 25%,100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -75,6 +94,7 @@
 }
 .picture-container:hover{
     opacity: 100%;
+    
 }
 .picture-container:first-child{
     /* gallery item*/
@@ -96,64 +116,68 @@
 }
 .picture-container:nth-child(4){
     /* gallery item*/
-    grid-row-start: 1;
-    grid-column: 8/ span 2;
-   
-}
-.picture-container:nth-child(5){
-    /* gallery item*/
     grid-row-start: 2;
     grid-column: 3/ span 2;
-   
 }
-.picture-container:nth-child(6){
+.picture-container:nth-child(5){
     /* gallery item*/
     grid-row-start: 2;
     grid-column: 5/ span 2;
    
 }
+.picture-container:nth-child(6){
+    /* gallery item*/
+    grid-row-start: 3;
+    grid-column: 2/ span 2;
+}
+   
+
 .picture-container:nth-child(7){
     /* gallery item*/
-    grid-row-start: 2;
-    grid-column: 7/ span 2;
-    width: 280px;
+    grid-row-start: 3;
+    grid-column: 4/ span 2;
 }
 .picture-container:nth-child(8){
     /* gallery item*/
     grid-row-start: 3;
-    grid-column: 2/ span 2;
-   
+    grid-column: 6/ span 2;
 }
 .picture-container:nth-child(9){
     /* gallery item*/
-    grid-row-start: 3;
-    grid-column: 4/ span 2;
+    grid-row-start: 4;
+    grid-column: 3/ span 2;
    
 }
 .picture-container:nth-child(10){
     /* gallery item*/
-    grid-row-start: 3;
-    grid-column: 6/ span 2;
+    grid-row-start: 4;
+    grid-column: 5/ span 2;
    
 }
 .picture-container:nth-child(11){
     /* gallery item*/
-    grid-row-start: 3;
-    grid-column: 8/ span 2;
+    grid-row-start: 5;
+    grid-column: 2/ span 2;
    
 }
 .picture-container:nth-child(12){
     /* gallery item*/
-    grid-row-start: 3;
-    grid-column: 8/ span 2;
+    grid-row-start:5;
+    grid-column: 4/ span 2;
+   
+}
+.picture-container:nth-child(13){
+    /* gallery item*/
+    grid-row-start:5;
+    grid-column: 6/ span 2;
    
 }
 .photoCollection{
     display: flex;
+    position: relative;
+    left: 40%;
     max-height: 40%;
     flex-direction: column;
-    border: 1px dotted black;
-
 }
 
 .hide{
@@ -162,5 +186,16 @@
 
 .show {
     display: flex;
+    padding-top:2% ;
+
 
 }
+
+
+@media screen and (min-width:900px) {
+    
+}
+
+
+
+/* 225 / 1320 */
