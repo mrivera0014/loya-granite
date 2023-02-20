@@ -11,9 +11,9 @@ const About = () => {
     useEffect(() => {
 
         // gsap.from('.granite', { duration: 2.5, x: '100', ease: 'power3.out', opacity: 0 })
-        gsap.from('.logoImage', { duration: 2.5, x: '-100', ease: 'power3.out', opacity: 0 })
+        // gsap.from('.logoImage', { duration: 2.5, x: '-100', ease: 'power3.out', opacity: 0 })
         gsap.from('.aboutLoyaGraniteSection', { duration: 2.5, x: '-100', opacity: 0 })
-        gsap.from('.reachUs', { duration: 2.5, x: '-100', opacity: 0 })
+        // gsap.from('.reachUs', { duration: 2.5, x: '-100', opacity: 0 })
         // gsap.from('.moreAboutLoyaGranite', { duration: 2.5, x: '-100', opacity: 0 })
     })
 

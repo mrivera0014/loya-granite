@@ -1,0 +1,14 @@
+article {
+    display: flex;
+}
+
+.starRating {
+    color: #fcdb03;
+}
+
+.reviewItem {
+    border: solid 2px black;
+    padding: 1rem;
+    min-width: 20rem;
+    margin: 1rem;
+}
