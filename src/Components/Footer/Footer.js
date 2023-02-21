@@ -7,7 +7,8 @@ const footer = () => {
         <h4 className={`footer-header`}>Loya Granite</h4>
         {/* <p className={`footer-contact`}>contact address</p> */}
 
-        <p className={`footer-phone`}>Phone: (661) 466-3286</p>
+        <p className={`footer-phone`}>Phone: (303) 977-6166</p>
+       
         <p className={`footer-email`}>Email: dieguito.loyagranite19@gmail.com</p>
       </div>
       <div className='footer-copyright'>
