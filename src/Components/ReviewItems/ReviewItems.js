@@ -3,6 +3,7 @@ export const reviewItems = [
 
     {
         reviewID: '01',
+        cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Christina',
         lastName: 'Santiago',
@@ -13,6 +14,7 @@ export const reviewItems = [
     },
     {
         reviewID: '02',
+        cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Sandy',
         lastName: 'K',
@@ -23,6 +25,7 @@ export const reviewItems = [
     },
     {
         reviewID: '03',
+        cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Ann',
         lastName: 'Roeber',
@@ -33,6 +36,7 @@ export const reviewItems = [
     },
     {
         reviewID: '04',
+        cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Stefani',
         lastName: 'W',
@@ -43,6 +47,7 @@ export const reviewItems = [
     },
     {
         reviewID: '05',
+        cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Kenja',
         lastName: 'S',
@@ -53,6 +58,7 @@ export const reviewItems = [
     },
     {
         reviewID: '06',
+        cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Natalie',
         lastName: 'M.',

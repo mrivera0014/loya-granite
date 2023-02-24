@@ -1,18 +1,19 @@
 import React, { useEffect } from 'react'
 import './About.css'
 
-import logoImage from './assets/LOYA-Logo-Color-WO-Text.png'
+// import logoImage from './assets/LOYA-Logo-Color-WO-Text.png'
 import fireplace from '../../assets/fireplace4.jpg'
 import { gsap } from 'gsap/all'
+import Reviews from '../Reviews/Reviews'
 
 const About = () => {
 
     useEffect(() => {
 
         // gsap.from('.granite', { duration: 2.5, x: '100', ease: 'power3.out', opacity: 0 })
-        gsap.from('.logoImage', { duration: 2.5, x: '-100', ease: 'power3.out', opacity: 0 })
+        // gsap.from('.logoImage', { duration: 2.5, x: '-100', ease: 'power3.out', opacity: 0 })
         gsap.from('.aboutLoyaGraniteSection', { duration: 2.5, x: '-100', opacity: 0 })
-        gsap.from('.reachUs', { duration: 2.5, x: '-100', opacity: 0 })
+        // gsap.from('.reachUs', { duration: 2.5, x: '-100', opacity: 0 })
         // gsap.from('.moreAboutLoyaGranite', { duration: 2.5, x: '-100', opacity: 0 })
     })
 
@@ -46,7 +47,7 @@ const About = () => {
                 </section> */}
                 {/* <img className='logoImage' src={logoImage} alt='loya-granite-logo-without-text' /> */}
             </div>
-
+            <Reviews />
         </div>
     )
 }
