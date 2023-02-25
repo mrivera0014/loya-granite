@@ -46,31 +46,31 @@ export default class Reviews extends Component {
 
         return (
             <div>
-                <h2>Reviews</h2>
-                <Slider {...settings}>
-                    {reviewItems.map((item, index) => {
-                        return (
-                            <div {...settings}>
-                                <div className={item.cName} key={item.reviewID}>
-                                    <div className='cardTop'>
-                                        <a target='_blank' href={item.sourceURL} className='advisorLink'>Home Advisor</a>
+                <section>
+                    <h2 className='Reviews'>Reviews</h2>
+                    <Slider {...settings}>
+                        {reviewItems.map((item, index) => {
+                            return (
+                                <div {...settings}>
+                                    <div className={item.cName} key={item.reviewID}>
+                                        <div className='cardTop'>
+                                            <a target='_blank' href={item.sourceURL} className='advisorLink'>Home Advisor</a>
 
-                                        <h4 className='reviewName'><BsFillStarFill className='starIcon' /> {item.ratingValue} {item.firstName} {item.lastName}</h4>
+                                            <h4 className='reviewName'><BsFillStarFill className='starIcon' /> {item.ratingValue} {item.firstName} {item.lastName}</h4>
 
-                                        <h5 className='reviewTitle'>{item.reviewTitle}</h5>
-                                        <p className='reviewDate'>{item.date}</p>
+                                            <h5 className='reviewTitle'>{item.reviewTitle}</h5>
+                                            <p className='reviewDate'>{item.date}</p>
+                                        </div>
+                                        <div className='cardBody'>
+                                            <p className='review'>{item.review}</p>
+                                        </div>
                                     </div>
-                                    <div className='cardBody'>
-                                        <p className='review'>{item.review}</p>
-                                    </div>
-
 
                                 </div>
-                            </div>
-                        )
-                    })}
-                </Slider>
-
+                            )
+                        })}
+                    </Slider>
+                </section>
             </div >
         )
     }
