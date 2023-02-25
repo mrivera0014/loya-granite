@@ -20,8 +20,8 @@ export default class Reviews extends Component {
                 {
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
                         infinite: true,
                         dots: true
                     }
@@ -46,15 +46,24 @@ export default class Reviews extends Component {
 
         return (
             <div>
+                <h2>Reviews</h2>
                 <Slider {...settings}>
                     {reviewItems.map((item, index) => {
                         return (
                             <div {...settings}>
                                 <div className={item.cName} key={item.reviewID}>
-                                    <h4 className='reviewName'><BsFillStarFill className='starRating' /> {item.ratingValue} {item.firstName} {item.lastName} {item.date}</h4>
-                                    <h5 className='reviewTitle'>{item.reviewTitle}</h5>
-                                    <p className='review'>{item.review}</p>
-                                    <a target='_blank' src={item.sourceURL}>Home Advisor</a>
+                                    <div className='cardTop'>
+                                        <a target='_blank' href={item.sourceURL} className='advisorLink'>Home Advisor</a>
+
+                                        <h4 className='reviewName'><BsFillStarFill className='starIcon' /> {item.ratingValue} {item.firstName} {item.lastName}</h4>
+
+                                        <h5 className='reviewTitle'>{item.reviewTitle}</h5>
+                                        <p className='reviewDate'>{item.date}</p>
+                                    </div>
+                                    <div className='cardBody'>
+                                        <p className='review'>{item.review}</p>
+                                    </div>
+
 
                                 </div>
                             </div>
