@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { NavItems } from "../NavItems/NavItems";
 import logo from "../Modal/assets/LOYA-logo-Color.png";
 import { BsFillTelephoneFill, BsFacebook, BsTypeH1 } from "react-icons/bs";
-import { AiOutlineMail, AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "./Nav.css";
 
 function Navbar() {
