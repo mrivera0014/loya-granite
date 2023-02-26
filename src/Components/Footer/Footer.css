@@ -2,7 +2,6 @@
     min-height: 15rem;
     min-width: 100%;
     background-color: #929292;
-    /* color: #333; */
     padding: 3rem;
     position: relative;
     bottom: 0;
@@ -56,6 +55,16 @@ section li {
 
 .socialMedia {
     color: #fff;
+    text-align: center;
+}
+
+.facebook {
+    margin-bottom: 1rem;
+}
+
+.facebookIcon {
+    color: #4267B2;
+    font-size: 24px;
 }
 
 .footer-copyright {
