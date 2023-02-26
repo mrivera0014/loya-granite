@@ -17,7 +17,7 @@ const footer = () => {
           <p className={`footer-email`}>Email: dieguito.loyagranite19@gmail.com</p>
         </section>
 
-        <section >
+        <section className='links'>
           {NavItems.map((item, index) => {
             return (
               <li key={index}>
