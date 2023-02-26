@@ -2,40 +2,103 @@
     min-height: 15rem;
     min-width: 100%;
     background-color: #929292;
-    color: #333;
-    padding: 3%;
+    padding: 3rem;
     position: relative;
     bottom: 0;
     margin-top: 2rem;
+    display: flex;
+    font-family: 'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
+    ;
+    font-size: 16px;
 }
 
 .footerInfo {
     margin-bottom: 1rem;
-    border-bottom: solid black 2px;
-    max-width: 100%;
-    line-height: 1.5rem;
+    line-height: 2rem;
     padding-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-phone,
+.footerLinks {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerLinks {
+    line-height: 2rem;
+}
+
+.footerLinks:hover,
+.footer-phone:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 0 auto;
+    line-height: 1.5rem;
+}
+
+section li {
+    list-style: none;
+}
+
+.socialMedia {
+    color: #fff;
+    text-align: center;
+}
+
+.facebook {
+    margin-bottom: 1rem;
+}
+
+.facebookIcon {
+    color: #4267B2;
+    font-size: 24px;
 }
 
 .footer-copyright {
-    left: 45%;
+    background-color: #929292;
     max-width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin-left: 5%;
+    color: #fff;
 }
 
 .loyaCopyright {
-    margin: auto;
+    height: 3rem;
+    text-align: center;
+    width: 80%;
+    padding: 1rem;
+    border-top: solid #000 2px;
+    margin: 0 auto;
 }
 
-.mscCopyright {
-    margin: auto;
-}
-
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
 
     .footer-copyright {
         margin-left: 0;
     }
+} */
+
+@media screen and (max-width: 769px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .haLogo {
+        margin: auto;
+    }
+
+
+
+
 }
