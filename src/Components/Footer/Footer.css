@@ -81,9 +81,24 @@ section li {
     margin: 0 auto;
 }
 
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
 
     .footer-copyright {
         margin-left: 0;
     }
+} */
+
+@media screen and (max-width: 769px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .haLogo {
+        margin: auto;
+    }
+
+
+
+
 }
