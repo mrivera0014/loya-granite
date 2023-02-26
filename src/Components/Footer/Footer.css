@@ -94,11 +94,21 @@ section li {
         flex-direction: column;
     }
 
+    .footerInfo {
+        text-align: center;
+    }
+
+    .links {
+        margin-bottom: 1rem;
+    }
+
     .haLogo {
         margin: auto;
     }
 
-
+    .socialMedia {
+        margin-top: 1rem;
+    }
 
 
 }
