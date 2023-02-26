@@ -17,13 +17,11 @@
         'Helvetica Neue',
         sans-serif;
     ;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .footerInfo {
     margin-bottom: 1rem;
-    border-bottom: solid black 2px;
-    max-width: 100%;
     line-height: 2rem;
     padding-bottom: 1rem;
     color: #fff;
@@ -68,19 +66,19 @@ section li {
 }
 
 .footer-copyright {
-    left: 45%;
+    background-color: #929292;
     max-width: 100%;
-    display: none;
-    justify-content: space-between;
-    margin-left: 5%;
+    display: flex;
+    color: #fff;
 }
 
 .loyaCopyright {
-    margin: auto;
-}
-
-.mscCopyright {
-    margin: auto;
+    height: 3rem;
+    text-align: center;
+    width: 80%;
+    padding: 1rem;
+    border-top: solid #000 2px;
+    margin: 0 auto;
 }
 
 @media (max-width: 640px) {
