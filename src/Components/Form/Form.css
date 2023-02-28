@@ -128,4 +128,8 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .englishHeader {
+        padding: 5px;
+    }
 }
