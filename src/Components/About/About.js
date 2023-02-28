@@ -49,39 +49,37 @@ const About = () => {
                     {spanish === false ? (
                         <div>
                             <h3 className='loyaGranite'>WHO IS LOYA GRANITE?</h3>
-                            <p className='loyaGraniteName'>Loya Granite</p><p className='aboutLoya'> is a family-owned and operated business with nearly two decades of experience . We are located in Thornton, CO. and proudly serve the Denver Metro area and have gone as far as Nebraska! </p>
+                            <p className='loyaGraniteName'>Loya Granite</p><p className='aboutLoya'> is a family-owned and operated business that boasts almost two decades of invaluable experience in the industry. Our establishment is conveniently situated in Thornton, CO, allowing us to deliver our exceptional services to the Denver Metro area. We take immense pride in our ability to cater to a vast range of clients, extending our reach as far as Nebraska. </p>
                             <br></br>
                             <br></br>
                             <h3>OUR WORK</h3>
                             <p>
-                                When you choose Loya Granite we make sure to communicate with you every step of the way, from choosing the correct material to the finished product. As a small business we understand the importance of high quality materials, fair pricing, and fine craftsmanship .  We also know that renovating one's home is a major investment that requires the utmost attention.  Unlike other installers we will never take shortcuts, instead at Loya Granite we look to create connections with our customers and look forward to bringing their ideas to life.
-                            </p>
-                            <br />
-                            <p>We provide service to home-owners, real estate agents, … etc. Some of our materials include but are not limited to marble, granite, quartz, and most recently porcelain.
+                                At Loya Granite, we deeply value the importance of high-quality materials, fair pricing, and excellent craftsmanship. We prioritize maintaining clear and open channels of communication with our clients, starting from the selection of materials and extending all the way to the finished product. We understand that home renovation is a significant investment that demands great attention to detail. Our commitment to establishing lasting relationships with our clients ensures that we consistently exceed expectations and bring their visions to life.
                             </p>
                             <br />
                             <p>
-                                Some of our work includes kitchen countertops, backsplash, bathrooms, fireplaces, and more! Our turnaround time varies from 3 days to a week and if your material is ready we will work hard to finish your project in less than two weeks!
+                                Our business caters to a diverse clientele that includes homeowners, real estate agents, and more. We specialize in an extensive range of materials, including but not limited to, marble, granite, quartz, and the newest addition to our collection, porcelain. Our expertise extends to a variety of projects, such as kitchen countertops, backsplashes, bathrooms, fireplaces, and more, ensuring that our clients receive top-notch results for every aspect of their home design needs.
                             </p>
                         </div>
 
                     ) : (
                         <div>
-                            <h3 className='loyaGranite'>ACERCE DE LOYA GRANITE</h3>
+                            <h3 className='loyaGranite'>ACERCA DE LOYA GRANITE</h3>
                             <p className='loyaGraniteName'>Loya Granite</p><p className='aboutLoya'> es un negocio familiar con casi dos décadas de experiencia. Estamos ubicados en Thornton, Colorado y servimos en el área de Denver. </p>
                             <br></br>
                             <br></br>
                             <h3>NUESTRO TRABAJO</h3>
                             <p>
-                                Cuando nosotros servimos a nuestros clientes nos aseguramos de siempre ayudarles a elegir el mejor material para su proyecto. Como microempresa entendemos la importancia de materiales de alta calidad, precios justos, y fine craftsmanship. También sabemos que reformar la casa es una gran inversión que requiere mucha atención. A diferencia de otras compañías nosotros nunca take shortcuts, instead at Loya Granite we look to create connections with our customers and look forward to bringing their ideas to life.
+                                Como microempresa, entendemos la importancia de ofrecer materiales de alta calidad a precios justos, y de proporcionar un trabajo artesanal con excelencia. En Loya Granite, nos aseguramos de guiarlos en la selección del mejor material para su proyecto, ya que sabemos que renovar un hogar es una gran inversión que requiere mucha atención y cuidado.
 
                             </p>
                             <br />
-                            <p>Trabajamos con dueños de casa, vendedores de casa, etc. Nuestros materiales incluyen mármol, granito, cuarzo, y más recientemente porcelana. Tenemos experiencia trabajando en cocinas, baños, chimeneas, y más!
+                            <p>
+                                Trabajamos con una variedad de clientes, incluyendo dueños de casa, agentes de bienes y raíces, y contratistas, entre otros. Ofrecemos una amplia gama de materiales de alta calidad, como mármol, granito, cuarzo y más recientemente porcelana. Contamos con una amplia experiencia en trabajos de remodelación y diseño de interiores, nuestra especialidad son cocinas, baños y chimeneas, aunque podemos trabajar en otros espacios según las necesidades de nuestros clientes.
                             </p>
                             <br />
                             <p>
-                                Nuestro tiempo de entrega varía entre tres días a una semana y si tenemos su material listo trabajaremos duro para terminar su proyecto en dos semanas!
+                                Estamos comprometidos en brindar un servicio personalizado y de alta calidad, nos esforzamos por cumplir con sus expectativas en todo momento.
                             </p>
                         </div>
                     )}
