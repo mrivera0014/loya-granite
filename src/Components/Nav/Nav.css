@@ -82,7 +82,7 @@ nav {
 
     .navbar.active {
         right: 0px;
-        z-index: 2;
+        z-index: 200;
     }
 
     .navbar li {
