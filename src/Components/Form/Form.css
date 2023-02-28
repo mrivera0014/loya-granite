@@ -110,8 +110,17 @@
 }
 
 
-@media (max-width: 640px) {
+@media only screen and (max-width: 640px) {
     .sub_section {
         margin-left: 2rem;
+    }
+    input, textArea,.button{
+        max-width: 16rem !important;
+    }
+    form,form > div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 }

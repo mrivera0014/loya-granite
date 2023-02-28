@@ -197,14 +197,20 @@
         display: none;
     }
     .photoCollection{
-        left:8%;
+        left:0%;
     }
     .picture-container{
-        width: 22vw;
+        width: 30vw;
     }
 }
 
 @media screen and (max-width:650px) {
+
+
+    .photoMenu{
+        display: flex;
+        flex-direction: column;
+    }
     .picture-container:first-child{
         /* gallery item*/
         grid-row-start: 1;
@@ -285,6 +291,10 @@
 .filler{
     display: none;
 }
+.projects{
+    height: 100vh;
+    overflow-y: scroll;
+}
 
 .picture-container{
     width: 65vw;
@@ -293,8 +303,12 @@
     grid-auto-rows: 6%;
     position: relative;
 }
-;.photoCollection{
+.photoCollection{
     left: 0;
+    
+} 
+.show{
+    height: 500vh;
 }
 }
 
