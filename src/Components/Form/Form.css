@@ -114,10 +114,15 @@
     .sub_section {
         margin-left: 2rem;
     }
-    input, textArea,.button{
+
+    input,
+    textArea,
+    .button {
         max-width: 16rem !important;
     }
-    form,form > div{
+
+    form,
+    form>div {
         display: flex;
         justify-content: center;
         flex-direction: column;

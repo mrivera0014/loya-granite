@@ -7,7 +7,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffff;
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 20px 80px;
     /* border-bottom: 2px solid black; */
     max-height: 8rem;
@@ -74,7 +74,7 @@ nav {
         right: -300px;
         width: 300px;
         height: 100vh;
-        background-color: #7c8798;
+        background-color: #929292;
         padding: 40px 0 0 10px;
         transition: 0.3s ease-in-out;
         z-index: 2;

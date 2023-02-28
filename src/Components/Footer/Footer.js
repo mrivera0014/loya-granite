@@ -20,7 +20,7 @@ const footer = () => {
         <section className='links'>
           {NavItems.map((item, index) => {
             return (
-              <li key={index}>
+              <li className='footerLinks' key={index}>
                 <Link className='footerLinks' to={item.path}>
                   {item.title}
                 </Link>
