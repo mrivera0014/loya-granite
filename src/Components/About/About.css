@@ -34,6 +34,37 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.loyaGranite {
+    margin-top: 2rem;
+}
+
+.spanishToggle {
+    font-family:
+        'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
+    font-weight: 600;
+    color: #ffff;
+    background: #929292;
+    height: 2rem;
+    float: right;
+    cursor: pointer;
+    padding: 3px;
+    margin-right: 5px;
+}
+
+.spanishToggle:hover {
+    color: #fcdb03;
+    text-decoration: underline;
+    transition: 1s;
+}
+
 .aboutLoyaGraniteSection {
     padding: 0.5rem;
     max-width: 30rem;
