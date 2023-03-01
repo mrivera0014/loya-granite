@@ -12,8 +12,10 @@ const footer = () => {
       <div className='footer'>
         <section className='footerInfo'>
           <h4 className={`footer-header`}>Loya Granite</h4>
-          <p className={`footer-address`}>851 E. 70th Ave, Thornton, CO.</p>
-          <a className={`footer-phone`} href="tel: 303-997-6166"> <BsFillTelephoneFill /> 303-977-6166</a>
+          <p className={`footer-address`}>851 Unit A2 E. 70th Ave, Thornton, CO.</p>
+          <a className={`footer-office`} href="tel: 303-997-6166"> <BsFillTelephoneFill /> Office: 303-977-6166</a>
+          <br />
+          <a className={`footer-cell`} href="tel: 303-903-5530"> <BsFillTelephoneFill /> Cell: 303-903-5530</a>
           <p className={`footer-email`}>Email: dieguito.loyagranite19@gmail.com</p>
         </section>
 
