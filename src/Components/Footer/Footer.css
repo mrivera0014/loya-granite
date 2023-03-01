@@ -34,11 +34,6 @@
     text-decoration: none;
 }
 
-.links {
-    margin: auto;
-    /* margin-bottom: 1rem; */
-}
-
 .footerLinks {
     line-height: 2rem;
     list-style: none !important;
