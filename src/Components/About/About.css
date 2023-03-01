@@ -68,7 +68,7 @@
 .aboutLoyaGraniteSection {
     padding: 0.5rem;
     width: 35rem;
-    /* margin: 1rem; */
+    margin: 1rem 0rem 0rem 10rem;
     float: left;
     background-color: #929292;
     box-shadow: 0px 5px 10px 0px #929292;
@@ -97,9 +97,10 @@
 }
 
 .fireplace {
-    max-height: 35rem;
-    margin-top: 5rem;
     box-shadow: 20px 20px rgba(0, 0, 0, .15);
+    max-height: 24rem;
+    margin-top: 5rem;
+    margin-left: 10rem;
 }
 
 .reachUs {
@@ -126,15 +127,21 @@
     margin-top: 2rem;
 }
 
-@media only screen and (min-width: 992px) {
-    .aboutLoyaGraniteSection {
-        margin-right: 6rem;
+@media only screen and (max-width: 1024px) {
+    .aboutbottom {
+        display: grid;
+        height: 1100px;
+    }
 
+    .aboutLoyaGraniteSection {
+        margin: auto;
+        width: 50rem;
     }
 
     .fireplace {
         max-height: 24rem;
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
+        margin: auto;
     }
 }
 
@@ -166,7 +173,7 @@
     }
 }
 
-@media (min-width: 641px) {
+/* @media (min-width: 641px) {
 
 
 
@@ -176,8 +183,4 @@
         margin-left: 5rem;
     }
 
-    /* .fireplace {
-        display: block;
-        margin: auto;
-    } */
-}
+} */
