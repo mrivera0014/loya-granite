@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e924cbd9.css",
-    "main.js": "/static/js/main.853c5090.js",
+    "main.css": "/static/css/main.6ef7f72b.css",
+    "main.js": "/static/js/main.2ce9930b.js",
     "static/media/close-up-black-marble-textured-background.jpg": "/static/media/close-up-black-marble-textured-background.ba96c168bbae7f8700dd.jpg",
     "static/media/black-marble-patterned-texture-background.jpg": "/static/media/black-marble-patterned-texture-background.f7e66ac50e972c89f613.jpg",
     "static/media/stone-floor-texture.jpg": "/static/media/stone-floor-texture.44556210ac5bd06d0b65.jpg",
     "static/media/LOYA-logo-Color.png": "/static/media/LOYA-logo-Color.31e7bc0250fdce81de3e.png",
-    "static/media/LOYA-Logo-Color-WO-Text.png": "/static/media/LOYA-Logo-Color-WO-Text.8e269a47450ac077f2b2.png",
+    "static/media/complete-kitchen-white-granite-grey-cabinets.jpg": "/static/media/complete-kitchen-white-granite-grey-cabinets.fba41ef0c55b93d9e286.jpg",
+    "static/media/kitchen-black-granite.jpg": "/static/media/kitchen-black-granite.b107a5b3b3016ca1f84e.jpg",
+    "static/media/fireplace4.jpg": "/static/media/fireplace4.6d7648f66029db95388a.jpg",
+    "static/media/kitchen-grey-island.jpg": "/static/media/kitchen-grey-island.e24d88b78abefb5de4df.jpg",
+    "static/media/kitchen1.jpg": "/static/media/kitchen1.d22b612a6e1742f993b6.jpg",
     "static/media/kitchen_counter_island_grey.jpg": "/static/media/kitchen_counter_island_grey.e44d8763352b54d45ea9.jpg",
     "static/media/kitchen_counter_island_counters_lighter_black_cabinet.jpg": "/static/media/kitchen_counter_island_counters_lighter_black_cabinet.524cc7d60e800be596a1.jpg",
     "static/media/bathroom_granite_two_sink_dark.jpg": "/static/media/bathroom_granite_two_sink_dark.60faa7a4287ccfbb7e6c.jpg",
@@ -27,12 +31,16 @@
     "static/media/bathroom_counter_sink_white.jpg": "/static/media/bathroom_counter_sink_white.7696bb6a0938d12c0e17.jpg",
     "static/media/fireplace_lighter.jpg": "/static/media/fireplace_lighter.62b37c970dd96fc05d5e.jpg",
     "static/media/kitchen_white_counters.jpg": "/static/media/kitchen_white_counters.232bd58444dddde4166f.jpg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.e924cbd9.css.map": "/static/css/main.e924cbd9.css.map",
-    "main.853c5090.js.map": "/static/js/main.853c5090.js.map"
+    "main.6ef7f72b.css.map": "/static/css/main.6ef7f72b.css.map",
+    "main.2ce9930b.js.map": "/static/js/main.2ce9930b.js.map"
   },
   "entrypoints": [
-    "static/css/main.e924cbd9.css",
-    "static/js/main.853c5090.js"
+    "static/css/main.6ef7f72b.css",
+    "static/js/main.2ce9930b.js"
   ]
 }
