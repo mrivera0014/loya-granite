@@ -18,6 +18,7 @@
         sans-serif;
     ;
     font-size: 16px;
+    justify-content: space-between;
 }
 
 .footerInfo {
@@ -47,15 +48,6 @@
 .footer-phone:hover {
     text-decoration: underline;
 }
-
-/* section {
-    margin: 0 auto;
-    line-height: 1.5rem;
-}
-
-section li {
-    list-style: none;
-} */
 
 .socialMedia {
     color: #fff;
@@ -105,7 +97,8 @@ section li {
     }
 
     .links {
-        margin-bottom: 1rem;
+        /* margin-bottom: 1rem; */
+        margin: auto;
     }
 
     .haLogo {
