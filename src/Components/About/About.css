@@ -157,6 +157,9 @@
     .granite {
         max-width: 100%;
         margin-top: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
 
     .aboutLoyaGraniteSection {
