@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './About.css'
-
+import parallax from '../../assets/kitchen1.jpg'
 // import logoImage from './assets/LOYA-Logo-Color-WO-Text.png'
 import fireplace from '../../assets/fireplace4.jpg'
 import { gsap } from 'gsap/all'
@@ -32,12 +32,12 @@ const About = () => {
 
     return (
 
-        <div className='aboutContain'>
-            <div className='granite' alt='kitchen-white-counters'  >
-            </div>
-
-            <h1 className='aboutTitle'>About Us</h1>
+        <div className='wrapper'>
+            <header className='aboutHeader'>
+                <img className='background' alt='kitchen-white-counters' src={parallax} />
+            </header>
             <div className='aboutbottom'>
+                <h1 className='aboutTitle'>About Us</h1>
                 <section className='aboutLoyaGraniteSection'>
                     {spanish === false ? (
                         <p className='spanishToggle' onClick={toggleText}>Español</p>
