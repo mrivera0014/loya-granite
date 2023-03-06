@@ -5,6 +5,7 @@ import parallax from '../../assets/kitchen1.jpg'
 import fireplace from '../../assets/fireplace4.jpg'
 import { gsap } from 'gsap/all'
 import Reviews from '../Reviews/Reviews'
+import ParallaxImg from '../Parallax/ImageOne'
 
 const About = () => {
 
@@ -33,9 +34,11 @@ const About = () => {
     return (
 
         <div className='wrapper'>
-            <header className='aboutHeader'>
+            {/* <header className='aboutHeader'>
                 <img className='background' alt='kitchen-white-counters' src={parallax} />
-            </header>
+            </header> */}
+
+            <ParallaxImg />
             <div className='aboutbottom'>
                 <h1 className='aboutTitle'>About Us</h1>
                 <section className='aboutLoyaGraniteSection'>
