@@ -1,13 +1,10 @@
-.wrapper {
-    /* background-repeat: no-repeat;
-    min-height: 100vh;
-    background-size: contain;
-    background-position: right; */
+/* .wrapper {
+   
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
-}
+} */
 
 .aboutTitle {
     background-color: #ffff;
