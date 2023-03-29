@@ -49,7 +49,7 @@ const About = () => {
                     {spanish === false ? (
                         <div>
                             <h3 className='loyaGranite'>WHO IS LOYA GRANITE?</h3>
-                            <p className='loyaGraniteName'>Loya Granite</p><p className='aboutLoya'> is a family-owned and operated business that boasts almost two decades of invaluable experience in the industry. Our establishment is conveniently situated in Thornton, CO, allowing us to deliver our exceptional services to the Denver Metro area. We take immense pride in our ability to cater to a vast range of clients, extending our reach as far as Nebraska. </p>
+                            <p className='loyaGraniteName'>Loya Granite</p><p className='aboutLoya'> is a family-owned and operated granite installation business that boasts almost two decades of invaluable experience in the industry. Our establishment is conveniently situated in Thornton, CO, allowing us to deliver our exceptional services to the Denver Metro area. We take immense pride in our ability to cater to a vast range of clients, extending our reach as far as Nebraska. </p>
                             <br></br>
                             <br></br>
                             <h3>OUR WORK</h3>

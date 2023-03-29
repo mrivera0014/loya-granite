@@ -6,7 +6,7 @@
 }
 
 .aboutTitle {
-    background-color: rgba(0, 0, 0, 0.1);
+    color: #929292;
     text-align: center;
     font-family:
         'Segoe UI',
@@ -31,7 +31,6 @@
 
 .aboutbottom {
     height: 1000px;
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .loyaGranite {
