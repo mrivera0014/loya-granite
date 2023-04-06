@@ -1,0 +1,27 @@
+.navbar {
+  background: #F7FFF7;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.navItems {
+  margin: 0;
+  padding: 16px;
+}
+
+.navItem {
+  text-decoration: none;
+  padding: 14px;
+  font-family: "Noto Sansa KR", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2B4570;
+}
+
+.navItem:hover {
+  background-color: #9590A8;
+  color: #2B4570;
+}

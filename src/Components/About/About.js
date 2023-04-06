@@ -4,6 +4,7 @@ import './About.css'
 // import logoImage from './assets/LOYA-Logo-Color-WO-Text.png'
 import fireplace from '../../assets/fireplace4.jpg'
 import { gsap } from 'gsap/all'
+import Logos from '../Logos/Logos'
 import Reviews from '../Reviews/Reviews'
 
 const About = () => {
@@ -92,6 +93,7 @@ const About = () => {
                 </section> */}
                 {/* <img className='logoImage' src={logoImage} alt='loya-granite-logo-without-text' /> */}
             </div>
+            <Logos />
             <Reviews />
         </div>
     )
