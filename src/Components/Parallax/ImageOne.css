@@ -1,0 +1,11 @@
+.imageOne {
+    height: 100vh;
+    position: sticky;
+
+}
+
+@media (max-width: 640px) {
+    .imageOne {
+        max-height: 50vh;
+    }
+}
