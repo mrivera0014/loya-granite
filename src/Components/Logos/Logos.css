@@ -1,0 +1,22 @@
+.providers {
+    background-color: rgba(0, 0, 0, .1);
+    height: 17rem;
+}
+
+.graniteProviders {
+    text-align: center;
+    padding: 1rem;
+}
+
+.provider {
+    max-height: 10rem;
+    background-color: blue;
+    /* max-width: 10rem !important; */
+}
+
+.providerLink,
+.provider {
+    max-width: 10rem !important;
+    display: block !important;
+    margin: 0 auto;
+}

@@ -4,6 +4,7 @@ import parallax from '../../assets/kitchen1.jpg'
 // import logoImage from './assets/LOYA-Logo-Color-WO-Text.png'
 import fireplace from '../../assets/fireplace4.jpg'
 import { gsap } from 'gsap/all'
+import Logos from '../Logos/Logos'
 import Reviews from '../Reviews/Reviews'
 import ParallaxImg from '../Parallax/ImageOne'
 
@@ -52,7 +53,7 @@ const About = () => {
                     {spanish === false ? (
                         <div>
                             <h3 className='loyaGranite'>WHO IS LOYA GRANITE?</h3>
-                            <p className='loyaGraniteName'>Loya Granite</p><p className='aboutLoya'> is a family-owned and operated business that boasts almost two decades of invaluable experience in the industry. Our establishment is conveniently situated in Thornton, CO, allowing us to deliver our exceptional services to the Denver Metro area. We take immense pride in our ability to cater to a vast range of clients, extending our reach as far as Nebraska. </p>
+                            <p className='loyaGraniteName'>Loya Granite</p><p className='aboutLoya'> is a family-owned and operated granite installation business that boasts almost two decades of invaluable experience in the industry. Our establishment is conveniently situated in Thornton, CO, allowing us to deliver our exceptional services to the Denver Metro area. We take immense pride in our ability to cater to a vast range of clients, extending our reach as far as Nebraska. </p>
                             <br></br>
                             <br></br>
                             <h3>OUR WORK</h3>
@@ -95,6 +96,7 @@ const About = () => {
                 </section> */}
                 {/* <img className='logoImage' src={logoImage} alt='loya-granite-logo-without-text' /> */}
             </div>
+            <Logos />
             <Reviews />
         </div>
     )
