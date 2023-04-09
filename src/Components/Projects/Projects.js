@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { assists, itemOne, itemTwo, itemThree } from './projectAssets/projectAssists';
+import { assists, itemOne, itemTwo, itemThree,materials } from './projectAssets/projectAssists';
 import './projects.css'
 import { gsap } from "gsap/all"
 import e from 'cors';
@@ -12,6 +12,7 @@ const ProjectsView = () => {
   const [projectToggle, setProjectToggle] = useState(false);
   const [modalToggle, setModalToggle] = useState("");
   const [bigPicToggle,setBigPicToggle] = useState("filler");
+  const [materialsToggle,setMartierlalsToggle] = useState(false);
 
 
 
@@ -30,6 +31,7 @@ const ProjectsView = () => {
   const openModal = (item) => {
     let modalToggleValue = ++item;
     setProjectToggle(true)
+    setMartierlalsToggle(false)
     if (modalToggleValue == 1) {
       setModalToggle("kitchen")
     }
@@ -46,6 +48,18 @@ const ProjectsView = () => {
 
     setBigPicToggle(item.itemitem);
     
+  }
+
+  let toggleMaterials = () =>{
+    if(materialsToggle == false){
+      setMartierlalsToggle(true);
+      setModalToggle(false);
+    } else {      
+      setMartierlalsToggle(false);
+    
+
+    }
+    console.log(materialsToggle)
   }
 
   // useEffect(() => {
@@ -65,7 +79,7 @@ const ProjectsView = () => {
   <section className='projectsInfo2'>
     <p>Choose from materials such as granite, quartz, marble, and much more! </p>
   </section>
-</div> : <img className={`bigPicture `}src={bigPicToggle}></img>}
+</div> : <img className={`bigPicture `}src={bigPicToggle} ></img>}
           
 
       {/* mapping the projects */}
@@ -73,10 +87,10 @@ const ProjectsView = () => {
    
       <div className='photoCollection'>
       <div className='photoMenu'>
-      {assists.map((item, index) => {
+      {assists.map((item, index) => { 
 
 return (
-  <div className='projects_photos' key={index}>
+  <div className='projects_photos' key={index}>       
     <button className={`projectItems`} onClick={() => openModal(index)}>
       <h1 className={`project_name`}>{item.name}</h1>
     </button>
@@ -87,12 +101,36 @@ return (
 
 })}
      </div>
+     <div >
+        <button className='projects_materials' onClick={toggleMaterials}>Materials</button>
+
+     </div>
 
       <div className={`modal ${projectToggle ? "show" : ""}`}>
 
+      <div className='materials_container'>
+        {materials.map((item,index)=>{
+            console.log(index)
+
+          return (
+            <div className={`materials ${materialsToggle ? "show" : ""}  `}>
+            <div  className={`materials-grid   `  }>
+              <div className={`materials-sub` }>{item.itemName}</div>
+              <div className={`materials-sub` } >{item.itemDesc}</div>
+              <div className={`materials-sub` }>{item.itemIdeal}</div>
+              <div className={`materials-sub` }>{item.itemRecommendation}</div> 
+              <div className={`materials-sub` }>{item.itemPrice}</div> 
+            </div>
+            </div>
+          )
+        })}
+        
+      </div>
+
+
         <div className={`modal-pictures`}>
 
-
+          
                 
 
           <div className={`${modalToggle == "kitchen" ? "show" : "hide"}`}>
@@ -148,3 +186,21 @@ return (
 }
 
 export default ProjectsView
+
+
+// Quartzite 
+//          .Natural Stone(Natural quartz)
+//          .Sealer required (Recommended once every six months.)
+//          . Medium maintenance required
+//          . Ideal for kitchen, bathrooms and fireplaces
+//          . Ideal for outside projects, weather resistant(Grills, or outer countertops)
+//          . Prices on quartzite are some of the highest of natural stone
+//          . Average slab cost 2300.00
+// Quartz
+//          .Laboratory fabricated (Unnatural stone)
+//          . No sealer required
+//          . Low maintenance required (regular cleaner will do)
+//          . Ideal for bathrooms, walls, and kitchens. (Not ideal for fireplaces)
+//          . Not Ideal for outside projects. Not weather resistant. 
+//          . Prices on quartz are very flexible depending on the brand or design.
+//          . Average Slab cost 1300.00 

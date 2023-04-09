@@ -38,14 +38,15 @@ export const assists = [
 
     {item:kitchenFinishedOne,
         name:"Kitchens Counters"
-
-    },
+},
     {item:bathroomOne,
         name: "Bathrooms"
 },
     {item:firePlaceOne,
         name: "Fire Places"
-}
+},
+
+
 
 
 ]
@@ -104,4 +105,34 @@ export const itemThree =[
 
 
 ]
+
+export const itemGranite = [
+    {itemitem: "granite"},
+    {itemitem:" .Sealer required (Recommended once every six months)"},
+    {itemitem:"Medium maintenance required "},
+    {itemitem:"Ideal for kitchen, bathrooms and fireplaces."},
+    {itemitem:".Ideal for outside projects, weather resistant(Grills, or outer countertops"},
+    {itemitem:"Prices vary on the highest grade of granite design and color"},
+    {itemitem:"Average slab cost 1500.00"}
+]
+
+export const materials =[
+    {
+    itemName:"Granite",
+    itemDesc:" Sealer required Recommended once every six months   Medium maintenance required " ,
+    itemIdeal: " Ideal for kitchen, bathrooms and fireplaces ", 
+    itemRecommendation:" .Ideal for outside projects, weather resistant Grills, or outer countertop " ,
+    itemPrice:"  Prices vary on the highest grade of granite design and color Average slab cost 1500.00"
+    },
+    {
+        itemName:"Marble",
+        itemDesc:"Natural Stone  Sealer required (Recommended once every six months) " ,
+        itemIdeal: "Ideal for bathrooms, walls or fireplaces. (Not recommended for kitchens)  Not ideal for outside projects.  ", 
+        itemRecommendation:" High maintenance required  " ,
+        itemPrice:"  Marble prices are one of the highest natural stones available. Average slab cost 2200.00 "
+    }    
+]
+
+
+
 
