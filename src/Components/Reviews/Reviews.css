@@ -11,6 +11,10 @@
         'Droid Sans',
         'Helvetica Neue',
         sans-serif;
+    border-top: #7c8798 solid 3px;
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
 }
 
 .starIcon {
@@ -41,6 +45,10 @@
         'Droid Sans',
         'Helvetica Neue',
         sans-serif;
+}
+
+.reviewItem:hover {
+    /* background-color: ; */
 }
 
 .slick-slider {

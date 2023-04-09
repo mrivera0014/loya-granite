@@ -1,12 +1,13 @@
-.aboutContain {
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    background-size: contain;
-    background-position: right;
-}
+/* .wrapper {
+   
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+} */
 
 .aboutTitle {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #ffff;
     text-align: center;
     font-family:
         'Segoe UI',
@@ -20,18 +21,30 @@
         sans-serif;
 }
 
-.granite {
-    background-image: url("../../assets/kitchen1.jpg");
-    min-height: 500px;
+.aboutHeader {
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    /* min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: translateZ(-10px) scale(2);
 }
 
 .aboutbottom {
     height: 1000px;
-    background-color: rgba(0, 0, 0, 0.1);
+
 }
 
 .loyaGranite {
@@ -67,8 +80,8 @@
 
 .aboutLoyaGraniteSection {
     padding: 0.5rem;
-    max-width: 30rem;
-    margin: 1rem;
+    width: 35rem;
+    margin: 1rem 0rem 0rem 10rem;
     float: left;
     background-color: #929292;
     box-shadow: 0px 5px 10px 0px #929292;
@@ -97,9 +110,10 @@
 }
 
 .fireplace {
-    max-height: 35rem;
-    margin-top: 5rem;
     box-shadow: 20px 20px rgba(0, 0, 0, .15);
+    max-height: 24rem;
+    margin-top: 5rem;
+    margin-left: 10rem;
 }
 
 .reachUs {
@@ -126,9 +140,21 @@
     margin-top: 2rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 1024px) {
+    .aboutbottom {
+        display: grid;
+        height: 1100px;
+    }
+
     .aboutLoyaGraniteSection {
-        margin-right: 10rem;
+        margin: auto;
+        width: 50rem;
+    }
+
+    .fireplace {
+        max-height: 24rem;
+        /* margin-top: 10rem; */
+        margin: auto;
     }
 }
 
@@ -137,9 +163,12 @@
         display: none;
     }
 
+    .aboutbottom {
+        height: 1200px;
+    }
+
     .granite {
         max-width: 100%;
-        margin-right: 1rem;
         margin-top: 0;
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -149,18 +178,25 @@
     .aboutLoyaGraniteSection {
         margin: auto;
         float: none;
+        width: 20rem;
     }
 
     .fireplace {
-        max-width: 20rem;
+        max-width: 19rem;
+        display: block;
+        margin: auto;
+        margin-top: 1rem;
     }
 }
 
-@media (min-width: 641px) {
+/* @media (min-width: 641px) {
+
+
 
     .aboutLoyaGraniteSection,
     .reachUs {
         margin-top: 5rem;
         margin-left: 5rem;
     }
-}
+
+} */

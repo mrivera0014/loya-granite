@@ -55,7 +55,7 @@ const Form = () => {
                         <input type="text" className="userInput inputPhone" name='phone' required />
                     </div>
                     <div className="messageSection">
-                        <p className="formText commentSection">Questions/Comments(Preguntas/Comentarios):</p>
+                        <p className="formText commentSection">Questions/Comments(Preguntas):</p>
                         <textarea className="userInput inputText" name='message' required></textarea>
                     </div>
                     <button type="submit" className="button" value="submit">Submit</button>

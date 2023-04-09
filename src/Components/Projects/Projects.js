@@ -43,11 +43,11 @@ const ProjectsView = () => {
     }
 
   }
-  let bigPicFunction = (item) =>{
-  
+  let bigPicFunction = (item) => {
+
 
     setBigPicToggle(item.itemitem);
-    
+
   }
 
   let toggleMaterials = () =>{
@@ -70,8 +70,8 @@ const ProjectsView = () => {
   return (
 
     <div className={`projects`}>
-   
-     {bigPicToggle == "filler" ? <div className='bigPicture bigPictureDiv' >
+
+      {bigPicToggle == "filler" ? <div className='bigPicture bigPictureDiv' >
 
   <section className='projectsInfo'>
     <p>At Loya Granite we take pride in our work and are not afraid to take on a challenge. We look forward to collaborating with out customers to develop a plan that will ensure customer satisfaction.</p>
@@ -84,7 +84,7 @@ const ProjectsView = () => {
 
       {/* mapping the projects */}
 
-   
+
       <div className='photoCollection'>
       <div className='photoMenu'>
       {assists.map((item, index) => { 
@@ -95,8 +95,8 @@ return (
       <h1 className={`project_name`}>{item.name}</h1>
     </button>
 
-  </div>
-)
+              </div>
+            )
 
 
 })}
@@ -128,59 +128,59 @@ return (
       </div>
 
 
-        <div className={`modal-pictures`}>
+          <div className={`modal-pictures`}>
 
           
                 
 
-          <div className={`${modalToggle == "kitchen" ? "show" : "hide"}`}>
+            <div className={`${modalToggle == "kitchen" ? "show" : "hide"}`}>
 
-            <div className={`modal-pictures-sub`}>
-              {kitchen.map((item, index) => {
-                return (
-                  <div className={`picture-container`} onClick={() => bigPicFunction(item)}>
-                  <img className={`modal-pictures-picture ${item.itemitem}`} src={item.itemitem}></img>
-                  </div>
+              <div className={`modal-pictures-sub`}>
+                {kitchen.map((item, index) => {
+                  return (
+                    <div className={`picture-container`} onClick={() => bigPicFunction(item)}>
+                      <img className={`modal-pictures-picture ${item.itemitem}`} src={item.itemitem}></img>
+                    </div>
+                  )
+                }
                 )
-              }
-              )
-              }
+                }
+              </div>
+            </div>
+            <div className={` ${modalToggle == "bathroom" ? "show" : "hide"}`}>
+
+              <div className={`modal-pictures-sub`}>
+
+                {bathroom.map((item, index) => {
+                  return (
+                    <div className={`picture-container`} onClick={() => bigPicFunction(item)}>
+                      <img className={`modal-pictures-picture ${item.itemitem}`} src={item.itemitem}></img>
+                    </div>
+                  )
+                }
+                )
+                } </div>
+            </div>
+            <div className={` ${modalToggle == "fireplace" ? "show" : "hide"}`}>
+
+              <div className={`modal-pictures-sub`}>
+
+                {firePlace.map((item, index) => {
+                  return (
+
+                    <div className={`picture-container`} onClick={() => bigPicFunction(item)}>
+                      <img className={`modal-pictures-picture ${item.itemitem}`} src={item.itemitem}></img>
+                    </div>
+                  )
+                }
+                )
+                }
+              </div>
             </div>
           </div>
-          <div className={` ${modalToggle == "bathroom" ? "show" : "hide"}`}>
 
-            <div className={`modal-pictures-sub`}>
-
-              {bathroom.map((item, index) => {
-                return (
-                  <div className={`picture-container`} onClick={() => bigPicFunction(item)}>
-                  <img className={`modal-pictures-picture ${item.itemitem}`} src={item.itemitem}></img>
-                  </div>
-                )
-              }
-              )
-              } </div>
-          </div>
-          <div className={` ${modalToggle == "fireplace" ? "show" : "hide"}`}>
-
-            <div className={`modal-pictures-sub`}>
-
-              {firePlace.map((item, index) => {
-                return (
-                  
-                  <div className={`picture-container`} onClick={() => bigPicFunction(item)}>
-                  <img className={`modal-pictures-picture ${item.itemitem}`} src={item.itemitem}></img>
-                  </div>
-                )
-              }
-              )
-              }
-            </div>
-          </div>
         </div>
-
       </div>
-    </div>
     </div>
   )
 }
