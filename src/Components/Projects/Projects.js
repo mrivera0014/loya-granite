@@ -117,9 +117,12 @@ return (
             <div  className={`materials-grid   `  }>
               <div className={`materials-sub` }>{item.itemName}</div>
               <div className={`materials-sub` } >{item.itemDesc}</div>
-              <div className={`materials-sub` }>{item.itemIdeal}</div>
-              <div className={`materials-sub` }>{item.itemRecommendation}</div> 
-              <div className={`materials-sub` }>{item.itemPrice}</div> 
+              <div className={`materials-sub` }>{item.itemSealRequirement}</div>
+              <div className={`materials-sub` }>{item.itemMaintenance}</div> 
+              <div className={`materials-sub` }>{item.itemIdeal}</div> 
+              <div className={`materials-sub` }>{item.itemOutsideCapability}</div> 
+              <div className={`materials-sub` }>{item.itemValueDesc}</div> 
+              <div className={`materials-sub` }>{item.itemValue}</div> 
             </div>
             </div>
           )
@@ -187,20 +190,3 @@ return (
 
 export default ProjectsView
 
-
-// Quartzite 
-//          .Natural Stone(Natural quartz)
-//          .Sealer required (Recommended once every six months.)
-//          . Medium maintenance required
-//          . Ideal for kitchen, bathrooms and fireplaces
-//          . Ideal for outside projects, weather resistant(Grills, or outer countertops)
-//          . Prices on quartzite are some of the highest of natural stone
-//          . Average slab cost 2300.00
-// Quartz
-//          .Laboratory fabricated (Unnatural stone)
-//          . No sealer required
-//          . Low maintenance required (regular cleaner will do)
-//          . Ideal for bathrooms, walls, and kitchens. (Not ideal for fireplaces)
-//          . Not Ideal for outside projects. Not weather resistant. 
-//          . Prices on quartz are very flexible depending on the brand or design.
-//          . Average Slab cost 1300.00 

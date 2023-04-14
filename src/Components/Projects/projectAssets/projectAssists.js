@@ -119,18 +119,46 @@ export const itemGranite = [
 export const materials =[
     {
     itemName:"Granite",
-    itemDesc:" Sealer required Recommended once every six months   Medium maintenance required " ,
+    itemDesc:"Natural Stone",
+    itemMaintenance:"Medium maintenance required",
+    itemSealRequirement:" Sealer required Recommended once every six months",
+    itemMaintenance:"Medium maintenance required " ,
     itemIdeal: " Ideal for kitchen, bathrooms and fireplaces ", 
-    itemRecommendation:" .Ideal for outside projects, weather resistant Grills, or outer countertop " ,
-    itemPrice:"  Prices vary on the highest grade of granite design and color Average slab cost 1500.00"
+    itemOutsideCapability:" .Ideal for outside projects, weather resistant Grills, or outer countertop " ,
+    itemValueDesc:"  Prices vary on the highest grade of granite design and color",
+    itemValue:"Average slab cost 1500.00"
     },
     {
         itemName:"Marble",
-        itemDesc:"Natural Stone  Sealer required (Recommended once every six months) " ,
-        itemIdeal: "Ideal for bathrooms, walls or fireplaces. (Not recommended for kitchens)  Not ideal for outside projects.  ", 
-        itemRecommendation:" High maintenance required  " ,
-        itemPrice:"  Marble prices are one of the highest natural stones available. Average slab cost 2200.00 "
-    }    
+        itemDesc:"Natural Stone ",
+        itemMaintenance:" High maintenance required  " ,
+        itemSealRequirement: "Sealer required (Recommended once every six months) " ,
+        itemMaintenance:" High maintenance required  " ,
+        itemIdeal: "Ideal for bathrooms, walls or fireplaces.", 
+        itemOutsideCapability:"(Not recommended for kitchens)  Not ideal for outside projects.  ", 
+        itemValueDesc:"  Marble prices are one of the highest natural stones available.",
+        itemValue:" Average slab cost 2200.00 "
+    },
+    
+{
+    itemName:"Quartzite", 
+    itemDesc: ".Natural Stone(Natural quartz)",
+    itemSealRequirement:".Sealer required (Recommended once every six months.)",
+    itemMaintenance:". Medium maintenance required",
+    itemIdeal:". Ideal for kitchen, bathrooms and fireplaces",
+    itemOutsideCapability:". Ideal for outside projects, weather resistant(Grills, or outer countertops)",
+    itemValueDesc:". Prices on quartzite are some of the highest of natural stone",
+    itemValue:". Average slab cost 2300.00"
+   },
+   {
+    itemName:"Quartz",
+    itemDesc:".Laboratory fabricated (Unnatural stone)",
+    itemSealRequirement:". No sealer required",
+    itemMaintenance:". Low maintenance required (regular cleaner will do)",
+    itemIdeal:"Ideal for bathrooms, walls, and kitchens. (Not ideal for fireplaces)",
+    itemOutsideCapability:". Not Ideal for outside projects. Not weather resistant.",
+    itemValueDesc: ". Prices on quartz are very flexible depending on the brand or design.",
+    itemValue:". Average Slab cost 1300.00" }    
 ]
 
 

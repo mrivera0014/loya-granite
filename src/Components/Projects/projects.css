@@ -429,7 +429,7 @@
     object-fit: fill;
 }
 .projects_materials{
-    width: 100%;
+    width: 59%;
     min-height: 15vh;
     color: white;
     background: black;
@@ -445,7 +445,6 @@
 .materials{
     height: 82%;
     display: none;
-    color: white;
     margin: 5px;
     
 }
@@ -455,7 +454,7 @@
 }
 
 .materials-sub{
-    background: black;
+    /* background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -467,7 +466,7 @@
     -webkit-clip-path: polygon(50% 0%,100% 25%,100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%,100% 25%,100% 75%, 50% 100%, 0% 75%, 0% 25%);
    
-    
+     */
 }
 
 
