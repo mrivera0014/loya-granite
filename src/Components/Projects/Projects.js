@@ -114,7 +114,7 @@ return (
 
           return (
             <div className={`materials ${materialsToggle ? "show" : ""}  `}>
-            <div  className={`materials-grid   `  }>
+            <div  className={`materials-subContainer   `  }>
               <div className={`materials-sub` }>{item.itemName}</div>
               <div className={`materials-sub` } >{item.itemDesc}</div>
               <div className={`materials-sub` }>{item.itemSealRequirement}</div>

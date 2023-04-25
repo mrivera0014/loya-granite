@@ -429,12 +429,13 @@
     object-fit: fill;
 }
 .projects_materials{
-    width: 59%;
+    width: 99%;
     min-height: 15vh;
     color: white;
     background: black;
     font-size: 200%;
     cursor:pointer;
+
 }
 .projects_materials:hover{
     background: rgba(0,0,0,0.5);
@@ -443,35 +444,39 @@
 
 
 .materials{
-    height: 82%;
+    height: 100%;
     display: none;
     margin: 5px;
     
 }
 .materials_container{
-    overflow-y: scroll;
+    overflow: auto;
+    box-shadow: 15px 15px 1px black ;
 
 }
 
-.materials-sub{
-    /* background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    height: 20rem;
-    width: 100%;
-    border: 1px solid white;
-    position: relative; 
-    -webkit-clip-path: polygon(50% 0%,100% 25%,100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    clip-path: polygon(50% 0%,100% 25%,100% 75%, 50% 100%, 0% 75%, 0% 25%);
-   
-     */
+
+.materials-subContainer{
+    padding: 0.5rem;
+    width: 35rem;
+    margin: 1rem 0rem 0rem 10rem;
+    float: left;
+    background-color: #929292;
+    box-shadow: 0px 5px 10px 0px #929292;
+    color: #ffff;
+    font-family:
+        'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
 }
 
-
-
-.modal-pictures-sub,.materials-grid{
+.modal-pictures-sub{
     /*gallery*/
     display: grid;
     grid-template-columns: repeat(8,1fr);
@@ -598,6 +603,7 @@
     position: relative;
     left: 40%;
     max-height: 40%;
+    width: 60%;
     flex-direction: column;
 }
 
@@ -608,7 +614,6 @@
 } 
 
 .show {
-        display: grid;
     grid-template-columns: repeat(8,1fr);
     grid-auto-rows:15%;
     grid-gap:1.5px;
@@ -626,6 +631,7 @@
     }
     .photoCollection{
         left:0%;
+
     }
     .picture-container{
         width: 30vw;
