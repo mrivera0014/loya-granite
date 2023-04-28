@@ -124,7 +124,16 @@ return (
               <div className={`materials-sub` }>{item.itemValueDesc}</div> 
               <div className={`materials-sub` }>{item.itemValue}</div> 
             </div>
-            </div>
+
+
+            <div className='materials_example-container'>example section with clickable pictures
+              
+              </div > 
+              <div className={`materials_example-item`}>
+              example picture
+
+              </div>
+          </div>  
           )
         })}
         
