@@ -50,18 +50,7 @@ const ProjectsView = () => {
 
   }
 
-  let toggleMaterials = () =>{
-    if(materialsToggle == false){
-      setMartierlalsToggle(true);
-      setModalToggle(false);
-    } else {      
-      setMartierlalsToggle(false);
-    
-
-    }
-    console.log(materialsToggle)
-  }
-
+ 
   // useEffect(() => {
   //   gsap.from('.projects', { duration: 2.5, y: '-100', ease: 'power3.out', opacity: 0 })
   // })
@@ -101,43 +90,9 @@ return (
 
 })}
      </div>
-     <div >
-        <button className='projects_materials' onClick={toggleMaterials}>Materials</button>
-
-     </div>
+    
 
       <div className={`modal ${projectToggle ? "show" : ""}`}>
-
-      <div className='materials_container'>
-        {materials.map((item,index)=>{
-            console.log(index)
-
-          return (
-            <div className={`materials ${materialsToggle ? "show" : ""}  `}>
-            <div  className={`materials-subContainer   `  }>
-              <div className={`materials-sub` }>{item.itemName}</div>
-              <div className={`materials-sub` } >{item.itemDesc}</div>
-              <div className={`materials-sub` }>{item.itemSealRequirement}</div>
-              <div className={`materials-sub` }>{item.itemMaintenance}</div> 
-              <div className={`materials-sub` }>{item.itemIdeal}</div> 
-              <div className={`materials-sub` }>{item.itemOutsideCapability}</div> 
-              <div className={`materials-sub` }>{item.itemValueDesc}</div> 
-              <div className={`materials-sub` }>{item.itemValue}</div> 
-            </div>
-
-
-            <div className='materials_example-container'>example section with clickable pictures
-              
-              </div > 
-              <div className={`materials_example-item`}>
-              example picture
-
-              </div>
-          </div>  
-          )
-        })}
-        
-      </div>
 
 
           <div className={`modal-pictures`}>

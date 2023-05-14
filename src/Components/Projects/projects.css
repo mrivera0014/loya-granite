@@ -388,104 +388,7 @@
     flex-direction: row;
     
 }
-.projects_photos,.projectItems{
-    display: block;
-    border: none;
-    min-height: 15vh;
-    min-width: 33%;
-    z-index: 100;
-    cursor: pointer;
-    background: transparent;
-    color: 3b414a;
-    
-}
 
-.projectItems{
-    width: 100%;
-
-}
-.projectItems:active,.projectItems:hover{
-    background:#3b414a;
-    color: white;
-}
-
-.projectsDisc{
-    display: flex;
-    flex-direction: column;
-    max-width: 15vw;
-    
-}
-.projectsInfo,.projectsInfo2{
-    font-size: 1.2rem;
-    padding-top: 2%;   
-}
-
-/* photos sub section */
-.modal-pictures-picture,.project_item-img{
-    background:#3b414a;
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: fill;
-}
-.projects_materials{
-    width: 99%;
-    min-height: 15vh;
-    color: white;
-    background: black;
-    font-size: 200%;
-    cursor:pointer;
-
-}
-.projects_materials:hover{
-    background: rgba(0,0,0,0.5);
-}
-
-
-
-.materials{
-    display: none;
-    flex-direction: column;
-
-    margin: 5px;
-    
-}
-.materials_container{
-    overflow: auto;
-    box-shadow: 15px 15px 1px black ;
-
-}
-
-
-.materials-subContainer{
-    padding: 0.5rem;
-    width: 35rem;
-    margin: 1rem 0rem 0rem 10rem;
-    float: left;
-    background-color: #929292;
-    box-shadow: 0px 5px 10px 0px #929292;
-    color: #ffff;
-    font-family:
-        'Segoe UI',
-        'Roboto',
-        'Oxygen',
-        'Ubuntu',
-        'Cantarell',
-        'Fira Sans',
-        'Droid Sans',
-        'Helvetica Neue',
-        sans-serif;
-}
-.materials_example-container{
-    width: 15vw;
-    min-height: 40vh;
-color: white;
-background: black;
-display: grid;
-grid-template-columns: repeat(8,1fr);
-grid-auto-rows:15%;
-grid-gap:1.5px;
-}
 .materials_example-item{
     background: lightblue;
     -webkit-clip-path: polygon(50% 0%,100% 25%,100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -515,28 +418,7 @@ grid-gap:1.5px;
     opacity: 100%;
     
 }
-.materials-sub:first-child{
-    grid-row-start: 1;
-    grid-column: 3/ span 2; 
-}
-.materials-sub:nth-child(2){
-    grid-row-start: 2;
-    grid-column: 2/ span 2; 
-}
 
-.materials-sub:nth-child(3){
-    grid-row-start: 2;
-    grid-column: 4/ span 2; 
-}
-
-.materials-sub:nth-child(4){
-    grid-row-start: 3;
-    grid-column: 1/ span 2; 
-}
-.materials-sub:nth-child(5){
-    grid-row-start: 3;
-    grid-column: 3/ span 2; 
-}
 .picture-container:first-child{
     /* gallery item*/
     grid-row-start: 1;
