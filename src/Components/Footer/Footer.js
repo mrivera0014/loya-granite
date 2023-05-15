@@ -31,6 +31,8 @@ const footer = () => {
           })}
         </section>
         <a className='haLogo' href="http://www.homeadvisor.com/rated.Loyagranite.109184108.html" target='_blank'><img alt="Loya Granite & Design - Reviews on Home Advisor" src="http://www.homeadvisor.com/images/sp-badges/soap-solid-border.png?sp=109184108&key=e9fdc08ab40001e2c4515b1539c8e690" /></a>
+        <img className='haLogo' alt="Loya Granite & Design - Reviews on Home Advisor" src="https://cdn1.homeadvisor.com/images/sp-badges/toprated.png" />
+        <img className='haLogo' alt="Loya Granite & Design - Reviews on Home Advisor" src="https://cdn1.homeadvisor.com/images/sp-badges/elite.png" />
         <section className='socialMedia'>
           <p className='facebook'>Follow us on Facebook :</p>
           <a
