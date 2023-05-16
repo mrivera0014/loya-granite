@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-import { BsFillTelephoneFill, BsFacebook, BsTypeH1 } from "react-icons/bs";
+import { BsFillTelephoneFill, BsFacebook } from "react-icons/bs";
 import { NavItems } from '../NavItems/NavItems';
 import './Footer.css'
 
