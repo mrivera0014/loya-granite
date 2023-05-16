@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.map {
+    border: none !important;
+}
+
+@media only screen and (max-width: 640px) {
+
+    .map {
+        max-width: 40%;
+    }
+}
