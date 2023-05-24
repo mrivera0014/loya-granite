@@ -47,8 +47,11 @@
         sans-serif;
 }
 
-.reviewItem:hover {
-    /* background-color: ; */
+.reviewName,
+.reviewDate,
+.review,
+.reviewTitle {
+    margin: auto;
 }
 
 .slick-slider {
