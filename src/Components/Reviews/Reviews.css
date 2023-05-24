@@ -47,6 +47,13 @@
         sans-serif;
 }
 
+.reviewName,
+.reviewDate,
+.review,
+.reviewTitle {
+    margin: auto;
+}
+
 .slick-slider {
     width: 85%;
     margin: auto;
