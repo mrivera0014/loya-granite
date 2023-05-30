@@ -67,6 +67,7 @@
 }
 .materials_subContainer-value{
     grid-row-start: 5;
+    
     grid-column: 1/span 3;
 }
 .materials_subContainer-valueDesc{
