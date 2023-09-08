@@ -75,6 +75,11 @@
     margin: 0 auto;
 }
 
+.topRated,
+.eliteService {
+    height: fit-content;
+}
+
 /* @media (max-width: 640px) {
 
     .footer-copyright {
