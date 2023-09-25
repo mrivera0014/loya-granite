@@ -1,6 +1,11 @@
 .container {
-    display: flex;
+    display: grid;
     justify-content: center;
+}
+
+.locationTitle {
+    text-align: center;
+    padding: 1rem;
 }
 
 .map {
@@ -10,6 +15,7 @@
 @media only screen and (max-width: 640px) {
 
     .map {
-        max-width: 40%;
+        max-width: 90%;
+        padding: 1.2rem;
     }
 }

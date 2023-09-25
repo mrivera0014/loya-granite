@@ -17,30 +17,6 @@ import "slick-carousel/slick/slick-theme.css";
 export default class Logos extends Component {
     render() {
 
-        // const logoList = [
-        //     {
-        //         src: '../../assets/arizonaTileLogo.png',
-        //         alt: 'arizonaTileLogo providers',
-        //         cName: 'arizonaTileLogo provider',
-
-        //     },
-        //     {
-        //         src: { crossvilleStudiosLogo },
-        //         alt: 'crossvilleStudiosLogo',
-        //         cName: 'crossvilleStudiosLogo provider',
-        //     },
-        //     {
-        //         src: { ESILogo },
-        //         alt: 'ESILogo',
-        //         cName: 'ESILogo provider',
-        //     },
-        //     {
-        //         src: { stoneCollection },
-        //         alt: 'stoneCollectionLogo',
-        //         cName: 'stonecolletionLogo provider',
-        //     },
-        // ]
-
         const settings = {
             dots: false,
             infinite: true,

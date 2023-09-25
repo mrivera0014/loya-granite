@@ -13,11 +13,11 @@ export const NavItems = [
         path: '/Projects'
 
     },
-    {
-        title:'Materials',
-        cName:'materialsTab navItem',
-        path:'/Materials'
-    },
+    // {
+    //     title:'Materials',
+    //     cName:'materialsTab navItem',
+    //     path:'/Materials'
+    // },
     {
         title: 'Contact Us',
         cName: 'navContact navItem',

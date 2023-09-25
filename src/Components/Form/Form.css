@@ -11,6 +11,7 @@
     margin: auto;
     justify-items: center;
     margin-top: 3rem;
+    margin-bottom: 3rem;
     box-shadow: 1px 1px 5px 5px #7c8798;
 }
 
@@ -63,6 +64,11 @@
     border: none;
     cursor: pointer;
     margin-top: 1rem;
+}
+
+.button:hover {
+    background: #3b414a;
+
 }
 
 .sub_section {
