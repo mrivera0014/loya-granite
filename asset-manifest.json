@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e379dbd.css",
-    "main.js": "/static/js/main.ee62b706.js",
-    "static/media/close-up-black-marble-textured-background.jpg": "/static/media/close-up-black-marble-textured-background.ba96c168bbae7f8700dd.jpg",
-    "static/media/black-marble-patterned-texture-background.jpg": "/static/media/black-marble-patterned-texture-background.f7e66ac50e972c89f613.jpg",
-    "static/media/stone-floor-texture.jpg": "/static/media/stone-floor-texture.44556210ac5bd06d0b65.jpg",
+    "main.css": "/static/css/main.0d4fe892.css",
+    "main.js": "/static/js/main.d9cd3ef2.js",
     "static/media/LOYA-logo-Color.png": "/static/media/LOYA-logo-Color.31e7bc0250fdce81de3e.png",
+    "static/media/granite-texture-blue.jpg": "/static/media/granite-texture-blue.fe3d7c1d824eeeb2b9ca.jpg",
     "static/media/complete-kitchen-white-granite-grey-cabinets.jpg": "/static/media/complete-kitchen-white-granite-grey-cabinets.fba41ef0c55b93d9e286.jpg",
     "static/media/kitchen-black-granite.jpg": "/static/media/kitchen-black-granite.b107a5b3b3016ca1f84e.jpg",
     "static/media/fireplace4.jpg": "/static/media/fireplace4.6d7648f66029db95388a.jpg",
     "static/media/kitchen-grey-island.jpg": "/static/media/kitchen-grey-island.e24d88b78abefb5de4df.jpg",
     "static/media/kitchen1.jpg": "/static/media/kitchen1.053b07e7bb3dc70b295c.jpg",
+    "static/media/marble-texture-white.jpg": "/static/media/marble-texture-white.9c150c574d53cefc7e70.jpg",
     "static/media/kitchen_counter_island_grey.jpg": "/static/media/kitchen_counter_island_grey.e44d8763352b54d45ea9.jpg",
     "static/media/ESI-Logo.jpg": "/static/media/ESI-Logo.1274f3c359829ae700b8.jpg",
     "static/media/kitchen_counter_island_counters_lighter_black_cabinet.jpg": "/static/media/kitchen_counter_island_counters_lighter_black_cabinet.524cc7d60e800be596a1.jpg",
@@ -25,6 +24,7 @@
     "static/media/kitchen_island.jpg": "/static/media/kitchen_island.7dede1cd306f8cd6eb63.jpg",
     "static/media/kitchen_counter_angle_2.jpg": "/static/media/kitchen_counter_angle_2.969328de7cc5c222f702.jpg",
     "static/media/fireplace_grey.jpg": "/static/media/fireplace_grey.589676719ae291bfb847.jpg",
+    "static/media/quartz-texture-yellow.jpg": "/static/media/quartz-texture-yellow.b39eee996002b252b19d.jpg",
     "static/media/kitchen_counter_island_lighter.jpg": "/static/media/kitchen_counter_island_lighter.04ae93fe21daa59fe45f.jpg",
     "static/media/kitchen_t_island.jpg": "/static/media/kitchen_t_island.3e3f35ffa662265b07ad.jpg",
     "static/media/kitchen_counter_white.jpg": "/static/media/kitchen_counter_white.575271197d84cf5e29e8.jpg",
@@ -33,6 +33,7 @@
     "static/media/bathroom_counter_sink_white.jpg": "/static/media/bathroom_counter_sink_white.7696bb6a0938d12c0e17.jpg",
     "static/media/fireplace_lighter.jpg": "/static/media/fireplace_lighter.62b37c970dd96fc05d5e.jpg",
     "static/media/kitchen_white_counters.jpg": "/static/media/kitchen_white_counters.232bd58444dddde4166f.jpg",
+    "static/media/quartzite-texture-yellow.jpg": "/static/media/quartzite-texture-yellow.a3cc2c409247e04f649f.jpg",
     "static/media/arizonaTileLogo.png": "/static/media/arizonaTileLogo.3f8a6d5e6a442f0532bc.png",
     "static/media/arizonaTileLogo2.png": "/static/media/arizonaTileLogo2.708d21d065df5b8ee9a3.png",
     "static/media/theStoneCollectionLogo.jpg": "/static/media/theStoneCollectionLogo.8d859d0c2196c69e35da.jpg",
@@ -41,11 +42,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.4e379dbd.css.map": "/static/css/main.4e379dbd.css.map",
-    "main.ee62b706.js.map": "/static/js/main.ee62b706.js.map"
+    "main.0d4fe892.css.map": "/static/css/main.0d4fe892.css.map",
+    "main.d9cd3ef2.js.map": "/static/js/main.d9cd3ef2.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e379dbd.css",
-    "static/js/main.ee62b706.js"
+    "static/css/main.0d4fe892.css",
+    "static/js/main.d9cd3ef2.js"
   ]
 }
