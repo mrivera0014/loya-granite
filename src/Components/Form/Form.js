@@ -62,35 +62,15 @@ const Form = () => {
                     <input type="hidden" name="_next" value="https://loyagranite.com/"></input>
                 </form>
 
+
+
             ) : (
                 <h1>Email Sent</h1>
 
 
             )}
-
-
-            {/* <div className='contactForm sub_section'>
-                <img className='formLogo' src={logoImage} alt='loya-grantie-logo' />
-                <section className='questionsEnglish'>
-                    <p> Have questions? Shoot us a message or give us a call! We can get you an estimate and are always willing to work with your budget. We work with many materials such as granite, marble, quartz, and porcelain.</p>
-                </section>
-                <section className='spanish'>
-                    <p>Preguntas? Envienos un mensaje o llamenos por telefono!
-                    </p>
-                </section>
-                <section className='contactInfo'>
-                    <h3>Contact Info</h3>
-                    <a href="tel: 303-997-6166" className='contact number'>Phone: 303-997-6166</a>
-                    <p className='contact'>Email: dieguito.loyagranite19@gmail.com</p>
-                </section>
-                <section className='loyaHours'>
-                    <h3>Hours of Operation</h3>
-                    <p>Monday-Friday: 9am- 5pm</p>
-                    <p>Saturday: Closed</p>
-                    <p>Sunday: Closed</p>
-                </section>
-            </div> */}
         </div>
+
     )
 }
 

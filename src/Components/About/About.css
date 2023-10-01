@@ -164,7 +164,8 @@
     }
 
     .aboutbottom {
-        height: 1200px;
+        /* height: 1200px; */
+        margin-bottom: 16rem;
     }
 
     .granite {

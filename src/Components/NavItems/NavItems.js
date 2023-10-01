@@ -14,9 +14,9 @@ export const NavItems = [
 
     },
     {
-        title:'Materials',
-        cName:'materialsTab navItem',
-        path:'/Materials'
+        title: 'Materials',
+        cName: 'materialsTab navItem',
+        path: '/Materials'
     },
     {
         title: 'Contact Us',

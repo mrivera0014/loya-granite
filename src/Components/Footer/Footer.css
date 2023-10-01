@@ -79,6 +79,11 @@
     margin: 0 auto;
 }
 
+.topRated,
+.eliteService {
+    height: fit-content;
+}
+
 /* @media (max-width: 640px) {
 
     .footer-copyright {
@@ -91,6 +96,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 3rem;
+        padding: 0;
     }
 
     .footerInfo {

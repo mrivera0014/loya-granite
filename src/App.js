@@ -5,14 +5,13 @@ import './App.css';
 import Nav from './Components/Nav/Nav'
 import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
-import Materials from './pages/Materials/material';
+import Materials from './pages/Materials/Material';
 import Footer from './Components/Footer/Footer';
 import Contact from './pages/Contact/Contact';
 function App() {
   return (
     <BrowserRouter>
 
-      {/* <Modal /> */}
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} ></Route>
