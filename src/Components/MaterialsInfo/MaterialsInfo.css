@@ -1,0 +1,10 @@
+#materialsList {
+    list-style: none;
+    color: #7c8798;
+    text-decoration: none;
+    padding: 2rem;
+}
+
+.Granite {
+    max-height: 10rem;
+}
