@@ -1,10 +1,87 @@
 import { BsFillStarFill } from 'react-icons/bs'
 
 export const reviewItems = [
-
     {
 
-        reviewID: '01',
+        reviewID: '15',
+        cName: 'reviewItem',
+        sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
+        firstName: 'Alina',
+        lastName: 'A.',
+        date: '09/13/2023',
+        ratingValue: '5.0',
+        reviewIcon: <BsFillStarFill />,
+        reviewTitle: 'Install Countertops',
+        review: 'We are very pleased to work with Loya Granite & Design- very professional, great communication, listening and execution. I will definitely contract them for my other outstanding project. Thank you to the entire team!'
+    },
+    {
+
+        reviewID: '14',
+        cName: 'reviewItem',
+        sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
+        firstName: 'Jennifer',
+        lastName: 'P.',
+        date: '08/28/2023',
+        ratingValue: '5.0',
+        reviewIcon: <BsFillStarFill />,
+        reviewTitle: 'Construct Built-In Furniture',
+        review: 'Excellent work. Very prompt. Would highly recommend Diego and his crew. So happy with the work they did.'
+    },
+    {
+
+        reviewID: '13',
+        cName: 'reviewItem',
+        sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
+        firstName: 'Julia',
+        lastName: 'F.',
+        date: '08/28/2023',
+        ratingValue: '5.0',
+        reviewIcon: <BsFillStarFill />,
+        reviewTitle: 'Install Countertops',
+        review: 'Diego was quick to respond, provide great communication throughout the project, and he and his team did great work!'
+    },
+    {
+
+        reviewID: '12',
+        cName: 'reviewItem',
+        sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
+        firstName: 'Josh',
+        lastName: 'M.',
+        date: '05/17//2023',
+        ratingValue: '5.0',
+        reviewIcon: <BsFillStarFill />,
+        reviewTitle: 'Install Countertops',
+        review: 'Very punctual, knowledgeable, and polite. Does great work!'
+    },
+    {
+
+        reviewID: '11',
+        cName: 'reviewItem',
+        sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
+        firstName: 'Dani',
+        lastName: 'J.',
+        date: '05/10/2023',
+        ratingValue: '5.0',
+        reviewIcon: <BsFillStarFill />,
+        reviewTitle: 'Install Stone Slab Countertops',
+        review: "Diego is awesome to work with! He was proactive throughout the entire project, always responded quickly to my questions and the countertop installation was quick and clean. I couldn't be happier with the results. Highly, highly recommend!"
+    },
+    {
+
+        reviewID: '10',
+        cName: 'reviewItem',
+        sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
+        firstName: 'Stephanie',
+        lastName: 'E.',
+        date: '05/04/2023',
+        ratingValue: '5.0',
+        reviewIcon: <BsFillStarFill />,
+        reviewTitle: 'Install Stone Slab Countertops',
+        review: 'Diego explained everything, gave suggestions, and listened to what I asked for. Him and his crew were over the top amazing! Personable, professional, and quick. Happy with the whole process and highly recommend them.'
+    },
+    {
+
+        reviewID: '09',
         cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Rebeca',
@@ -17,7 +94,7 @@ export const reviewItems = [
     },
     {
 
-        reviewID: '02',
+        reviewID: '08',
         cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Brad',
@@ -30,7 +107,7 @@ export const reviewItems = [
     },
     {
 
-        reviewID: '03',
+        reviewID: '07',
         cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Marty',
@@ -43,7 +120,7 @@ export const reviewItems = [
     },
     {
 
-        reviewID: '04',
+        reviewID: '06',
         cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Christina',
@@ -67,7 +144,7 @@ export const reviewItems = [
         review: 'Amazing Company! They were incredibly easy to work with and punctual. They had great communication skills and did a beautiful job. I would highly recommend them!'
     },
     {
-        reviewID: '06',
+        reviewID: '04',
         cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Ann',
@@ -79,7 +156,7 @@ export const reviewItems = [
         review: 'This is THE place to go for countertops! Absolutely wonderful customer service. Fast, continual contact, and amazing installation. We couldn\'t be happier!'
     },
     {
-        reviewID: '07',
+        reviewID: '03',
         cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Stefani',
@@ -91,7 +168,7 @@ export const reviewItems = [
         review: 'I am very grateful for the amazing job they did in my kitchen.'
     },
     {
-        reviewID: '08',
+        reviewID: '02',
         cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Kenja',
@@ -103,7 +180,7 @@ export const reviewItems = [
         review: 'They were on time, they were very professional, answered every question and the results were wonderful.'
     },
     {
-        reviewID: '09',
+        reviewID: '01',
         cName: 'reviewItem',
         sourceURL: 'https://www.homeadvisor.com/rated.Loyagranite.109184108.html',
         firstName: 'Natalie',
