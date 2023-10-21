@@ -1,4 +1,7 @@
 import React from 'react'
+import { Photos } from '../Photos/Photos'
+
+import './MaterialsInfo.css'
 
 function MaterialsInfo() {
 
@@ -22,6 +25,12 @@ function MaterialsInfo() {
 
     ]
 
+    const getPhotosByMaterialType = (materialType) => {
+        return Photos.filter((photo) => photo.materialType === materialType)
+    }
+
+    console.log(Photos)
+
     return (
         <div>
 
@@ -29,14 +38,19 @@ function MaterialsInfo() {
 
                 <h4>If you’re considering investing on stone countertops or other stone installations, there are several options available, including granite, marble, quartzite, and quartz. </h4>
                 {materials.map((item, index) => {
+                    const photosByMaterialType = getPhotosByMaterialType(item.type);
                     return (
-                        <li key={index} className={item.type}>
+                        <li key={index} className={item.type} id='materialsList'>
                             <h4>{item.type}</h4>
                             <section>{item.desc}</section>
+                            {photosByMaterialType.map((photo, photoIndex) => (
+                                <img key={photoIndex} src={photo.image} alt={item.type} className={item.type} />
+                            ))}
                         </li>
+
+
                     )
                 })}
-
             </main>
 
         </div>
