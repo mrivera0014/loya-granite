@@ -14,7 +14,7 @@ export const NavItems = [
 
     },
     {
-        // title: 'Materials',
+        title: 'Materials',
         cName: 'materialsTab navItem',
         path: '/Materials'
     },
