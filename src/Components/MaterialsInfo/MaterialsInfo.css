@@ -3,8 +3,15 @@
     color: #7c8798;
     text-decoration: none;
     padding: 2rem;
+    max-height: none;
 }
 
-.Granite {
-    max-height: 10rem;
+.Granite,
+.Marble,
+.Quartz,
+.Quartzite {
+    max-height: 16rem;
+    padding: 1rem;
 }
+
+.diffMaterial {}

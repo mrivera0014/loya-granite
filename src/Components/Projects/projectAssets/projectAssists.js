@@ -31,20 +31,23 @@ import kitchenEleven from './assets/kitchen_island.jpg'
 import kitchenTwelve from './assets/kitchen_t_island.jpg'
 
 import kitchenThirteen from './assets/kitchen_white_counters.jpg'
-import kitchenFinishedOne from '../../../../src/assets/kitchen-grey-island.jpg'
+import kitchenFinishedOne from '../../../../src/assets/material-kitchen-003.jpg'
 import kitchenFinishedTwo from '../../../../src/assets/complete-kitchen-white-granite-grey-cabinets.jpg'
-import kitchenFinishedThree from '../../../../src/assets/kitchen-black-granite.jpg'
+import kitchenFinishedThree from '../../../../src/assets/material-kitchen-002.jpg'
 export const assists = [
 
-    {item:kitchenFinishedOne,
-        name:"Kitchens Counters"
-},
-    {item:bathroomOne,
+    {
+        item: kitchenFinishedOne,
+        name: "Kitchens Counters"
+    },
+    {
+        item: bathroomOne,
         name: "Bathrooms"
-},
-    {item:firePlaceOne,
+    },
+    {
+        item: firePlaceOne,
         name: "Fire Places"
-},
+    },
 
 
 
@@ -52,68 +55,68 @@ export const assists = [
 ]
 
 
-export const itemTwo =[
-    {itemitem:bathroomOne},
-    {itemitem:bathroomTwo},
-    {itemitem:bathroomThree},
-    {itemitem:bathroomFour},
-    {itemitem:bathroomFive},
-    {itemitem:bathroomSix},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
+export const itemTwo = [
+    { itemitem: bathroomOne },
+    { itemitem: bathroomTwo },
+    { itemitem: bathroomThree },
+    { itemitem: bathroomFour },
+    { itemitem: bathroomFive },
+    { itemitem: bathroomSix },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
 
 
 ]
 
-export const itemOne =[
-    {itemitem:kitchenFinishedOne},
-    {itemitem:kitchenFinishedTwo},
-    {itemitem:kitchenFinishedThree},
-    {itemitem:kitchenFour},
-    {itemitem:kitchenSix},
-    {itemitem:kitchenSeven},
-    {itemitem:kitchenNine},
-    {itemitem:kitchenTen},
-    {itemitem:kitchenEleven},
-    {itemitem:kitchenTwelve},
-    {itemitem:kitchenThirteen},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
+export const itemOne = [
+    { itemitem: kitchenFinishedOne },
+    { itemitem: kitchenFinishedTwo },
+    { itemitem: kitchenFinishedThree },
+    { itemitem: kitchenFour },
+    { itemitem: kitchenSix },
+    { itemitem: kitchenSeven },
+    { itemitem: kitchenNine },
+    { itemitem: kitchenTen },
+    { itemitem: kitchenEleven },
+    { itemitem: kitchenTwelve },
+    { itemitem: kitchenThirteen },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
 
-    
+
 ]
 
-export const itemThree =[
-    {itemitem:firePlaceOne},
-    {itemitem:firePlaceTwo},
-    {itemitem:firePlaceThree},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
-    {itemitem:"filler"},
+export const itemThree = [
+    { itemitem: firePlaceOne },
+    { itemitem: firePlaceTwo },
+    { itemitem: firePlaceThree },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
+    { itemitem: "filler" },
 
 
 ]
 
 export const itemGranite = [
-    {itemitem: "granite"},
-    {itemitem:" .Sealer required (Recommended once every six months)"},
-    {itemitem:"Medium maintenance required "},
-    {itemitem:"Ideal for kitchen, bathrooms and fireplaces."},
-    {itemitem:".Ideal for outside projects, weather resistant(Grills, or outer countertops"},
-    {itemitem:"Prices vary on the highest grade of granite design and color"},
-    {itemitem:"Average slab cost 1500.00"}
+    { itemitem: "granite" },
+    { itemitem: " .Sealer required (Recommended once every six months)" },
+    { itemitem: "Medium maintenance required " },
+    { itemitem: "Ideal for kitchen, bathrooms and fireplaces." },
+    { itemitem: ".Ideal for outside projects, weather resistant(Grills, or outer countertops" },
+    { itemitem: "Prices vary on the highest grade of granite design and color" },
+    { itemitem: "Average slab cost 1500.00" }
 ]
 
 
