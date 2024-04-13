@@ -1,8 +1,13 @@
-.imageOne {
+.imageOne,
+.graniteImg,
+.marbleImg,
+.quartziteImg {
     height: 100vh;
     position: sticky;
 
 }
+
+
 
 @media (max-width: 640px) {
     .imageOne {

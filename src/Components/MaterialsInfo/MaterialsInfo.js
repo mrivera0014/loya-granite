@@ -1,9 +1,15 @@
 import React from 'react'
 import { Photos } from '../Photos/Photos'
+import GraniteImg from '../Parallax/GraniteImg'
+import MarbleImg from '../Parallax/MarbleImg'
+import QuartziteImg from '../Parallax/QuartziteImg'
 
 import './MaterialsInfo.css'
+import '../Parallax/ImageOne.css'
 
 function MaterialsInfo() {
+
+
 
     let materials = [
         {
@@ -25,11 +31,11 @@ function MaterialsInfo() {
 
     ]
 
+
+
     const getPhotosByMaterialType = (materialType) => {
         return Photos.filter((photo) => photo.materialType === materialType)
     }
-
-    console.log(Photos)
 
     return (
         <div>
@@ -40,12 +46,20 @@ function MaterialsInfo() {
                 {materials.map((item, index) => {
                     const photosByMaterialType = getPhotosByMaterialType(item.type);
                     return (
+
+
                         <li key={index} className={item.type} id='materialsList'>
+                            {/* {item.type === 'Granite' && <GraniteImg />} */}
+                            {/* {item.type === 'Marble' && <MarbleImg />} */}
+
                             <h4>{item.type}</h4>
                             <section>{item.desc}</section>
-                            {photosByMaterialType.map((photo, photoIndex) => (
-                                <img key={photoIndex} src={photo.image} alt={item.type} className={item.type} />
-                            ))}
+                            <figure className='diffMaterials'>
+                                {photosByMaterialType.map((photo, photoIndex) => (
+                                    <img key={photoIndex} src={photo.image} alt={item.type} className={item.type} />
+
+                                ))}
+                            </figure>
                         </li>
 
 

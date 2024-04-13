@@ -2,6 +2,8 @@ import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import './Form.css'
 import { gsap } from 'gsap/all'
+import { BsFillTelephoneFill } from "react-icons/bs"
+import { SiGmail } from "react-icons/si"
 
 import Banner from '../Banner/banner'
 
@@ -36,6 +38,18 @@ const Form = () => {
     return (
         <div className='contactContain'>
             <Banner className='banner' />
+            <h3 className='contactHeading'>Contact Us</h3>
+            <section>
+                <p>
+                    Have some more questions? Fill out the form or use one of the alternative options below to contact us!
+                </p>
+                <a className='contact-office' href='tel: 303-997-6166'> Call Us
+                    <BsFillTelephoneFill /> Office: 303-977-6166
+                </a>
+                <a className='contact-email'>
+                    Email Us: <SiGmail /> dieguito.loyagranite19@gmail.com
+                </a>
+            </section>
             {!sent ? (
 
                 <form id='contactForm' method='POST' action='https://formsubmit.co/88c64532444798a1448f19cc7ca8e7be' encType='multipart/form-data'>
@@ -50,10 +64,10 @@ const Form = () => {
                         <p className="formText">Email (Correo Electronico):</p>
                         <input type="email" className="userInput inputEmail" name='email' required />
                     </div>
-                    <div className="phoneSection">
+                    {/* <div className="phoneSection">
                         <p className="formText">Phone Number (Numero de Telefono):</p>
                         <input type="text" className="userInput inputPhone" name='phone' required />
-                    </div>
+                    </div> */}
                     <div className="messageSection">
                         <p className="formText commentSection">Questions/Comments(Preguntas):</p>
                         <textarea className="userInput inputText" name='message' required></textarea>
