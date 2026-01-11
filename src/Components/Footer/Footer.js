@@ -13,7 +13,7 @@ const footer = () => {
         <section className='footerInfo'>
           <h4 className={`footer-header`}>Loya Granite</h4>
           <p className={`footer-address`}>2671 E. Highway 224 Denver, CO. 80229</p>
-          <a className={`footer-office`} href="tel: 303-997-6166"> <BsFillTelephoneFill /> Office: 720-749-2920</a>
+          <a className={`footer-office`} href="tel: 720-749-2920"> <BsFillTelephoneFill /> Office: 720-749-2920</a>
           <br />
           <a className={`footer-cell`} href="tel: 303-903-5530"> <BsFillTelephoneFill /> Cell: 303-903-5530</a>
           <p className={`footer-email`}>Email: loyagranitedesign19@gmail.com</p>
